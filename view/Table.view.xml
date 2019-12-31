@@ -1,0 +1,77 @@
+<core:View
+  controllerName="UI5FioriForTools.controller.Table"
+  height="calc(100% - 0.5rem)"
+  xmlns:core="sap.ui.core"
+  xmlns:f="sap.ui.layout.form"
+  xmlns:l="sap.ui.layout"
+  xmlns:m="sap.m"
+  xmlns="sap.uxap">
+
+      <m:Table id="idProductsTable"
+        class=" sapUiSizeCompact table"
+        mode="SingleSelectMaster"
+        selectionChange="onSelectionChange"
+        items="{file>/todos}"
+        title="TODOs">
+        <m:headerToolbar>
+          <m:Toolbar>
+            <m:Title text="TODOs" level="H2" />
+          </m:Toolbar>
+        </m:headerToolbar>
+        <m:columns>
+          <m:Column
+            vAlign="Middle"
+            hAlign="Left"
+            width="2em">
+            <m:Text text="ID" />
+          </m:Column>
+          <m:Column
+            vAlign="Middle"
+            hAlign="Left">
+            <m:Text text="Name" />
+          </m:Column>
+          <m:Column
+            vAlign="Middle"
+            hAlign="Left">
+            <m:Text text="Jira Task" />
+          </m:Column>
+          <m:Column
+            minScreenWidth="Tablet"
+            demandPopin="true"
+            vAlign="Middle"
+            hAlign="Left">
+            <m:Text text="File" />
+          </m:Column>
+          <m:Column
+            width="2em"
+            vAlign="Middle">
+            <m:Text text="" />
+          </m:Column>
+        </m:columns>
+        <m:items>
+          <m:ColumnListItem>
+            <m:cells>
+              <m:Text
+                title="{file>id}"
+                text="{file>id}"/>
+              <m:Text
+                text="{file>name}"/>
+              <m:Link 
+                text="{file>jira}" 
+                href="https://de.atlassian.com/software/jira" 
+                target="_blank"/>
+              <m:Text
+                text="{file>location}" />
+              <core:Icon
+                src="sap-icon://navigation-right-arrow"
+                class="size1"
+                color="#999999" >
+                <core:layoutData>
+                  <m:FlexItemData growFactor="1" />
+                </core:layoutData>
+              </core:Icon>
+            </m:cells>
+          </m:ColumnListItem>
+        </m:items>
+      </m:Table>
+</core:View>

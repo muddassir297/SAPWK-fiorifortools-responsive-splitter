@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+	<name>ChartContainerToolbarPlaceholder</name>
+
+	<documentation>Provides a placeholder for the embedded chart container toolbar.</documentation>
+
+</control>

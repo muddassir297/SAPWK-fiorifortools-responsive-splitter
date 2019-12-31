@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>semantic/AddAction</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>A &lt;code&gt;AddAction&lt;/code&gt; button has default semantic-specific properties
+and it`s placed in the &lt;code&gt;SemanticPage&lt;/code&gt; title.
+The &lt;code&gt;AddAction&lt;/code&gt; is eligible for aggregation content of a {@link sap.f.semantic.SemanticPage}.</documentation>
+    <since>1.46.0</since>
+    <baseType>sap.f/semantic/SemanticButton</baseType>
+</control>

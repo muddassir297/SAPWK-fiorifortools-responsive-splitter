@@ -1,0 +1,22 @@
+{
+        "todos": [
+            {
+                "id": "1",
+                "name": "Create Data Binding",
+                "jira": "BLOCK-1",
+                "location": "Block.view.xml"
+            },
+            {
+                "id": "2",
+                "name": "Add New Row",
+                "jira": "BLOCK-2",
+                "location": "Block.view.xml"
+            },
+            {
+                "id": "3",
+                "name": "Make JSON Model dynamic",
+                "jira": "BLOCK-3",
+                "location": "Block.controller.js"
+            }
+        ]
+}

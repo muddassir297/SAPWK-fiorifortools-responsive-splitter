@@ -1,0 +1,8 @@
+{
+        "id": "6",
+        "name": "Change JSON Model",
+        "description": "Change the JSON Model to the model used in this project.",
+        "date": "17.02.2017",
+        "person": "-",
+        "jira": "SPLITER-3"
+}

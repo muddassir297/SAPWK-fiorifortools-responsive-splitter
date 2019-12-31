@@ -1,0 +1,11 @@
+
+Tool Page
+    |
+    |__ Page.view.xml
+    |       |__ TODO 14: Customize Tool Header
+    |       |__ TODO 15: Customize Side Navigation
+    |       |__ TODO 16: Add Content
+    |
+    |__ Page.controller.js
+            |__ TODO 17: Modify Model
+            |__ TODO 18: Implement Logout

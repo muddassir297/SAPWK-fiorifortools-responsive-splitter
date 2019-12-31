@@ -1,0 +1,169 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * ${copyright}
+ */
+
+@import "../sap_belize/library.less";
+@import "../../../../../../../Base/baseLib/sap_belize_plus/base.less"; /* ORIGINAL IMPORT PATH: "../../../../../../sap/ui/core/themes/sap_belize_plus/base.less" */
+
+@import "../../../../../../sap/ui/core/themes/sap_belize_plus/global.less";
+
+/* START "AreaMicroChart.less" */
+/* ========================================================================================== */
+/* CSS for control sap.suite.ui.microchart/AreaMicroChart.control for 'sap_belize_plus' theme */
+/* ========================================================================================== */
+/* END "AreaMicroChart.less" */
+
+/* START "BulletMicroChart.less" */
+/* ==================================================================================================== */
+/* CSS for control sap.suite.ui.microchart/BulletMicroChart.control control for 'sap_belize_plus' theme */
+/* ==================================================================================================== */
+/* END "BulletMicroChart.less" */
+
+/* START "ColumnMicroChart.less" */
+/* ============================================================================================ */
+/* CSS for control sap.suite.ui.microchart/ColumnMicroChart.control for 'sap_belize_plus' theme */
+/* ============================================================================================ */
+/* END "ColumnMicroChart.less" */
+
+/* START "ComparisonMicroChart.less" */
+/* ======================================================================================== */
+/* CSS for sap.suite.ui.microchart/ComparisonMicroChart control for 'sap_belize_plus' theme */
+/* ======================================================================================== */
+
+.sapSuiteCpMCChartBarNoValue,
+.sapSuiteCpMCChartBarNegNoValue {
+	border-color: @sapUiBaseColor;
+}
+/* END "ComparisonMicroChart.less" */
+
+/* START "DeltaMicroChart.less" */
+/* =========================================================================================== */
+/* CSS for control sap.suite.ui.microchart/DeltaMicroChart.control for 'sap_belize_plus' theme */
+/* =========================================================================================== */
+/* END "DeltaMicroChart.less" */
+
+/* START "HarveyBallMicroChart.less" */
+/* ======================================================================================== */
+/* CSS for sap.suite.ui.microchart/HarveyBallMicroChart.control for 'sap_belize_plus' theme */
+/* ======================================================================================== */
+/* END "HarveyBallMicroChart.less" */
+
+/* START "InteractiveBarChart.less" */
+/* ==================================================================== */
+/* CSS for control sap.suite.ui.microchart/InteractiveBarChart*/
+/* ==================================================================== */
+
+.sapContrastPlus .sapSuiteIBCBar {
+	background-color: lighten(saturate(@sapUiBrand,40),30);
+}
+
+html.sap-desktop .sapContrastPlus.sapSuiteIBC:not(.sapSuiteIBCNonInteractive) .sapSuiteIBCBarInteractionArea:hover,
+html.sap-desktop .sapContrastPlus .sapSuiteIBC:not(.sapSuiteIBCNonInteractive) .sapSuiteIBCBarInteractionArea:hover {
+	background-color: fade(lighten(saturate(@sapUiBrand,40),30), 55);
+}
+.sapContrastPlus .sapSuiteIBCBarSelected {
+	background-color: fade(lighten(saturate(@sapUiBrand,40),30), 20);
+}
+
+html.sap-desktop .sapContrastPlus.sapSuiteIBC:not(.sapSuiteIBCNonInteractive) .sapSuiteIBCBarSelected:hover,
+html.sap-desktop .sapContrastPlus .sapSuiteIBC:not(.sapSuiteIBCNonInteractive) .sapSuiteIBCBarSelected:hover {
+	background-color: fade(lighten(saturate(@sapUiBrand,40),30), 30);
+}
+
+.sapContrastPlus .sapSuiteIBCDivider {
+	background-color: @sapUiBaseText;
+}
+/* END "InteractiveBarChart.less" */
+
+/* START "InteractiveDonutChart.less" */
+/* ===================================================================== */
+/* CSS for control sap.suite.ui.microchart/InteractiveDonutChart.control */
+/* ===================================================================== */
+
+html.sap-desktop .sapContrastPlus .sapSuiteIDC:not(.sapSuiteIDCNonInteractive) {
+	.sapSuiteIDCLegendSegmentHover {
+		background-color: fade(lighten(saturate(@sapUiBrand, 40), 30), 55);
+	}
+	.sapSuiteIDCLegendSegmentSelected.sapSuiteIDCLegendSegmentHover {
+		background-color: fade(lighten(saturate(@sapUiBrand, 40), 30), 30);
+	}
+}
+.sapContrastPlus .sapSuiteIDCLegendSegmentSelected {
+	background-color: fade(lighten(saturate(@sapUiBrand, 40), 30), 20);
+}
+
+.sapSuiteIDCLegendMarker {
+	border-color: fade(lighten(saturate(@sapUiBrand, 40), 30), 80);
+}
+
+/* SVG STYLE */
+.sapSuiteIDCChartSegment { /*normal*/
+	stroke: lighten(saturate(@sapUiBrand, 40), 30);
+}
+.sapContrastPlus .sapSuiteIDCChartSegmentGhostSelected {
+	fill: fade(lighten(saturate(@sapUiBrand, 40), 30), 20);
+}
+.sapContrastPlus .sapSuiteIDCChartSegmentGhostHighlight {
+	fill: fade(lighten(saturate(@sapUiBrand, 40), 30), 55);
+}
+.sapContrastPlus .sapSuiteIDCChartSegmentGhostHighlight.sapSuiteIDCChartSegmentGhostSelected {
+	fill: fade(lighten(saturate(@sapUiBrand, 40), 30), 30);
+}
+
+/* The Donut colors */
+@_sap_suite_idc_color: lighten(saturate(@sapUiBrand, 40), 30);
+/* END "InteractiveDonutChart.less" */
+
+/* START "InteractiveLineChart.less" */
+/* ==================================================================== */
+/* CSS for control sap.suite.ui.microchart/InteractiveLineChart         */
+/* Belize Plus theme                                                    */
+/* ==================================================================== */
+
+html.sap-desktop .sapSuiteILCInteractionArea:focus {
+	border: 1px dotted;
+}
+.sapContrastPlus .sapSuiteILCSvgElement {
+	stroke: lighten(saturate(@sapUiBrand, 40), 30);
+}
+.sapContrastPlus .sapSuiteILCPoint {
+	background-color: lighten(saturate(@sapUiBrand, 40), 30);
+}
+html.sap-desktop .sapContrastPlus.sapSuiteILC:not(.sapSuiteILCNonInteractive) .sapSuiteILCSection:hover .sapSuiteILCBackgroundArea,
+html.sap-desktop .sapContrastPlus .sapSuiteILC:not(.sapSuiteILCNonInteractive) .sapSuiteILCSection:hover .sapSuiteILCBackgroundArea {
+	background-color: fade(lighten(saturate(@sapUiBrand, 40), 30), 55);
+}
+.sapContrastPlus .sapSuiteILCSection.sapSuiteILCSelected .sapSuiteILCBackgroundArea {
+	background-color: fade(lighten(saturate(@sapUiBrand, 40), 30), 20);
+}
+html.sap-desktop .sapContrastPlus.sapSuiteILC:not(.sapSuiteILCNonInteractive) .sapSuiteILCSection.sapSuiteILCSelected:hover .sapSuiteILCBackgroundArea,
+html.sap-desktop .sapContrastPlus .sapSuiteILC:not(.sapSuiteILCNonInteractive) .sapSuiteILCSection.sapSuiteILCSelected:hover .sapSuiteILCBackgroundArea {
+	background-color: fade(lighten(saturate(@sapUiBrand, 40), 30), 30);
+}
+
+.sapContrastPlus .sapSuiteILCBottomLabelArea {
+	border-top-color: lighten(@sapUiChartGridlineColor,40);
+}
+.sapContrastPlus .sapSuiteILCDivider {
+	stroke: lighten(@sapUiChartGridlineColor,40);
+}
+/* END "InteractiveLineChart.less" */
+
+/* START "RadialMicroChart.less" */
+/* ==================================================================================== */
+/* CSS for sap.suite.ui.microchart/RadialMicroChart.control for 'sap_belize_plus' theme */
+/* ==================================================================================== */
+/* END "RadialMicroChart.less" */
+
+/* START "StackedBarMicroChart.less" */
+/* ======================================================================================== */
+/* CSS for sap.suite.ui.microchart/StackedBarMicroChart control for 'sap_belize_plus' theme */
+/* ======================================================================================== */
+.sapContrastPlus.sapSuiteStackedMCBarNoLast,
+.sapContrastPlus .sapSuiteStackedMCBarNoLast {
+	border-right: 1px solid @sapUiBaseColor;
+}
+/* END "StackedBarMicroChart.less" */
+

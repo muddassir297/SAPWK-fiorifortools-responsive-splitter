@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>semantic/NegativeAction</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>An &lt;code&gt;NegativeAction&lt;/code&gt; button has default semantic-specific properties
+and it`s placed in the &lt;code&gt;SemanticPage&lt;/code&gt; footer.
+The &lt;code&gt;NegativeAction&lt;/code&gt; is eligible for aggregation content of a {@link sap.f.semantic.SemanticPage}.</documentation>
+    <since>1.46.0</since>
+    <baseType>sap.f/semantic/SemanticButton</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="text">
+            <documentation>Defines &lt;code&gt;NegativeAction&lt;/code&gt; text.
+&lt;b&gt;Note:&lt;/b&gt; the default text is &quot;Reject&quot;</documentation>
+        </property>
+    </properties>
+</control>

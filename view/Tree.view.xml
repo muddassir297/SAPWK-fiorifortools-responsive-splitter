@@ -1,0 +1,10 @@
+<mvc:View
+	controllerName="UI5FioriForTools.controller.Tree"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	 	<Tree id="Tree" class="sapUiSizeCompact" items="{path: '/'}" mode="SingleSelectMaster" selectionChange="onSelectionChange" >
+       		<StandardTreeItem title="{text}"/>
+       	</Tree>
+</mvc:View>

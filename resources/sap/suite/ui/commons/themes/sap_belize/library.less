@@ -1,0 +1,1449 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2017 SAP SE. All rights reserved
+ */
+
+@import "../base/library.less";
+@import "../../../../../../../Base/baseLib/sap_belize/base.less"; /* ORIGINAL IMPORT PATH: "../../../../../../sap/ui/core/themes/sap_belize/base.less" */
+
+@import "../../../../../../sap/ui/core/themes/sap_belize/global.less";
+/* START "shared.css" */
+/* This CSS inherits rules from default/shared.css */
+/* END "shared.css" */
+
+
+/* START "ChartContainer.css" */
+/* ========================================================================== */
+/* CSS for sap.suite.ui.commons/ChartConatiner.control for 'sap_belize' theme */
+/* ========================================================================== */
+
+.sapSuiteUiCommonsChartContainer {
+	background-color: @sapUiGroupContentBackground;
+}
+/* END "ChartContainer.css" */
+
+/* START "HeaderContainer.css" */
+/* =========================================================================== */
+/* CSS for sap.suite.ui.commons/HeaderContainer.control for 'sap_belize' theme */
+/* =========================================================================== */
+
+.sapSuiteHdrCntrBtn > .sapMBtnInner {
+	border: none;
+}
+
+.sapSuiteHdrCntrBGTransparent {
+	background-color: transparent;
+}
+
+.sapSuiteHdrCntrBGSolid {
+	background-color: @sapUiBaseColor;
+}
+
+.sapSuiteHdrCntrBGTranslucent {
+	background-color: fade(@sapUiBaseColor, 100%);
+}
+/* END "HeaderContainer.css" */
+
+/* START "ProcessFlow.css" */
+/* =========================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlow.control 'sap_belize' theme */
+/* =========================================================================== */
+
+/* Common styles */
+table.sapSuiteUiCommonsPF {
+  border-spacing: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+thead.sapSuiteUiCommonsPFHeaderFocused {
+  outline-style: dotted;
+  outline-width: 0.063rem;
+}
+
+.sapPFHArrowScroll {
+  color: @sapUiContentIconColor;
+  text-shadow: 0 1px 0 fade(@sapUiContentContrastShadowColor, 70);
+}
+
+html.sap-desktop .sapPFHArrowScroll:hover,
+html.sap-desktop .sapPFHArrowScroll:active {
+  color: @sapUiHighlight;
+}
+
+.suiteUiPFHCounter {
+  font-family: @sapUiFontFamily;
+  font-size: @sapMFontSmallSize;
+  color: darken(@sapUiContentLabelColor, 20);
+  text-shadow: 0 1px 0 fade(@sapUiContentContrastShadowColor, 70);
+}
+
+/*---------------*/
+/* sapContrast   */
+/*---------------*/
+
+.sapContrast.sapPFHArrowScroll,
+.sapContrast .sapPFHArrowScroll {
+  color: @sapUiContentIconColor;
+  text-shadow: 0 1px 0 fade(@sapUiContentShadowColor, 50);
+}
+
+.sapContrast.suiteUiPFHCounter,
+.sapContrast .suiteUiPFHCounter {
+  color: lighten(@sapUiContentLabelColor, 13);
+  text-shadow: 0 1px 0 fade(@sapUiContentShadowColor, 50);
+}
+/* END "ProcessFlow.css" */
+
+/* START "ProcessFlowConnection.css" */
+/* ===================================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlowConnection.control 'sap_belize' theme */
+/* ===================================================================================== */
+
+.borderLeft {
+  border-left-width: 0.125rem;
+}
+.borderBottom {
+  border-bottom-width: 0.125rem;
+}
+.borderLeftTypeNormal {
+  border-left-style: solid;
+}
+.borderLeftTypePlanned {
+  border-left-style: dashed;
+}
+.borderBottomTypeNormal {
+  border-bottom-style: solid;
+}
+.borderBottomTypePlanned {
+  border-bottom-style: dashed;
+}
+.borderLeftStateRegular {
+  border-left-color: darken(@sapUiContentForegroundBorderColor, 15);
+}
+.borderLeftStateHighlighted {
+  border-left-color: @sapUiHighlight;
+}
+.borderLeftStateDimmed {
+  border-left-color: lighten(@sapUiContentForegroundBorderColor, 6);
+}
+.borderLeftStateSelected {
+  border-left-color: darken(@sapUiContentForegroundBorderColor, 30);
+}
+.borderBottomStateRegular {
+  border-bottom-color: darken(@sapUiContentForegroundBorderColor, 15);
+}
+.borderBottomStateHighlighted {
+  border-bottom-color: @sapUiHighlight;
+}
+.borderBottomStateDimmed {
+  border-bottom-color: lighten(@sapUiContentForegroundBorderColor, 6);
+}
+.borderBottomStateSelected {
+  border-bottom-color: darken(@sapUiContentForegroundBorderColor, 30);
+}
+.arrowRight {
+  border-style: solid;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-width: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+/*---------------*/
+/* sapContrast   */
+/*---------------*/
+
+.sapContrast.borderLeftStateRegular,
+.sapContrast .borderLeftStateRegular {
+  border-left-color: @sapUiContentForegroundBorderColor;
+}
+.sapContrast.borderBottomStateRegular,
+.sapContrast .borderBottomStateRegular {
+  border-bottom-color: @sapUiContentForegroundBorderColor;
+}
+.sapContrast.borderLeftStateSelected,
+.sapContrast .borderLeftStateSelected {
+  border-left-color: lighten(@sapUiContentForegroundBorderColor, 10);
+}
+.sapContrast.borderBottomStateSelected,
+.sapContrast .borderBottomStateSelected {
+  border-bottom-color: lighten(@sapUiContentForegroundBorderColor, 10);
+}
+.sapContrast.borderLeftStateDimmed,
+.sapContrast .borderLeftStateDimmed {
+  border-left-color: darken(@sapUiContentForegroundBorderColor, 18);
+}
+.sapContrast.borderBottomStateDimmed,
+.sapContrast .borderBottomStateDimmed {
+  border-bottom-color: darken(@sapUiContentForegroundBorderColor, 18);
+}
+/* END "ProcessFlowConnection.css" */
+
+/* START "ProcessFlowConnectionLabel.css" */
+/* ========================================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlowConnectionLabel.control 'sap_belize' theme */
+/* ========================================================================================== */
+
+/* Configures inner elements of a label (e.g. for border, background, etc.) to display states (e.g. hover, active, etc.) */
+
+/* Regular */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtn > .sapMBtnInner {
+/* Needs to be in the theme file since font variables are only available there */
+  font-size: @sapMFontMediumSize;
+  background-color: @sapUiButtonBackground;
+  border-color: @sapUiButtonBorderColor;
+  color: @sapUiButtonTextColor;
+  text-shadow: 0 1px 0 fade(@sapUiContentContrastShadowColor, 70);
+}
+
+/* Selected/Highlighted */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelSelected:not(.sapMBtnDisabled) > .sapMBtnInner:not(.sapSuiteUiCommonsProcessFlowLabelHover),
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelHighlighted:not(.sapMBtnDisabled) > .sapMBtnInner:not(.sapSuiteUiCommonsProcessFlowLabelHover) {
+  background-image: none;
+  border-color: darken(@sapUiButtonBorderColor, 5);
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+
+/* Disabled/ReadOnly */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtnDisabled {
+  opacity: 1;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtnDisabled > .sapMBtnInner {
+  border-style: none;
+}
+
+/* Dimmed */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelDimmed:not(.sapMBtnDisabled) > .sapMBtnInner:not(.sapSuiteUiCommonsProcessFlowLabelHover) {
+  background-image: none;
+  background-color: @sapUiButtonBackground;
+  border-color: lighten(@sapUiButtonBorderColor, 15);
+}
+
+/* Hover */
+.sapSuiteUiCommonsProcessFlowConnectionLabel:hover:not(.sapMBtnDisabled) > .sapMBtnInner:not(:active) {
+  background-color: @sapUiButtonHoverBackground;
+  border-color: @sapUiButtonHoverBorderColor;
+}
+
+/* Configure inner text element of Label for specific state. */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner {
+  color: @sapUiNegativeText;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner {
+  color: @sapUiCriticalText;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner {
+  color: @sapUiPositiveText;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner {
+  color: @sapUiButtonTextColor;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral.sapMBtnDisabled > .sapMBtnInner {
+  color: @sapUiContentLabelColor;
+}
+
+/* Configure inner icon element of Label for specific state. */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiNegativeElement;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiCriticalElement;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiPositiveElement;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiNeutralElement;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral.sapMBtnDisabled > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiContentLabelColor;
+}
+
+/* handle the keyboard press event for active state (both text and icon) */
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapMBtnActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapMBtnActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapMBtnActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapMBtnActive {
+  color: @sapUiButtonActiveTextColor;
+  background-color: @sapUiButtonActiveBackground;
+  border-color: @sapUiButtonActiveBorderColor;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  outline-style: none;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon {
+  color: @sapUiButtonActiveTextColor;
+  background-color: @sapUiButtonActiveBackground;
+  border-color: @sapUiButtonActiveBorderColor;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  outline-style: none;
+}
+
+/* handle the mouse press event for active state (both text and icon) */
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive {
+  color: @sapUiButtonActiveTextColor;
+  background-color: @sapUiButtonActiveBackground;
+  border-color: @sapUiButtonActiveBorderColor;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  outline-style: none;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive > .sapMBtnIcon {
+  color: @sapUiButtonActiveTextColor;
+  background-color: @sapUiButtonActiveBackground;
+  border-color: @sapUiButtonActiveBorderColor;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  outline-style: none;
+}
+
+/*---------------*/
+/* sapContrast   */
+/*---------------*/
+
+/* Regular */
+.sapContrast.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtn > .sapMBtnInner,
+.sapContrast .sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtn > .sapMBtnInner {
+  text-shadow: 0 1px 0 fade(@sapUiContentShadowColor, 50);
+}
+
+/* Selected */
+.sapContrast.sapSuiteUiCommonsProcessFlowConnectionLabel.labelSelected:not(.sapMBtnDisabled) > .sapMBtnInner:not(.sapSuiteUiCommonsProcessFlowLabelHover),
+.sapContrast .sapSuiteUiCommonsProcessFlowConnectionLabel.labelSelected:not(.sapMBtnDisabled) > .sapMBtnInner:not(.sapSuiteUiCommonsProcessFlowLabelHover) {
+  border-color: lighten(@sapUiButtonBorderColor, 5);
+}
+/* Highlighted */
+.sapContrast.sapSuiteUiCommonsProcessFlowConnectionLabel.labelHighlighted:not(.sapMBtnDisabled) > .sapMBtnInner:not(.sapSuiteUiCommonsProcessFlowLabelHover),
+.sapContrast .sapSuiteUiCommonsProcessFlowConnectionLabel.labelHighlighted:not(.sapMBtnDisabled) > .sapMBtnInner:not(.sapSuiteUiCommonsProcessFlowLabelHover) {
+  border-color: lighten(@sapUiButtonBorderColor, 5);
+}
+
+/* Dimmed */
+.sapContrast.sapSuiteUiCommonsProcessFlowConnectionLabel.labelDimmed:not(.sapMBtnDisabled) > .sapMBtnInner:not(.sapSuiteUiCommonsProcessFlowLabelHover),
+.sapContrast .sapSuiteUiCommonsProcessFlowConnectionLabel.labelDimmed:not(.sapMBtnDisabled) > .sapMBtnInner:not(.sapSuiteUiCommonsProcessFlowLabelHover) {
+  border-color: darken(@sapUiButtonBorderColor, 23);
+}
+/* END "ProcessFlowConnectionLabel.css" */
+
+/* START "ProcessFlowLaneHeader.css" */
+/* ===================================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlowLaneHeader.control 'sap_belize' theme */
+/* ===================================================================================== */
+
+.suiteUiProcessFlowLaneHeaderText {
+  color: darken(@sapUiContentLabelColor, 20);
+  font-family: @sapUiFontFamily;
+  font-size: @sapMFontSmallSize;
+  text-shadow: 0 1px 0 fade(@sapUiContentContrastShadowColor, 70);
+}
+
+.suiteUiProcessFlowLaneHeaderDonutSvg {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.suiteUiProcessFlowLaneHeaderIconContainer { 
+  color: lighten(@sapUiGroupContentBackground, 2);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.suiteUiProcessFlowLaneHeaderHorizontalLine {
+  background-color: @sapUiContentForegroundBorderColor;
+}
+
+.suiteUiProcessFlowLaneHeaderStartEndSymbolContainer {
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.suiteUiProcessFlowLaneHeaderStartEndSymbol {
+  background-color: darken(@sapUiContentForegroundBorderColor, 15);
+}
+
+.suiteUiProcessFlowLaneHeaderProcessSymbolContainer {
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.suiteUiProcessFlowLaneHeaderProcessSymbol {
+  background-color: transparent;
+  color: @sapUiContentNonInteractiveIconColor;
+  text-shadow: 0 1px 0 fade(@sapUiContentContrastShadowColor, 70);
+  -webkit-text-shadow: 0 1px 0 fade(@sapUiContentContrastShadowColor, 70);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0,0,0);
+  font-size: @sapMFontHeader5Size;
+}
+
+.suiteUiProcessFlowLaneHeaderProcessSymbolIcon,
+.suiteUiProcessFlowLaneHeaderProcessSymbolIcon > .sapUiIcon,
+.suiteUiProcessFlowLaneHeaderProcessSymbolIcon > .sapUiIcon:before {
+  color: @sapUiContentNonInteractiveIconColor;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.suiteUiProcessFlowLaneHeaderNoSelection {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.suiteUiCommonsProcessFlowHeaderIconFill {
+  fill: lighten(@sapUiGroupContentBackground, 2);
+  stroke: @sapUiContentForegroundBorderColor;
+}
+
+.suiteUiCommonsProcessFlowHeaderPositiveColor {
+  fill: lighten(@sapUiPositiveElement, 6);
+}
+
+.suiteUiCommonsProcessFlowHeaderNegativeColor {
+  fill: lighten(@sapUiNegativeElement, 6);
+}
+
+.suiteUiCommonsProcessFlowHeaderNeutralColor {
+  fill: lighten(@sapUiNeutralElement, 15);
+}
+
+.suiteUiCommonsProcessFlowHeaderPlannedColor {
+  fill: lighten(@sapUiGroupContentBackground, 2);
+}
+
+.suiteUiCommonsProcessFlowHeaderCriticalColor {
+  fill: lighten(@sapUiCriticalElement, 6);
+}
+
+.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderPositiveColor {
+  stroke: lighten(@sapUiPositiveElement, 6);
+  fill: lighten(@sapUiGroupContentBackground, 2);
+}
+
+.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderNegativeColor {
+  stroke: lighten(@sapUiNegativeElement, 6);
+  fill: lighten(@sapUiGroupContentBackground, 2);
+}
+
+.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderNeutralColor {
+  stroke: lighten(@sapUiNeutralElement, 15);
+  fill: lighten(@sapUiGroupContentBackground, 2);
+}
+
+.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderPlannedColor {
+  stroke: lighten(@sapUiGroupContentBackground, 2);
+  fill: lighten(@sapUiGroupContentBackground, 2);
+}
+
+.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderCriticalColor {
+  stroke: lighten(@sapUiCriticalElement, 6);
+  fill: lighten(@sapUiGroupContentBackground, 2);
+}
+
+/*---------------*/
+/* sapContrast   */
+/*---------------*/
+
+.sapContrast.suiteUiProcessFlowLaneHeaderText,
+.sapContrast .suiteUiProcessFlowLaneHeaderText {
+  color: lighten(@sapUiContentLabelColor, 11.5);
+  text-shadow: 0 1px 0 fade(@sapUiContentShadowColor, 50);
+}
+
+.sapContrast.suiteUiProcessFlowLaneHeaderIconContainer,
+.sapContrast .suiteUiProcessFlowLaneHeaderIconContainer {
+  color: @sapUiGroupContentBackground;
+}
+
+.sapContrast.suiteUiProcessFlowLaneHeaderStartEndSymbol,
+.sapContrast .suiteUiProcessFlowLaneHeaderStartEndSymbol {
+  background-color: lighten(@sapUiContentForegroundBorderColor, 8);
+}
+
+.sapContrast.suiteUiProcessFlowLaneHeaderProcessSymbol,
+.sapContrast .suiteUiProcessFlowLaneHeaderProcessSymbol {
+  color: @sapUiContentNonInteractiveIconColor;
+  text-shadow: 0 1px 0 fade(@sapUiContentShadowColor, 50);
+}
+
+.sapContrast.suiteUiProcessFlowLaneHeaderProcessSymbolIcon,
+.sapContrast.suiteUiProcessFlowLaneHeaderProcessSymbolIcon > .sapUiIcon,
+.sapContrast.suiteUiProcessFlowLaneHeaderProcessSymbolIcon > .sapUiIcon:before {
+  color: @sapUiContentNonInteractiveIconColor;
+}
+
+.sapContrast .suiteUiProcessFlowLaneHeaderProcessSymbolIcon,
+.sapContrast .suiteUiProcessFlowLaneHeaderProcessSymbolIcon > .sapUiIcon,
+.sapContrast .suiteUiProcessFlowLaneHeaderProcessSymbolIcon > .sapUiIcon:before {
+  color: @sapUiContentNonInteractiveIconColor;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderIconFill,
+.sapContrast .suiteUiCommonsProcessFlowHeaderIconFill {
+  fill: @sapUiGroupContentBackground;
+  stroke: lighten(@sapUiContentForegroundBorderColor, 8);
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderPositiveColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderPositiveColor {
+  fill: @sapUiPositiveElement;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderNegativeColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderNegativeColor {
+  fill: @sapUiNegativeElement;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderNeutralColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderNeutralColor {
+  fill: @sapUiNeutralElement;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderCriticalColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderCriticalColor {
+  fill: @sapUiCriticalElement;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderPlannedColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderPlannedColor {
+  fill: @sapUiGroupContentBackground;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderPositiveColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderPositiveColor {
+  stroke: @sapUiPositiveElement;
+  fill: @sapUiGroupContentBackground;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderNegativeColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderNegativeColor {
+  stroke: @sapUiNegativeElement;
+  fill: @sapUiGroupContentBackground;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderNeutralColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderNeutralColor {
+  stroke: @sapUiNeutralElement;
+  fill: @sapUiGroupContentBackground;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderCriticalColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderCriticalColor {
+  stroke: @sapUiCriticalElement;
+  fill: @sapUiGroupContentBackground;
+}
+
+.sapContrast.suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderPlannedColor,
+.sapContrast .suiteUiCommonsProcessFlowHeaderIconFill.suiteUiCommonsProcessFlowHeaderPlannedColor {
+  stroke: @sapUiGroupContentBackground;
+  fill: @sapUiGroupContentBackground;
+}
+/* END "ProcessFlowLaneHeader.css" */
+
+/* START "ProcessFlowNode.css" */
+/* =============================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlowNode.control 'sap_belize' theme */
+/* =============================================================================== */
+
+/* border styles */
+.sapSuiteUiCommonsProcessFlowNodeBorderStandard {
+  border-width: 0.0625rem;
+  border-style: solid;
+}
+.sapSuiteUiCommonsProcessFlowNode1BorderStyle {
+  border-right: none !important;
+  border-bottom: none !important;
+}
+.sapSuiteUiCommonsProcessFlowNode1FoldedBorderStyle {
+  border-style: none;
+}
+.sapSuiteUiCommonsProcessFlowNode2BorderStyle {
+  border-left: none !important;
+  border-bottom: none !important;
+}
+.sapSuiteUiCommonsProcessFlowNode3BorderStyle {
+  border-top: none !important;
+}
+
+/* ----- */
+/* node0 */
+/* ----- */
+/* shadow */
+
+.shadowedDivBorderTop,
+.shadowedDivFoldedCornerBorderTop {
+  top: 0rem;
+  height: 0rem;
+  min-height: 0rem;
+  max-height: 0rem;
+  line-height: 0rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.shadowedDivBorderRight {
+  right: 0rem;
+  top: 0rem;
+  width: 0rem;
+  min-width: 0rem;
+  max-width: 0rem;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  line-height: 100%;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.shadowedDivBorderBottom {
+  left: 0rem;
+  bottom: 0rem;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 0rem;
+  min-height: 0rem;
+  max-height: 0rem;
+  line-height: 0rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.shadowedDivBorderLeft,
+.shadowedDivFoldedCornerBorderLeft {
+  left: 0rem;
+  width: 0rem;
+  min-width: 0rem;
+  max-width: 0rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.shadowedDivFoldedCorner,
+.shadowedDivFoldedCornerSafari {
+  position: absolute;
+  border: none;
+  height: 0rem;
+  min-height: 0rem;
+  max-height: 0rem;
+  line-height: 0rem;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.shadowedDivCommon {
+  position: absolute;
+  border: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel1 > .shadowedDivBorderTop  {
+  left: 0rem;
+  width: 11rem;
+  min-width: 11rem;
+  max-width: 11rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel1 > .shadowedDivFoldedCornerBorderTop  {
+  left: 1rem;
+  width: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel1 > .shadowedDivBorderLeft  {
+  top: 0rem;
+  height: 13.8125rem;
+  min-height: 13.8125rem;
+  max-height: 13.8125rem;
+  line-height: 13.8125rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel1 > .shadowedDivFoldedCornerBorderLeft  {
+  top: 1rem;
+  height: 12.8125rem;
+  min-height: 12.8125rem;
+  max-height: 12.8125rem;
+  line-height: 12.8125rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel1 > .shadowedDivFoldedCorner  {
+  left: -0.18125rem;
+  top: 0.45rem;
+  width: 1.2375rem;
+  min-width: 1.2375rem;
+  max-width: 1.2375rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel1 > .shadowedDivFoldedCornerSafari  {
+  left: -0.18125rem;
+  top: 0.5rem;
+  width: 1.25rem;
+  min-width: 1.25rem;
+  max-width: 1.25rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel2 > .shadowedDivBorderTop  {
+  left: 0rem;
+  width: 9rem;
+  min-width: 9rem;
+  max-width: 9rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel2 > .shadowedDivFoldedCornerBorderTop  {
+  left: 1rem;
+  width: 8rem;
+  min-width: 8rem;
+  max-width: 8rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel2 > .shadowedDivBorderLeft  {
+  top: 0rem;
+  height: 12.1875rem;
+  min-height: 12.1875rem;
+  max-height: 12.1875rem;
+  line-height: 12.1875rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel2 > .shadowedDivFoldedCornerBorderLeft  {
+  top: 1rem;
+  height: 11.1875rem;
+  min-height: 11.1875rem;
+  max-height: 11.1875rem;
+  line-height: 11.1875rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel2 > .shadowedDivFoldedCorner  {
+  left: -0.18125rem;
+  top: 0.45rem;
+  width: 1.2375rem;
+  min-width: 1.2375rem;
+  max-width: 1.2375rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel2 > .shadowedDivFoldedCornerSafari  {
+  left: -0.18125rem;
+  top: 0.5rem;
+  width: 1.25rem;
+  min-width: 1.25rem;
+  max-width: 1.25rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel3 > .shadowedDivBorderTop  {
+  left: 0rem;
+  width: 6.5rem;
+  min-width: 6.5rem;
+  max-width: 6.5rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel3 > .shadowedDivFoldedCornerBorderTop  {
+  left: 0.75rem;
+  width: 5.75rem;
+  min-width: 5.75rem;
+  max-width: 5.75rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel3 > .shadowedDivBorderLeft  {
+  top: 0rem;
+  height: 8rem;
+  min-height: 8rem;
+  max-height: 8rem;
+  line-height: 8rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel3 > .shadowedDivFoldedCornerBorderLeft  {
+  top: 0.75rem;
+  height: 7.25rem;
+  min-height: 7.25rem;
+  max-height: 7.25rem;
+  line-height: 7.25rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel3 > .shadowedDivFoldedCorner {
+  left: -0.13125rem;
+  top: 0.325rem;
+  width: 0.89375rem;
+  min-width: 0.89375rem;
+  max-width: 0.89375rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel3 > .shadowedDivFoldedCornerSafari  {
+  left: -0.125rem;
+  top: 0.375rem;
+  width: 0.9375rem;
+  min-width: 0.9375rem;
+  max-width: 0.9375rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel4 > .shadowedDivBorderTop  {
+  left: 0rem;
+  width: 3rem;
+  min-width: 3rem;
+  max-width: 3rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel4 > .shadowedDivFoldedCornerBorderTop  {
+  left: 0.75rem;
+  width: 2.25rem;
+  min-width: 2.25rem;
+  max-width: 2.25rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel4 > .shadowedDivBorderLeft  {
+  top: 0rem;
+  height: 3.75rem;
+  min-height: 3.75rem;
+  max-height: 3.75rem;
+  line-height: 3.75rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel4 > .shadowedDivFoldedCornerBorderLeft  {
+  top: 0.75rem;
+  height: 3rem;
+  min-height: 3rem;
+  max-height: 3rem;
+  line-height: 3rem;
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel4 > .shadowedDivFoldedCorner {
+  left: -0.13125rem;
+  top: 0.325rem;
+  width: 0.89375rem;
+  min-width: 0.89375rem;
+  max-width: 0.89375rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+.sapSuiteUiCommonsProcessFlowNode0ZoomLevel4 > .shadowedDivFoldedCornerSafari {
+  left: -0.125rem;
+  top: 0.375rem;
+  width: 0.9375rem;
+  min-width: 0.9375rem;
+  max-width: 0.9375rem;
+  box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -moz-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+  -webkit-box-shadow: 0 0 0.125rem 1px fade(@sapUiContentShadowColor, 30);
+}
+
+
+/* ----- */
+/* node1 */
+/* ----- */
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel1,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel2,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel1 > .sapUiIcon,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel2 > .sapUiIcon,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel1 > .sapUiIcon:before,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel2 > .sapUiIcon:before {
+  background-color: transparent;
+  font-size: @sapMFontLargeSize;
+}
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel3,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel4,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel3 > .sapUiIcon,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel4 > .sapUiIcon,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel3 > .sapUiIcon:before,
+.sapSuiteUiCommonsProcessFlowNode1ZoomLevel4 > .sapUiIcon:before {
+  background-color: transparent;
+  font-size: @sapMFontSmallSize;
+}
+
+/* ----- */
+/* node2 */
+/* ----- */
+
+/* ----- */
+/* node3 */
+/* ----- */
+
+/*---------------*/
+/* folded corner */
+/*---------------*/
+
+/* Title */
+.sapSuiteUiCommonsProcessFlowNode3Title,
+.sapSuiteUiCommonsProcessFlowNode3Title > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxWidth {
+  border: none;
+  color: @sapUiGroupTitleTextColor;
+  font-size: @sapMFontLargeSize;
+}
+
+.sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNodeActive,
+.sapSuiteUiCommonsProcessFlowNode3Title > .sapMText.sapSuiteUiCommonsProcessFlowNodeActive,
+.sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxLine.sapSuiteUiCommonsProcessFlowNodeActive,
+.sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxWidth.sapSuiteUiCommonsProcessFlowNodeActive {
+  color: @sapUiContentContrastTextColor;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed > .sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNode3Title > .sapMText,
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed > .sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed > .sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxWidth {
+  color: lighten(@sapUiGroupTitleTextColor, 20);
+}
+
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel1 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel1 > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel1 > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel1 > .sapMTextMaxWidth {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel2 {
+  border: none;
+  font-size: @sapMFontMediumSize;
+}
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel2 > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel2 > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel2 > .sapMTextMaxWidth {
+  border: none;
+  font-size: @sapMFontMediumSize;
+}
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel3 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel3 > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel3 > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3TitleZoomLevel3 > .sapMTextMaxWidth {
+  border: none;
+  font-size: @sapMFontMediumSize;
+}
+
+/* State area */
+.sapSuiteUiCommonsProcessFlowNode3State {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateZoomLevel1 {
+  border: none;
+  font-size: @sapMFontMediumSize;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateZoomLevel2 {
+  border: none;
+  font-size: @sapMFontSmallSize;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateZoomLevel3 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateZoomLevel4 {
+  border: none;
+}
+
+/* State icon */
+.sapSuiteUiCommonsProcessFlowNode3StateIcon,
+.sapSuiteUiCommonsProcessFlowNode3StateIcon > .sapUiIcon,
+.sapSuiteUiCommonsProcessFlowNode3StateIcon > .sapUiIcon:before {
+  border: none;
+}
+
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel1 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel1 > .sapUiIcon,
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel1 > .sapUiIcon:before {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel2 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel2 > .sapUiIcon,
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel2 > .sapUiIcon:before {
+  border: none;
+  font-size: @sapMFontLargeSize;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel3 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel3 > .sapUiIcon,
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel3 > .sapUiIcon:before {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel4 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel4 > .sapUiIcon,
+.sapSuiteUiCommonsProcessFlowNode3StateIconZoomLevel4 > .sapUiIcon:before {
+  border: none;
+}
+
+/* State text */
+.sapSuiteUiCommonsProcessFlowNode3StateText,
+.sapSuiteUiCommonsProcessFlowNode3StateText > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3StateText > .sapMTextMaxWidth {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel1 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel1 > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel1 > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel1 > .sapMTextMaxWidth {
+  border: none;
+  font-size: @sapMFontMediumSize;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel2 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel2 > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel2 > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel2 > .sapMTextMaxWidth {
+  border: none;
+  font-size: @sapMFontSmallSize;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel3 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel3 > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel3 > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3StateTextZoomLevel3 > .sapMTextMaxWidth {
+  border: none;
+  font-size: @sapMFontSmallSize;
+}
+
+/* Text area */
+.sapSuiteUiCommonsProcessFlowNode3Text,
+.sapSuiteUiCommonsProcessFlowNode3Text > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3Text > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3Text > .sapMTextMaxWidth {
+  border: none;
+  color: @sapUiContentLabelColor;
+  font-size: @sapMFontSmallSize;
+}
+.sapSuiteUiCommonsProcessFlowNode3TextZoomLevel1 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3TextZoomLevel1 > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3TextZoomLevel1 > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3TextZoomLevel1 > .sapMTextMaxWidth {
+  border: none;
+  font-size: @sapMFontMediumSize;
+}
+.sapSuiteUiCommonsProcessFlowNode3TextZoomLevel2 {
+  border: none;
+}
+.sapSuiteUiCommonsProcessFlowNode3TextZoomLevel2 > .sapMText,
+.sapSuiteUiCommonsProcessFlowNode3TextZoomLevel2 > .sapMTextMaxLine,
+.sapSuiteUiCommonsProcessFlowNode3TextZoomLevel2 > .sapMTextMaxWidth {
+  border: none;
+  font-size: @sapMFontSmallSize;
+}
+
+/* node content states */
+.sapSuiteUiCommonsProcessFlowFoldedCornerIndication {
+  background-color: transparent !important;
+}
+.sapSuiteUiCommonsProcessFlowNodeStateNeutral .sapMText {
+  color: @sapUiContentLabelColor;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeStateCritical .sapMText {
+  color: @sapUiCriticalText;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeStatePositive .sapMText {
+  color: @sapUiPositiveText;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeStateNegative .sapMText {
+  color: @sapUiNegativeText;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeStateNeutral.sapSuiteUiCommonsProcessFlowNode3StateIcon {
+  color: @sapUiNeutralElement;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeStateCritical.sapSuiteUiCommonsProcessFlowNode3StateIcon {
+  color: @sapUiCriticalElement;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeStatePositive.sapSuiteUiCommonsProcessFlowNode3StateIcon {
+  color: @sapUiPositiveElement;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeStateNegative.sapSuiteUiCommonsProcessFlowNode3StateIcon {
+  color: @sapUiNegativeElement;
+}
+
+/* node display states */
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateRegular {
+  background-color: @sapUiGroupContentBackground;
+  border-color: @sapUiContentForegroundBorderColor;
+}
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateRegular.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  border-color: lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateHighlighted {
+  background-color: @sapUiGroupContentBackground;
+  border-color: @sapUiHighlight;
+}
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed {
+  background-color: @sapUiGroupContentBackground;
+  border-color: lighten(@sapUiContentForegroundBorderColor, 15);
+}
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  border-color: lighten(@sapUiContentForegroundBorderColor, 15);
+}
+.sapSuiteUiCommonsProcessFlowNodeHover {
+  background-color: darken(@sapUiGroupContentBackground, 5) !important;
+}
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeStatePlanned.sapSuiteUiCommonsProcessFlowNodeHover {
+  border-color: lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeHover {
+  border-color: @sapUiContentForegroundBorderColor;
+}
+.sapSuiteUiCommonsProcessFlowNodeActive {
+  border-color: @sapUiHighlight !important;
+  background-color: @sapUiHighlight !important;
+  color: @sapUiContentContrastTextColor !important;
+}
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateFocused {
+  background-color: @sapUiGroupContentBackground;
+  border-color: lighten(@sapUiAccent6, 5);
+}
+.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeDisplayStateFocused {
+  border-color: lighten(@sapUiAccent6, 35);
+}
+
+.sapSuiteUiCommonsProcessFlowNode3StateIcon.sapSuiteUiCommonsProcessFlowNodeStatePlanned,
+.sapSuiteUiCommonsProcessFlowNode3StateText.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  background-color: transparent !important;
+}
+
+/* node corner states */
+.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateRegular {
+  color: @sapUiContentForegroundBorderColor;
+}
+.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateRegular.sapSuiteUiCommonsProcessFlowFoldedCornerPlanned {
+  color: lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateHighlighted {
+  color: @sapUiHighlight;
+}
+.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateDimmed {
+  color: lighten(@sapUiContentForegroundBorderColor, 15);
+}
+.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateDimmed.sapSuiteUiCommonsProcessFlowFoldedCornerPlanned {
+  color: lighten(@sapUiContentForegroundBorderColor, 15);
+}
+.sapSuiteUiCommonsProcessFlowFoldedCornerNodeActive {
+  color: @sapUiContentContrastIconColor;
+  border-color: @sapUiContentContrastIconColor;
+}
+.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateFocused,
+.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateFocused.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateRegular {
+  color: lighten(@sapUiAccent6, 5);
+}
+.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateFocused.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateDimmed {
+  color: lighten(@sapUiAccent6, 20);
+}
+html.sap-desktop .sapSuiteUiCommonsProcessFlowNode0.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateNavigation {
+  outline-style: dotted !important;
+  outline-width: 0.0625rem !important;
+  outline-offset: 0.0625rem !important;
+  color: darken(@sapUiContentForegroundBorderColor, 15) !important;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeStatePlannedDashedBorder {
+  border-width: 0.0625rem;
+  border-style: dashed;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeAggregated {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem @sapUiContentForegroundBorderColor, 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem @sapUiContentForegroundBorderColor;
+  box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem @sapUiContentForegroundBorderColor, 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem @sapUiContentForegroundBorderColor;
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedZoomLevel4 {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem @sapUiContentForegroundBorderColor, 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem @sapUiContentForegroundBorderColor;
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem @sapUiContentForegroundBorderColor, 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem @sapUiContentForegroundBorderColor;
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregated.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 8), 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 8);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 8), 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 8);
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedZoomLevel4.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 8), 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 8);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 8), 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 8);
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedFocused {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiAccent6, 5), 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem lighten(@sapUiAccent6, 5);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiAccent6, 5), 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem lighten(@sapUiAccent6, 5);
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedFocusedZoomLevel4 {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiAccent6, 5), 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem lighten(@sapUiAccent6, 5);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiAccent6, 5), 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem lighten(@sapUiAccent6, 5);
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedFocused.sapSuiteUiCommonsProcessFlowNodeStateDimmed {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiAccent6, 35), 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem lighten(@sapUiAccent6, 35);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiAccent6, 35), 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem lighten(@sapUiAccent6, 35);
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedFocusedZoomLevel4.sapSuiteUiCommonsProcessFlowNodeStateDimmed {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiAccent6, 35), 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem lighten(@sapUiAccent6, 35);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiAccent6, 35), 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem lighten(@sapUiAccent6, 35);
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmed {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 15), 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 15);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 15), 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 15);
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedZoomLevel4 {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 15), 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 15);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 15), 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 15);
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedPressed,
+.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedPressed {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem @sapUiHighlight, 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem @sapUiHighlight;
+  box-shadow: 0.25rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.1875rem @sapUiHighlight, 0.625rem 0rem 0rem -0.3125rem @sapUiGroupContentBackground, 0.75rem 0rem 0rem -0.375rem @sapUiHighlight;
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedPressedZoomLevel4,
+.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedPressedZoomLevel4 {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem @sapUiHighlight, 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem @sapUiHighlight;
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem @sapUiGroupContentBackground, 0.1875rem 0rem 0rem -0.0625rem @sapUiHighlight, 0.3125rem 0rem 0rem -0.125rem @sapUiGroupContentBackground, 0.375rem 0rem 0rem -0.125rem @sapUiHighlight;
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHovered {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem darken(@sapUiGroupContentBackground, 5), 0.375rem 0rem 0rem -0.1875rem @sapUiContentForegroundBorderColor, 0.625rem 0rem 0rem -0.3125rem darken(@sapUiGroupContentBackground, 5), 0.75rem 0rem 0rem -0.375rem @sapUiContentForegroundBorderColor;
+  box-shadow: 0.25rem 0rem 0rem -0.125rem darken(@sapUiGroupContentBackground, 5), 0.375rem 0rem 0rem -0.1875rem @sapUiContentForegroundBorderColor, 0.625rem 0rem 0rem -0.3125rem darken(@sapUiGroupContentBackground, 5), 0.75rem 0rem 0rem -0.375rem @sapUiContentForegroundBorderColor;
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHoveredZoomLevel4 {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem darken(@sapUiGroupContentBackground, 5), 0.1875rem 0rem 0rem -0.0625rem @sapUiContentForegroundBorderColor, 0.3125rem 0rem 0rem -0.125rem darken(@sapUiGroupContentBackground, 5), 0.375rem 0rem 0rem -0.125rem @sapUiContentForegroundBorderColor;
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem darken(@sapUiGroupContentBackground, 5), 0.1875rem 0rem 0rem -0.0625rem @sapUiContentForegroundBorderColor, 0.3125rem 0rem 0rem -0.125rem darken(@sapUiGroupContentBackground, 5), 0.375rem 0rem 0rem -0.125rem @sapUiContentForegroundBorderColor;
+  z-index: 4;
+}
+.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHovered.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem darken(@sapUiGroupContentBackground, 5), 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 8), 0.625rem 0rem 0rem -0.3125rem darken(@sapUiGroupContentBackground, 5), 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 8);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem darken(@sapUiGroupContentBackground, 5), 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 8), 0.625rem 0rem 0rem -0.3125rem darken(@sapUiGroupContentBackground, 5), 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 8);
+  z-index: 4;
+}
+
+.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHoveredZoomLevel4.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  border-radius: 0.0625rem;
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem darken(@sapUiGroupContentBackground, 5), 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 8), 0.3125rem 0rem 0rem -0.125rem darken(@sapUiGroupContentBackground, 5), 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 8);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem darken(@sapUiGroupContentBackground, 5), 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 8), 0.3125rem 0rem 0rem -0.125rem darken(@sapUiGroupContentBackground, 5), 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 8);
+  z-index: 4;
+}
+
+/*---------------*/
+/* sapContrast   */
+/*---------------*/
+
+/* Title */
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed > .sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNode3Title > .sapMText,
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed > .sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxLine,
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed > .sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxWidth {
+  color: @sapUiGroupTitleTextColor;
+}
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed > .sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNode3Title > .sapMText,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed > .sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxLine,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed > .sapSuiteUiCommonsProcessFlowNode3Title > .sapSuiteUiCommonsProcessFlowNode3Title > .sapMTextMaxWidth {
+  color: @sapUiGroupTitleTextColor;
+}
+
+/* node display states */
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateRegular,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateRegular {
+  background-color: lighten(@sapUiGroupContentBackground, 2);
+  border-color: lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateRegular.sapSuiteUiCommonsProcessFlowNodeStatePlanned,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateRegular.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  background-color: lighten(@sapUiGroupContentBackground, 2);
+  border-color: darken(@sapUiContentForegroundBorderColor, 2);
+}
+
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateHighlighted,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateHighlighted {
+  background-color: lighten(@sapUiGroupContentBackground, 2);
+}
+
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed {
+  background-color: lighten(@sapUiGroupContentBackground, 2);
+  border-color: darken(@sapUiContentForegroundBorderColor, 20);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeStatePlanned,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  background-color: lighten(@sapUiGroupContentBackground, 2);
+  border-color: darken(@sapUiContentForegroundBorderColor, 20);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeHover,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeHover {
+  background-color: lighten(@sapUiGroupContentBackground, 6) !important;
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeHover.sapSuiteUiCommonsProcessFlowNodeStatePlanned,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeHover.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  background-color: lighten(@sapUiGroupContentBackground, 6) !important;
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeStatePlanned.sapSuiteUiCommonsProcessFlowNodeHover,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeStatePlanned.sapSuiteUiCommonsProcessFlowNodeHover {
+  border-color: darken(@sapUiContentForegroundBorderColor, 2);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeHover,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeHover {
+  border-color: lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateFocused,
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateFocused.sapSuiteUiCommonsProcessFlowNodeDisplayStateRegular,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateFocused,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateFocused.sapSuiteUiCommonsProcessFlowNodeDisplayStateRegular {
+  background-color: lighten(@sapUiGroupContentBackground, 2);
+  border-color: @sapUiAccent6;
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeDisplayStateFocused,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeDisplayStateDimmed.sapSuiteUiCommonsProcessFlowNodeDisplayStateFocused {
+  background-color: lighten(@sapUiGroupContentBackground, 2);
+  border-color: darken(@sapUiAccent6, 10);
+}
+
+/* node corner states */
+.sapContrast.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateRegular,
+.sapContrast .sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateRegular {
+  color: lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateRegular.sapSuiteUiCommonsProcessFlowFoldedCornerPlanned,
+.sapContrast .sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateRegular.sapSuiteUiCommonsProcessFlowFoldedCornerPlanned {
+	color: darken(@sapUiContentForegroundBorderColor, 2);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateDimmed,
+.sapContrast.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateDimmed.sapSuiteUiCommonsProcessFlowFoldedCornerPlanned,
+.sapContrast .sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateDimmed,
+.sapContrast .sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateDimmed.sapSuiteUiCommonsProcessFlowFoldedCornerPlanned {
+  color: darken(@sapUiContentForegroundBorderColor, 20);
+}
+
+.sapContrast.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateFocused,
+.sapContrast.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateFocused.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateRegular,
+.sapContrast .sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateFocused,
+.sapContrast .sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateFocused.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateRegular {
+  color:  @sapUiAccent6 !important;
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateFocused.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateDimmed,
+.sapContrast .sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateFocused.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateDimmed {
+  color: Darken(@sapUiAccent6, 10) !important;
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNode0.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateNavigation,
+.sapContrast .sapSuiteUiCommonsProcessFlowNode0.sapSuiteUiCommonsProcessFlowFoldedCornerDisplayStateNavigation {
+  outline-color: lighten(@sapUiContentForegroundBorderColor, 8) !important;
+  color: lighten(@sapUiContentForegroundBorderColor, 8) !important;
+}
+
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregated,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregated {
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 8), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 8);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 8), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedZoomLevel4,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedZoomLevel4 {
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 8), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 8);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 8), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregated.sapSuiteUiCommonsProcessFlowNodeStatePlanned,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregated.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem darken(@sapUiContentForegroundBorderColor, 2), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem darken(@sapUiContentForegroundBorderColor, 2);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem darken(@sapUiContentForegroundBorderColor, 2), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem darken(@sapUiContentForegroundBorderColor, 2);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedZoomLevel4.sapSuiteUiCommonsProcessFlowNodeStatePlanned,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedZoomLevel4.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem darken(@sapUiContentForegroundBorderColor, 2), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem darken(@sapUiContentForegroundBorderColor, 2);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem darken(@sapUiContentForegroundBorderColor, 2), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem darken(@sapUiContentForegroundBorderColor, 2);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedFocused,
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedFocused {
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem @sapUiAccent6, 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem @sapUiAccent6;
+  box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem @sapUiAccent6, 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem @sapUiAccent6;
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedFocusedZoomLevel4,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedFocusedZoomLevel4 {
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem @sapUiAccent6, 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem @sapUiAccent6;
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem @sapUiAccent6, 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem @sapUiAccent6;
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedFocused.sapSuiteUiCommonsProcessFlowNodeStateDimmed,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedFocused.sapSuiteUiCommonsProcessFlowNodeStateDimmed {
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem darken(@sapUiAccent6, 10), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem darken(@sapUiAccent6, 10);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem darken(@sapUiAccent6, 10), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem darken(@sapUiAccent6, 10);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedFocusedZoomLevel4.sapSuiteUiCommonsProcessFlowNodeStateDimmed,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedFocusedZoomLevel4.sapSuiteUiCommonsProcessFlowNodeStateDimmed {
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem darken(@sapUiAccent6, 10), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem darken(@sapUiAccent6, 10);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem darken(@sapUiAccent6, 10), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem darken(@sapUiAccent6, 10);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmed,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedDimmed {
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem darken(@sapUiContentForegroundBorderColor, 20), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem darken(@sapUiContentForegroundBorderColor, 20);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.1875rem darken(@sapUiContentForegroundBorderColor, 20), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 2), 0.75rem 0rem 0rem -0.375rem darken(@sapUiContentForegroundBorderColor, 20);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedZoomLevel4,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedZoomLevel4 {
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem darken(@sapUiContentForegroundBorderColor, 20), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem darken(@sapUiContentForegroundBorderColor, 20);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 2), 0.1875rem 0rem 0rem -0.0625rem darken(@sapUiContentForegroundBorderColor, 20), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 2), 0.375rem 0rem 0rem -0.125rem darken(@sapUiContentForegroundBorderColor, 20);
+}
+
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHovered,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHovered {
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 6), 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 8), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 6), 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 8);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 6), 0.375rem 0rem 0rem -0.1875rem lighten(@sapUiContentForegroundBorderColor, 8), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 6), 0.75rem 0rem 0rem -0.375rem lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHoveredZoomLevel4,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHoveredZoomLevel4 {
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 6), 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 8), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 6), 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 8);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 6), 0.1875rem 0rem 0rem -0.0625rem lighten(@sapUiContentForegroundBorderColor, 8), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 6), 0.375rem 0rem 0rem -0.125rem lighten(@sapUiContentForegroundBorderColor, 8);
+}
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHovered.sapSuiteUiCommonsProcessFlowNodeStatePlanned,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHovered.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  -webkit-box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 6), 0.375rem 0rem 0rem -0.1875rem darken(@sapUiContentForegroundBorderColor, 2), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 6), 0.75rem 0rem 0rem -0.375rem darken(@sapUiContentForegroundBorderColor, 2);
+  box-shadow: 0.25rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 6), 0.375rem 0rem 0rem -0.1875rem darken(@sapUiContentForegroundBorderColor, 2), 0.625rem 0rem 0rem -0.3125rem lighten(@sapUiGroupContentBackground, 6), 0.75rem 0rem 0rem -0.375rem darken(@sapUiContentForegroundBorderColor, 2);
+}
+
+.sapContrast.sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHoveredZoomLevel4.sapSuiteUiCommonsProcessFlowNodeStatePlanned,
+.sapContrast .sapSuiteUiCommonsProcessFlowNodeAggregatedDimmedHoveredZoomLevel4.sapSuiteUiCommonsProcessFlowNodeStatePlanned {
+  -webkit-box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 6), 0.1875rem 0rem 0rem -0.0625rem darken(@sapUiContentForegroundBorderColor, 2), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 6), 0.375rem 0rem 0rem -0.125rem darken(@sapUiContentForegroundBorderColor, 2);
+  box-shadow: 0.125rem 0rem 0rem -0.0625rem lighten(@sapUiGroupContentBackground, 6), 0.1875rem 0rem 0rem -0.0625rem darken(@sapUiContentForegroundBorderColor, 2), 0.3125rem 0rem 0rem -0.125rem lighten(@sapUiGroupContentBackground, 6), 0.375rem 0rem 0rem -0.125rem darken(@sapUiContentForegroundBorderColor, 2);
+}
+/* END "ProcessFlowNode.css" */
+

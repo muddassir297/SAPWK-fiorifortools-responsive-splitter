@@ -1,0 +1,101 @@
+<core:FragmentDefinition xmlns:sfi="sap.ui.comp.smartfield"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:smartlink="sap.ui.comp.navpopover"
+	xmlns="sap.m" xmlns:sfo="sap.ui.comp.smartform" xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" xmlns:build="sap.build" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form">
+
+<!-- done in the same way as in sap\ui\comp\navpopover\Util.js
+	<form:SimpleForm 
+		maxContainerCols= "1"
+		editable= "false"
+		layout="ResponsiveGridLayout">
+		<form:content>
+		<Title text="Contact data" level="H1"/>
+			<core:Title text="Contact data" level="H2"/>
+			<Image src="sap-icon://competitor" decorative="false" />
+			<Label text="Name" />
+			<Text text="John Doe" />
+			<Label text="Email" />
+			<Link href="mailto:abc" text="text" />
+			<Label text="Tel." />
+			<Link href="tel:1234" text="text" />
+		</form:content>
+	</form:SimpleForm>-->
+
+		<sfo:SmartForm 	class="sapSmartTemplatesSmartForm"
+						flexEnabled="true"
+						build:metadata="#pattern:Form;">
+			<sfo:customData>
+				<core:CustomData key="dateFormatSettings" value='\{"UTC":true,"style":"short"\}' />
+			</sfo:customData>
+			<sfo:layout>
+				<sfo:Layout columnsM="2" columnsL="3" columnsXL="4" labelSpanS="12" labelSpanM="12" labelSpanL="12" labelSpanXL="12" singleGroupFullSize="false" />
+			</sfo:layout>
+			<sfo:groups>
+				<!-- alternative determination of header - this is only used if the Groups should get a "title"
+				<sfo:Group binding="{parts: [{path: 'header>'}, {path: 'entitySet>'}, {path: 'quickView>/navigationPath'}], formatter: 'sap.suite.ui.generic.template.js.AnnotationHelper.getCurrentPathWithExpand'}">
+					<sfo:GroupElement class="sapUiTinyMargin">
+						<QuickViewPage title="{path: 'header>Description/Value', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}" 
+									   icon="{path: 'header>ImageUrl', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}" 
+									   description="{path: 'header>Title/Value', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}" 
+									   />
+					</sfo:GroupElement>
+				</sfo:Group>
+				<sfo:Group label="HBox">
+					<sfo:GroupElement class="sapUiTinyMargin">
+						<HBox>
+							<items>
+								<Image src="{path: 'header>ImageUrl', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}"/>
+								<ObjectIdentifier title="{path: 'header>Description/Value', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}" 
+												   text="{path: 'header>Title/Value', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}"/>
+							</items>
+						</HBox>
+					</sfo:GroupElement>
+				</sfo:Group>
+				<sfo:Group label="HorizontalLayout">
+					<sfo:GroupElement class="sapUiTinyMargin">
+						<layout:HorizontalLayout>
+							<Image src="{path: 'header>ImageUrl', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}"/>
+							<layout:VerticalLayout>
+								<Link text="{path: 'header>Description/Value', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}""/> 
+								<Text text="{path: 'header>Title/Value', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}/>
+							</layout:VerticalLayout>
+						</layout:HorizontalLayout>
+					</sfo:GroupElement>
+				</sfo:Group> -->
+				<template:repeat list="{facetCollection>}" var="facet">
+					<template:with path="facet>Target" helper="sap.ui.model.odata.AnnotationHelper.resolvePath" var="target">
+						<template:with path="facet>" var="groupFacet"> <!-- only needed in called fragments.SmartFormDataField -->
+							<sfo:Group binding="{parts: [{path: 'facet>Target'}, {path: 'entitySet>'}, {path: 'quickView>/navigationPath'}], formatter: 'sap.suite.ui.generic.template.js.AnnotationHelper.getCurrentPathWithExpand'}">
+								<sfo:GroupElement>
+									<Title text="{path: 'target>Label' , formatter: 'sap.ui.model.odata.AnnotationHelper.format'}" titleStyle="H2"/>
+								</sfo:GroupElement>
+								<template:if test="{target>Data}">
+									<template:then>
+										<template:repeat list="{target>Data}" var="dataField">
+											<template:if test="{= ${dataField>RecordType} !== 'com.sap.vocabularies.UI.v1.DataFieldForAction' &amp;&amp; ${dataField>RecordType} !== 'com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation'}">
+												<template:with path="dataField>Value" helper="sap.ui.model.odata.AnnotationHelper.resolvePath" var="dataFieldValue">
+													<core:Fragment fragmentName="sap.suite.ui.generic.template.fragments.SmartFormDataField" type="XML" build:metadata="#ignore" />
+												</template:with>
+											</template:if>
+										</template:repeat>
+									</template:then>
+									<template:elseif test="{= ${facet>Target/AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.DataPoint') > -1 }">
+										<core:Fragment fragmentName="sap.suite.ui.generic.template.fragments.SmartFormDataField" type="XML" build:metadata="#ignore" />
+									</template:elseif>
+									<template:else>
+										<template:repeat list="{target>}" var="dataField">
+											<template:if test="{= ${dataField>RecordType} !== 'com.sap.vocabularies.UI.v1.DataFieldForAction' &amp;&amp; ${dataField>RecordType} !== 'com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation'}">
+												<core:Fragment fragmentName="sap.suite.ui.generic.template.fragments.SmartFormDataField" type="XML" build:metadata="#ignore" />
+											</template:if>
+										</template:repeat>
+									</template:else>
+								</template:if>
+							</sfo:Group>
+						</template:with>
+					</template:with>
+				</template:repeat>
+			</sfo:groups>
+		</sfo:SmartForm>
+
+</core:FragmentDefinition>

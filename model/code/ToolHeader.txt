@@ -1,0 +1,9 @@
+
+Tool Header
+    |
+    |__ Header.view.xml
+    |       |__ TODO 11: Change Tool Name
+    |       |__ TODO 12: Bind to real User
+    |
+    |__ Header.controller.js
+            |__ TODO 13: Implement Logout

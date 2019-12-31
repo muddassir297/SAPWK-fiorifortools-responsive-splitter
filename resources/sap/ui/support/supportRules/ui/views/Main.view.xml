@@ -1,0 +1,81 @@
+<mvc:View
+		height="100%"
+		controllerName="sap.ui.support.supportRules.ui.controllers.Main"
+		xmlns="sap.m"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:l="sap.ui.layout"
+		xmlns:c= "sap.ui.core">
+	<Page showHeader="false">
+		<l:FixFlex>
+			<l:fixContent>
+
+				<Bar class="sapContrast" design="SubHeader" id="sapSTShowButtonBar">
+					<contentMiddle>
+						<Text text="UI5 Support Assistant" class="STCustomHeaderInfo" />
+						<c:Icon src="sap-icon://full-screen" press="toggleHide" class="STCustomHeaderInfo" />
+					</contentMiddle>
+				</Bar>
+
+				<Bar class="sapContrast" design="SubHeader">
+					<contentLeft>
+						<Text text="UI5 Support Assistant" class="STCustomHeaderInfo" />
+					</contentLeft>
+
+					<contentMiddle>
+						<FlexBox
+								height="100%"
+								width="500px"
+								alignItems="Center"
+								justifyContent="Center">
+							<ProgressIndicator
+									id="progressIndicator"
+									percentValue="{/progress}"
+									displayValue="None"
+									showValue="true"
+									state="Success"
+									visible="{/showProgressIndicator}">
+								<layoutData>
+									<FlexItemData growFactor="1" />
+								</layoutData>
+							</ProgressIndicator>
+							<Text	id="coreStateLabel"
+									visible="{= ${/analyzePressed} === true &amp;&amp; ${/coreStateChanged} === true &amp;&amp; ${/showProgressIndicator} === false }"
+									text='Application state has changed and issues view is not in sync. Analyze again. '>
+							</Text>
+							<Text	id="elapsedTimeLabel"
+									visible="{= ${/analyzePressed} === true &amp;&amp; ${/coreStateChanged} === false &amp;&amp; ${/showProgressIndicator} === false }"
+									text='{/analysisDurationTitle}: {/lastAnalysisElapsedTime}'>
+							</Text>
+						</FlexBox>
+					</contentMiddle>
+
+					<contentRight>
+						<Button text="{path: '/libraries', formatter: '.setRulesLabel'}" press="goToAnalysis"/>
+						<Button text="{= 'Issues (' + ${/issues}.length + ')' }" enabled="{= ${/progress} === 100}" press="goToIssues"/>
+
+						<Button class="supportAnalyzeButton" text="Analyze" press="onAnalyze" type="Emphasized"/>
+						<Button class="supportSettingsButton" icon="sap-icon://settings" press="onAnalyzeSettings" type="Emphasized"/>
+						<Button id="viewReportBtn" text="View report" press="onViewReport" visible="{/analyzePressed}"/>
+						<Button id="downloadReportBtn" text="Download report" press="onDownloadReport" visible="{/analyzePressed}"/>
+
+						<c:Icon src="sap-icon://sys-help" press="goToWiki" class="STCustomHeaderInfo STHelpIcon" tooltip="Open Documentation" />
+
+						<c:Icon src="sap-icon://minimize" press="toggleHide" class="STCustomHeaderInfo" />
+
+						<Button icon="sap-icon://down" press="resizeDown" />
+						<Button icon="sap-icon://up" press="resizeUp" />
+					</contentRight>
+				</Bar>
+			</l:fixContent>
+
+			<l:flexContent>
+				<NavContainer
+					id="navCon"
+					afterNavigate="onNavConAfterNavigate">
+					<mvc:XMLView id="issues"  viewName="sap.ui.support.supportRules.ui.views.Issues"></mvc:XMLView>
+					<mvc:XMLView id="analysis" viewName="sap.ui.support.supportRules.ui.views.Analysis"></mvc:XMLView>
+				</NavContainer>
+			</l:flexContent>
+		</l:FixFlex>
+	</Page>
+</mvc:View>

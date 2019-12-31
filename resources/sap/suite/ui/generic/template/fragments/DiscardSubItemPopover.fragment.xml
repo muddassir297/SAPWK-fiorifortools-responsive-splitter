@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Popover id="DiscardSubItemPopover" placement="{discard>/placement}" showHeader="false" class="sapUiContentPadding">
+		<VBox id="DiscardSubItemBox">
+			<Text id="DiscardSubItemText" width="16rem" text="{i18n>ST_CANCEL_AND_DISCARD_SUB_ITEM}" />
+			<Button id="DiscardSubItemConfirmButton" text="{i18n>ST_DISCARD}" width="100%" press="onDiscardConfirm" />	
+		</VBox>	
+	</Popover>
+</core:FragmentDefinition>

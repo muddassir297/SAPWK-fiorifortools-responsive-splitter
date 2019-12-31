@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>InteractiveDonutChart</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The InteractiveDonutChart control belongs to a chart control group in the MicroChart library with a number of interactive features. These interactive features provide more information on a chart value.
+For example, by selecting a segment you can get more details on the displayed value.</documentation>
+    <since>1.42.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Appearance" defaultValue="3" type="sap.ui.core/int" name="displayedSegments">
+            <documentation>Number of segments to be displayed.</documentation>
+        </property>
+        <property group="Behavior" defaultValue="true" type="sap.ui.core/boolean" name="selectionEnabled">
+            <documentation>Switch which enables or disables selection.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="selectionChanged">
+            <documentation>Event is fired when a user has selected or deselected a segment or a legend entry.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="press">
+            <documentation>The event is fired when the user presses the chart while its segments are not selectable in non-interactive mode. This is decided internally, depending on the size of the chart.</documentation>
+        </event>
+    </events>
+    <aggregations default="segments">
+        <aggregation bindable="bindable" cardinality="0..n" type="sap.suite.ui.microchart/InteractiveDonutChartSegment" name="segments">
+            <documentation>Aggregation which contains all segments.</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association cardinality="0..n" type="sap.ui.core/Control" name="ariaLabelledBy">
+            <documentation>Association to controls which label this control (see WAI-ARIA attribute aria-labelledby).</documentation>
+        </association>
+    </associations>
+</control>

@@ -1,0 +1,41 @@
+{
+  "_version": "1.2.0",
+  "sap.app": {
+    "_version": "1.2.0",
+    "id": "sap.zen.crosstab",
+    "type": "library",
+    "embeds": [],
+    "applicationVersion": {
+      "version": "1.46.0"
+    },
+    "title": "SAP UI library: sap.zen.crosstab (by SAP, Author)",
+    "description": "SAP UI library: sap.zen.crosstab (by SAP, Author)",
+    "ach": "BI-RA-AD-EA",
+    "resources": "resources.json",
+    "offline": true
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_belize",
+      "sap_belize_plus",
+      "sap_bluecrystal",
+      "sap_goldreflection",
+      "sap_hcb",
+      "sap_platinum"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "dependencies": {
+      "minUI5Version": "1.46",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.46.0"
+        }
+      }
+    }
+  }
+}

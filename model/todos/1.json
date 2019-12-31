@@ -1,0 +1,8 @@
+{
+        "id": "1",
+        "name": "Create Data Binding",
+        "description": "Create the Data Binding between the Block Layout and the JSON Model.",
+        "date": "01.03.2017",
+        "person": "-",
+        "jira": "BLOCK-1"
+}

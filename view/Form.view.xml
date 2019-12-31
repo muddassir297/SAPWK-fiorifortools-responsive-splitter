@@ -1,0 +1,31 @@
+<mvc:View
+	controllerName="UI5FioriForTools.controller.Form"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	 	
+	<f:SimpleForm id="SimpleFormDisplay480_12120"
+		editable="false"
+		layout="ResponsiveGridLayout"
+		title="{todo>/name}"
+		labelSpanL="4"
+		labelSpanM="12"
+		adjustLabelSpan="false">
+		<f:content>
+			<core:Title text="Detailed Information" />
+			<Label text="Id" />
+			<Text text="{todo>/id}" />
+			<Label text="Description" />
+			<Text text="{todo>/description}" />
+			<Label text="Deadline" />
+			<Text text="{todo>/date}" />
+			<Label text="Responsible Person" />
+			<Text text="{todo>/person}" />
+			<Label text="Jira Task" />
+			<Link text="{todo>/jira}" href="https://de.atlassian.com/software/jira" target="_blank"/>
+		</f:content>
+	</f:SimpleForm>
+
+</mvc:View>

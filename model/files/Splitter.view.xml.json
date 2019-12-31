@@ -1,0 +1,16 @@
+{
+        "todos": [
+            {
+                "id": "4",
+                "name": "Customize Content",
+                "jira": "SPLITTER-1",
+                "location": "Splitter.view.xml"
+            },
+            {
+                "id": "5",
+                "name": "Add Layout Data",
+                "jira": "SPLITTER-2",
+                "location": "Splitter.view.xml"
+            }
+        ]
+}

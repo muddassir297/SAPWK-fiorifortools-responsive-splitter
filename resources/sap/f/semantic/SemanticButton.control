@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>semantic/SemanticButton</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>A &lt;code&gt;SemanticButton&lt;/code&gt; is either a {@link sap.m.Button} or {@link sap.m.OverflowToolbarButton} ,
+eligible for aggregation content of a {@link sap.f.semantic.SemanticPage}.</documentation>
+    <since>1.46.0</since>
+    <abstract/>
+    <baseType>sap.f/semantic/SemanticControl</baseType>
+    <properties>
+        <property group="Behavior" defaultValue="true" type="sap.ui.core/boolean" name="enabled">
+            <documentation>Determines if the &lt;code&gt;SemanticButton&lt;/code&gt; is enabled or disabled (default is true).</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="press">
+            <documentation>Event is fired when the user clicks on the &lt;code&gt;SemanticButton&lt;/code&gt;.</documentation>
+        </event>
+    </events>
+</control>

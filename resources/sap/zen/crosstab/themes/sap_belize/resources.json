@@ -1,0 +1,1121 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".theming",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "BookmarkDialog.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "BookmarkFilter.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "ChartTypeSwitch.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "Crosstab.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "FilterBar.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "FilterPanel-Navigation.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "FilterPanel.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "InfoFeeding.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "ListBox.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "MessageView.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "NavigationPanel.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "PageBookPaginator.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "PdfExportDialog.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "Popup.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "SplitCellContainer.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "Tree.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "VariablesDialog.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "ZZ_More.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "fonts/BusinessSuiteInAppSymbols.eot",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "fonts/BusinessSuiteInAppSymbols.ttf",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "fonts/SAP-icons.eot",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "fonts/SAP-icons.ttf",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/CornerTornEffect.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/HTornEffect.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/HTornEffectData.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/HTornEffectHeader.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ResizeDialog.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/VTornEffect.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ValueHelp.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/VariablenDialogClose.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/apply.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/arrow_down.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/arrow_down.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/arrow_right.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/arrow_up.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/axisview_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/axisview_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/check.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/col.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/col_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/col_16_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/col_selected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/col_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/collapse_tree_node.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/column-selected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/column-unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/columns.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/down_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/down_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/status_1.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/status_2.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/status_3.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/status_4.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/status_5.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/status_6.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/status_7.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/status_8.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/status_9.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_1.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_2.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_3.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_4.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_5.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_6.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_7.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_8.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_9.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_1.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_2.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_3.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_4.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_5.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_6.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_7.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_8.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_9.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_1.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_2.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_3.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_4.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_5.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_6.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_7.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_8.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_9.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/expand_tree_node.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/filterpanel_checkAll.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/filterpanel_dirty_state.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/filterpanel_excluded.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/filterpanel_excluding.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/filterpanel_included.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/filterpanel_including.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/filterpanel_membersegmentbutton.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/filterpanel_remove.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/filterpanel_searchsegmentbutton.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/havana-vxtab-sprite.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ie8_btn.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ie8_btn_active.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ie8_btn_hover.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ie_btn.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ie_btn_19.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ie_btn_active.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ie_btn_active_19.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ie_btn_hover.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/ie_btn_hover_19.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/list_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/list_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/loading.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/locked.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/messageview_error.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/messageview_expand.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/messageview_expand_active.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/messageview_info.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/messageview_remove.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/messageview_remove1.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/messageview_warning.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/paginator_bubble.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/paginator_bubble_active.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/pressed_col.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/pressed_col_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/pressed_row.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/pressed_row_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/right_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/right_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/row-selected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/row-unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/row.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/row_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/row_16_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/row_selected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/row_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/rowcol_btn_background.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/rowcol_btn_background_pressed.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/rows.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/settings.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/sort_asc.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/sort_desc.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/sort_none.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/tab-bar.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/trashcan.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/treenode_collapse.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/treenode_expand.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/unpressed_col_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/unpressed_row_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/up_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img-RTL/up_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/CornerTornEffect.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/HTornEffect.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/HTornEffectData.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/HTornEffectHeader.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ResizeDialog.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/VTornEffect.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ValueHelp.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/VariablenDialogClose.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/apply.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/arrow_down.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/arrow_down.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/arrow_right.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/arrow_up.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/axisview_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/axisview_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/check.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/col.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/col_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/col_16_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/col_selected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/col_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/collapse_tree_node.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/column-selected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/column-unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/columns.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/down_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/down_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/status_1.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/status_2.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/status_3.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/status_4.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/status_5.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/status_6.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/status_7.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/status_8.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/status_9.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_asc_1.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_asc_2.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_asc_3.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_asc_4.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_asc_5.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_asc_6.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_asc_7.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_asc_8.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_asc_9.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_desc_1.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_desc_2.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_desc_3.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_desc_4.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_desc_5.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_desc_6.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_desc_7.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_desc_8.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_desc_9.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_grey_1.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_grey_2.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_grey_3.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_grey_4.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_grey_5.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_grey_6.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_grey_7.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_grey_8.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/exceptions/trend_grey_9.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/expand_tree_node.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/filterpanel_checkAll.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/filterpanel_dirty_state.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/filterpanel_excluded.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/filterpanel_excluding.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/filterpanel_included.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/filterpanel_including.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/filterpanel_membersegmentbutton.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/filterpanel_remove.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/filterpanel_searchsegmentbutton.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/havana-vxtab-sprite.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ie8_btn.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ie8_btn_active.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ie8_btn_hover.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ie_btn.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ie_btn_19.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ie_btn_active.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ie_btn_active_19.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ie_btn_hover.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/ie_btn_hover_19.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/list_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/list_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/loading.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/locked.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/messageview_error.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/messageview_expand.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/messageview_expand_active.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/messageview_info.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/messageview_remove.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/messageview_remove1.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/messageview_warning.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/paginator_bubble.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/paginator_bubble_active.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/pressed_col.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/pressed_col_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/pressed_row.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/pressed_row_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/right_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/right_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/row-selected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/row-unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/row.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/row_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/row_16_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/row_selected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/row_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/rowcol_btn_background.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/rowcol_btn_background_pressed.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/rows.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/settings.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/sort_asc.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/sort_desc.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/sort_none.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/tab-bar.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/trashcan.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/treenode_collapse.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/treenode_expand.gif",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/unpressed_col_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/unpressed_row_unselected.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/up_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "img/up_selected_16.png",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "sap_belize"
+    },
+    {
+      "name": "library-RTL.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "library-dbg.css",
+      "isDebug": true,
+      "theme": "sap_belize"
+    },
+    {
+      "name": "library-parameters.json",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "library.css",
+      "theme": "sap_belize"
+    },
+    {
+      "name": "library.less",
+      "designtime": true,
+      "theme": "sap_belize"
+    },
+    {
+      "name": "library.source.less",
+      "designtime": true,
+      "theme": "sap_belize"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+
+Responsive Splitter
+    |
+    |__ Splitter.view.xml
+    |       |__ TODO 4: Customize Content
+    |       |__ TODO 5: Add Layout Data
+    |
+    |__ Splitter.controller.js
+            |__ TODO 6: Change JSON Model

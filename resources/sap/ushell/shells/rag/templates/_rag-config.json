@@ -1,0 +1,176 @@
+{
+  "file-config" : {
+    "access" : {
+      "read" : false,
+      "write" : false,
+      "delete" : false,
+      "visible" : false
+    },
+    "validity" : "volatile",
+    "scope" : "system",
+    "mime-type" : "application/octet-stream",
+    "dynamic" : false,
+    "cacheability" : "private",
+    "file-extensions" : {
+      "js" : {
+        "mime-type" : "application/javascript"
+      },
+      "json" : {
+        "mime-type" : "application/json"
+      },
+      "html" : {
+        "mime-type" : "text/html",
+        "access" : {
+          "read" : true,
+          "visible" : true
+        },
+        "dynamic" : true
+      },
+      "xml" : {
+        "mime-type" : "text/xml"
+      },
+      "css" : {
+        "mime-type" : "text/css"
+      },
+      "txt" : {
+        "mime-type" : "text/plain"
+      },
+      "properties" : {
+        "mime-type" : "text/plain"
+      },
+      "png" : {
+        "mime-type" : "image/png"
+      },
+      "jpg" : {
+        "mime-type" : "image/jpeg"
+      },
+      "jpeg" : {
+        "mime-type" : "image/jpeg"
+      },
+      "gif" : {
+        "mime-type" : "image/gif"
+      },
+      "ttf" : {
+        "mime-type" : "font/ttf"
+      },
+      "ico" : {
+        "mime-type" : "image/x-icon"
+      }
+    },
+    "subfolders" : {
+      "shared" : {
+        "access" : {
+          "read" : true
+        },
+        "file-extensions" : {
+          "html" : {
+            "access" : {
+              "visible" : true
+            },
+            "dynamic" : true
+          }
+        },
+        "scope" : "shared",
+        "subfolders" : {
+          "apps" : {
+            "access" : {
+              "visible" : true
+            },
+            "validity" : "cached",
+            "cacheability" : "public"
+          },
+          "app-adaptations" : {
+            "access" : {
+              "visible" : true
+            },
+            "validity" : "cacheBusted",
+            "cacheability" : "public"
+          },
+          "flp-site" : {
+            "access" : {
+              "visible" : true
+            },
+            "validity" : "cacheBusted",
+            "file-extensions" : {
+              "json" : {
+                "dynamic" : true
+              }
+            }
+          },
+          "roles" : {
+            "subfolders" : {
+              "*" : {
+                "access" : {
+                  "read" : {
+                    "file" : "../user/env/roles.txt",
+                    "anyOf" : ["*Value"]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "user" : {
+        "scope" : "user",
+        "access" : {
+          "read" : true
+        },
+        "file-extensions" : {
+          "html" : {
+            "access" : {
+              "visible" : true
+            },
+            "dynamic" : true
+          }
+        },
+        "symbolic-links" : {
+          "FioriLaunchpad.html" : "../FioriLaunchpad.html"
+        },
+        "subfolders" : {
+          "flpsite" : {
+            "file-extensions" : {
+              "json" : {
+                "access" : {
+                  "visible" : true
+                },
+                "validity" : "cacheBusted",
+                "dynamic" : true
+              }
+            }
+          }
+        }
+      },
+      "config" : {
+        "access" : {
+          "write" : {
+            "file" : "../user/env/roles.txt",
+            "anyOf" : ["RAG_ADMIN"]
+          }
+        }
+      },
+      "request" : {
+        "access" : {
+          "read" : true,
+          "visible" : true
+        },
+        "scope" : "user"
+      }
+    }
+  },
+  "validity" : {
+    "cached" : {
+      "cache-control" : "max-age=31536000, <cacheability>",
+      "expires" : "<expires-header>"
+    },
+    "volatile" : {
+      "cache-control" : "must-revalidate, <cacheability>",
+      "expires" : "-1"
+    },
+    "cacheBusted" : {
+      "cache-control" : "max-age=31536000, <cacheability>",
+      "expires" : "<expires-header>"
+    }
+  },
+  "language-map" : {}
+}

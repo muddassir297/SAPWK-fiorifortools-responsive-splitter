@@ -1,0 +1,148 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:viz="sap.viz.ui5.controls"
+	xmlns:layout="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+	xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:smartChart="sap.ui.comp.smartchart"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:custData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationHelper sap.suite.ui.generic.template.AnalyticalListPage.util.KpiVizAnnotationHelper sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationFormatter sap.ui.model.odata.AnnotationHelper">
+
+	<template:alias name=".KAH" value="sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationHelper">
+		<template:alias name=".KVIZAH" value="sap.suite.ui.generic.template.AnalyticalListPage.util.KpiVizAnnotationHelper">
+			<template:with path="parameter>/" helper=".KAH.selectionPresentationVariantResolveWithQualifier" var="selPres">
+				<template:with path="selPres>SelectionVariant" helper="sap.ui.model.odata.AnnotationHelper.resolvePath" var="selVar">
+					<template:with path="selPres>PresentationVariant" helper="sap.ui.model.odata.AnnotationHelper.resolvePath" var="presVar">
+						<template:repeat list="{path:'presVar>Visualizations', filters: {path: 'AnnotationPath', operator: 'Contains', value1: 'com.sap.vocabularies.UI.v1.DataPoint'}}" var="visualization">
+							<template:with path="visualization>" helper="sap.ui.model.odata.AnnotationHelper.resolvePath" var="dataPoint">
+								<layout:VerticalLayout class="sapUiContentPadding" width="100%" content="{parts:[{path:'entitySet>'}, {path:'dataPoint>'}, {path:'selVar>'},{path:'parameter>/'}], formatter: 'sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationFormatter.getAggregateNumber'}">
+									<layout:content>
+<!--
+										<Label text="{path: 'selPres>Text', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}" class="sapUiSmallMarginBottom alrKpiCardTitleLabel" design="Bold"/> -->
+										<Label id="kpiHeaderTitle" text="{path: 'dataPoint>', formatter: 'sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationFormatter.formatDPTitle'}" class="alrKpiCardSubTitleLabel" />
+									</layout:content>
+								</layout:VerticalLayout>
+
+								<template:if test="{dataPoint>Value}">
+									<HBox
+										items="{parts:[{path:'entitySet>'}, {path:'dataPoint>'}, {path:'selVar>'},{path:'parameter>/'}], formatter: 'sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationFormatter.getAggregateNumber'}"
+										class="sapUiContentPadding">
+										<items>
+											<FlexBox class="sapUiContentPadding" width="100%" alignItems="Start" justifyContent="SpaceBetween">
+												<items>
+													<layout:VerticalLayout>
+														<layout:content>
+															<!-- Disabling Trend for Wave 15
+															Need more clarity as it would also
+															need reference period
+															 indicator="{path:'dataPoint>', formatter: 'sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationFormatter.resolvePathForTrendIcon'}" -->
+															<NumericContent
+																id="kpiCardActual"
+																size="M"
+																truncateValueTo="12"
+																value="{path:'dataPoint>', formatter: 'sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationFormatter.resolvePathForKpiValue'}"
+																formatterValue="true"
+																valueColor="{path:'dataPoint>', formatter: 'sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationFormatter.resolveKpiHeaderState'}"
+																state="Loaded"
+																withMargin="false"
+																class="sapUiSmallMarginRight"/>
+															<Label text="{path: 'dataPoint>Description', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}" class="sapUiSmallMarginBottom alrKpiCardSubTitleLabel"/>
+														</layout:content>
+													</layout:VerticalLayout>
+													<HBox alignItems="Start" justifyContent="End">
+														<layout:VerticalLayout class="sapUiContentPadding" width="100%">
+															<layout:content>
+																<Label text="{i18n>KPI_CARD_TARGET}" class="sapUiSmallMarginBottom" design="Bold"/>
+																<Label id="kpiCardTarget" text="{path:'dataPoint>', formatter: 'sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationFormatter.resolvePathForKpiTargetValue'}" class="sapUiSmallMarginBottom" design="Bold"/>
+															</layout:content>
+														</layout:VerticalLayout>
+														<layout:VerticalLayout class="sapUiContentPadding" width="100%">
+															<layout:content>
+																<Label text="{i18n>KPI_CARD_DEVIATION}" class="sapUiSmallMarginBottom" design="Bold"/>
+																<Label text="{path:'dataPoint>', formatter: 'sap.suite.ui.generic.template.AnalyticalListPage.util.KpiAnnotationFormatter.resolvePathForDeviation'}" class="sapUiSmallMarginBottom" design="Bold"/>
+															</layout:content>
+														</layout:VerticalLayout>
+													</HBox>
+												</items>
+											</FlexBox>
+										</items>
+									</HBox>
+								</template:if>
+							</template:with>
+						</template:repeat>
+
+						<template:repeat list="{path:'presVar>Visualizations', filters: {path: 'AnnotationPath', operator: 'Contains', value1: 'com.sap.vocabularies.UI.v1.Chart'}}" var="visualization">
+							<template:with path="visualization>" helper="sap.ui.model.odata.AnnotationHelper.resolvePath" var="chart">
+
+								<template:if test="{chart>}">
+									<template:if test="{chart>DimensionAttributes}">
+										<template:if test="{chart>MeasureAttributes}">
+											<template:if test="{chart>ChartType}">
+												<layout:HorizontalLayout class="sapUiContentPadding">
+													<Label id="kpiChartHeaderTitle" text="" class="sapUiSmallMarginBottom alrKpiCardChartTitleLabel" design="Bold"/>
+												</layout:HorizontalLayout>
+												<HBox class="alrKpiCardVizBoxContainer">
+													<viz:VizFrame id="kpiCardChartVizFrame" uiConfig="{applicationSet:'fiori'}" vizType="{path: 'chart>ChartType', formatter: '.KVIZAH.getChartType'}" height='350px' width="400px">
+														<viz:dataset>
+															<viz.data:FlattenedDataset data="{parts: [{path:'entitySet>'}, {path:'selVar>'}, {path:'presVar>'}, {path:'chart>DimensionAttributes'}, {path:'chart>MeasureAttributes'},{path:'chart>ChartType'},{path:'parameter>/'}], formatter: '.KVIZAH.formatItems'}"></viz.data:FlattenedDataset>
+														</viz:dataset>
+													</viz:VizFrame>
+												</HBox>
+											</template:if>
+										</template:if>
+									</template:if>
+
+									<HBox alignItems="Start" justifyContent="End" visibility="{= ${__metadata} &amp;&amp; ${__metadata/headers} &amp;&amp; ${__metadata/headers/age}?'hidden':'visible'}">
+										<Label text="{ path: '__metadata/headers/age' }" class="sapUiSmallMarginRight"/>
+									</HBox>
+
+								</template:if>
+
+							</template:with>
+						</template:repeat>
+						<OverflowToolbar class="">
+							<ToolbarSpacer/>
+							<Button
+								text="{i18n>DETAIL_BUTTON}"
+								press="handleNavigationPress"
+								custData:target="{detailNavigation>/target}"
+								custData:action="{detailNavigation>/action}"
+								custData:parameters="{detailNavigation>/parameters}"
+								type="Transparent"
+								visible="{detailNavigation>/visible}">
+								<layoutData></layoutData>
+							</Button>
+						</OverflowToolbar>
+						<!--
+                         <template:repeat list="{path:'presVar>Visualizations', filters: {path: 'AnnotationPath', operator: 'Contains', value1: 'com.sap.vocabularies.UI.v1.Chart'}}" var="visualization">
+                            <template:with path="visualization>" helper="sap.ui.model.odata.AnnotationHelper.resolvePath" var="chart">
+
+                                <template:if test="{chart>Actions}">
+                                    <OverflowToolbar class="">
+                                        <ToolbarSpacer/>
+                                        <template:repeat list="{path:'chart>Actions'}" var="navigation">
+                                            <Button
+                                                text="{path:'navigation>Value', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}"
+                                                press="handleNavigationPress"
+                                                custData:target="{path:'navigation>SemanticObject', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}"
+                                                custData:action="{path:'navigation>Action', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}"
+                                                type="Transparent">
+                                                <layoutData></layoutData>
+                                            </Button>
+                                        </template:repeat>
+                                    </OverflowToolbar>
+                                </template:if>
+                             </template:with>
+                        </template:repeat>
+                    -->
+
+					</template:with>
+				</template:with>
+			</template:with>
+
+		</template:alias>
+	</template:alias>
+</core:FragmentDefinition>

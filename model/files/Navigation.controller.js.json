@@ -1,0 +1,16 @@
+{
+        "todos": [
+            {
+                "id": "8",
+                "name": "Fill onInit",
+                "jira": "NAVIGATION-2",
+                "location": "Navigation.controller.js"
+            },
+            {
+                "id": "9",
+                "name": "Change to Collapsed",
+                "jira": "NAVIGATION-3",
+                "location": "Navigation.controller.js"
+            }
+        ]
+}

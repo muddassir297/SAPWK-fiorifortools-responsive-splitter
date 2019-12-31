@@ -1,0 +1,10 @@
+{
+        "todos": [
+            {
+                "id": "6",
+                "name": "Change JSON Model",
+                "jira": "SPLITTER-3",
+                "location": "Splitter.controller.js"
+            }
+        ]
+}

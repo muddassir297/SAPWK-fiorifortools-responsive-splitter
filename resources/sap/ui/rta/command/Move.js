@@ -1,0 +1,6 @@
+/*
+ * ! SAP UI development toolkit for HTML5 (SAPUI5)
+
+(c) Copyright 2009-2017 SAP SE. All rights reserved
+ */
+sap.ui.define(['jquery.sap.global','sap/ui/rta/command/FlexCommand'],function(q,F){"use strict";var M=F.extend("sap.ui.rta.command.Move",{metadata:{library:"sap.ui.rta",properties:{movedElements:{type:"any[]"},target:{type:"any"},source:{type:"any"}},associations:{},events:{}}});M.prototype._getChangeSpecificData=function(i){var s=i?this.getTarget():this.getSource();var t=i?this.getSource():this.getTarget();var S=s.parent||sap.ui.getCore().byId(s.id);if(s.parent){s.id=s.parent.getId();delete s.parent;}if(t.parent){t.id=t.parent.getId();delete t.parent;}var m={changeType:this.getChangeType(),selector:{id:S.getId()},source:s,target:t,movedElements:[]};this.getMovedElements().forEach(function(a){m.movedElements.push({id:a.id||a.element.getId(),sourceIndex:i?a.targetIndex:a.sourceIndex,targetIndex:i?a.sourceIndex:a.targetIndex});});return m;};M.prototype.prepare=function(){F.prototype.prepare.apply(this,arguments);this._oPreparedUndoChange=this._createChangeFromData(this._getChangeSpecificData(true));};M.prototype.undo=function(){this._applyChange(this._oPreparedUndoChange);};return M;},true);

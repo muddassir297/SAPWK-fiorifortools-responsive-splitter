@@ -1,0 +1,2 @@
+// @copyright@
+sap.ui.define([],function(){"use strict";function S(){this.oLastPromise=new jQuery.Deferred();this.oLastPromise.resolve();};S.prototype.addToQueue=function(f){var n=new jQuery.Deferred();this.oLastPromise.always(function(){var r=f();r.done(function(){n.resolve.apply(n,arguments);}).fail(function(){n.reject.apply(n,arguments);});});this.oLastPromise=n;return n.promise();};return S;});

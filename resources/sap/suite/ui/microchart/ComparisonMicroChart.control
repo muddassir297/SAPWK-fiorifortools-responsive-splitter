@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ComparisonMicroChart</name>
+    <derived/>
+    <documentation>Illustrates values as colored bar charts with title, numeric value, and scaling factor in the content area. This control replaces the deprecated sap.suite.ui.commons.ComparisonChart.</documentation>
+    <since>1.34</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" defaultValue="Auto" type="sap.m/Size" name="size">
+            <documentation>The size of the chart. If not set, the default size is applied based on the size of the device tile.</documentation>
+        </property>
+        <property group="Misc" defaultValue="" type="sap.ui.core/string" name="scale">
+            <documentation>The scaling suffix that is added to the actual and target values.</documentation>
+        </property>
+        <property since="1.42.0" group="Appearance" type="sap.ui.core/float" name="minValue">
+            <documentation>The minimum scale value for the chart used to define the value range of the scale for comparing different values.</documentation>
+        </property>
+        <property since="1.42.0" group="Appearance" type="sap.ui.core/float" name="maxValue">
+            <documentation>The maximum scale value for the chart used to define the value range of the scale for comparing different values.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="Normal" type="sap.suite.ui.microchart/ComparisonMicroChartViewType" name="view">
+            <documentation>The view of the chart. If not set, the Normal view is used by default.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="[]" type="sap.ui.core/string[]" name="colorPalette">
+            <documentation>The color palette for the chart. If this property is set, semantic colors defined in ComparisonData are ignored. Colors from the palette are assigned to each bar consequentially. When all the palette colors are used, assignment of the colors begins from the first palette color.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="shrinkable">
+            <documentation>If it is set to true, the height of the control is defined by its content.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/CSSSize" name="width">
+            <documentation>The width of the chart. If it is not set, the size of the control is defined by the size property.</documentation>
+        </property>
+        <property group="Appearance" type="sap.ui.core/CSSSize" name="height">
+            <documentation>Height of the chart.</documentation>
+        </property>
+        <property since="1.38.0" group="Appearance" defaultValue="false" type="sap.ui.core/boolean" name="isResponsive">
+            <documentation>If this set to true, width and height of the control are determined by the width and height of the container in which the control is placed. Size and Width properties are ignored in such case.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="press">
+            <documentation>The event is fired when the user chooses the comparison microchart.</documentation>
+        </event>
+    </events>
+    <aggregations default="data">
+        <aggregation bindable="bindable" cardinality="0..n" type="sap.suite.ui.microchart/ComparisonMicroChartData" name="data">
+            <documentation>The comparison chart bar data.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

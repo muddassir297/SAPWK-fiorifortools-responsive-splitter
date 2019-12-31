@@ -1,0 +1,1551 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".gitignore"
+    },
+    {
+      "name": ".library"
+    },
+    {
+      "name": ".theming"
+    },
+    {
+      "name": "AnalyticGrid-dbg.js",
+      "module": "sap/zen/dsh/AnalyticGrid.js",
+      "isDebug": true,
+      "required": [
+        "sap/zen/dsh/library.js",
+        "sap/ui/core/Control.js"
+      ],
+      "condRequired": [
+        "sap/zen/dsh/rt/all.js",
+        "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js",
+        "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js"
+      ]
+    },
+    {
+      "name": "AnalyticGrid.control",
+      "designtime": true
+    },
+    {
+      "name": "AnalyticGrid.js",
+      "module": "sap/zen/dsh/AnalyticGrid.js",
+      "required": [
+        "sap/zen/dsh/library.js",
+        "sap/ui/core/Control.js"
+      ],
+      "condRequired": [
+        "sap/zen/dsh/rt/all.js",
+        "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js",
+        "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js"
+      ]
+    },
+    {
+      "name": "AnalyticGridRenderer-dbg.js",
+      "module": "sap/zen/dsh/AnalyticGridRenderer.js",
+      "isDebug": true,
+      "required": [
+        "sap/zen/dsh/DshRenderer.js"
+      ]
+    },
+    {
+      "name": "AnalyticGridRenderer.js",
+      "module": "sap/zen/dsh/AnalyticGridRenderer.js",
+      "required": [
+        "sap/zen/dsh/DshRenderer.js"
+      ]
+    },
+    {
+      "name": "DS.bitype"
+    },
+    {
+      "name": "Dsh-dbg.js",
+      "module": "sap/zen/dsh/Dsh.js",
+      "isDebug": true,
+      "required": [
+        "sap/zen/dsh/library.js",
+        "sap/ui/core/Control.js"
+      ],
+      "condRequired": [
+        "sap/zen/dsh/rt/all.js",
+        "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js",
+        "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js"
+      ]
+    },
+    {
+      "name": "Dsh.control",
+      "designtime": true
+    },
+    {
+      "name": "Dsh.js",
+      "module": "sap/zen/dsh/Dsh.js",
+      "required": [
+        "sap/zen/dsh/library.js",
+        "sap/ui/core/Control.js"
+      ],
+      "condRequired": [
+        "sap/zen/dsh/rt/all.js",
+        "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js",
+        "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js"
+      ]
+    },
+    {
+      "name": "DshRenderer-dbg.js",
+      "module": "sap/zen/dsh/DshRenderer.js",
+      "isDebug": true
+    },
+    {
+      "name": "DshRenderer.js",
+      "module": "sap/zen/dsh/DshRenderer.js"
+    },
+    {
+      "name": "applications/0ANALYSIS/content.xml"
+    },
+    {
+      "name": "applications/0ANALYSIS/localization.properties",
+      "module": "sap/zen/dsh/applications/0ANALYSIS/localization.properties"
+    },
+    {
+      "name": "applications/0ANALYTIC_GRID/content.xml"
+    },
+    {
+      "name": "applications/0ANALYTIC_GRID/localization.properties",
+      "module": "sap/zen/dsh/applications/0ANALYTIC_GRID/localization.properties"
+    },
+    {
+      "name": "fioriwrapper/Component-dbg.js",
+      "module": "sap/zen/dsh/fioriwrapper/Component.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/core/UIComponent.js"
+      ],
+      "condRequired": [
+        "sap/zen/dsh/Dsh.js",
+        "sap/ui/generic/app/navigation/service/NavigationHandler.js"
+      ]
+    },
+    {
+      "name": "fioriwrapper/Component.js",
+      "module": "sap/zen/dsh/fioriwrapper/Component.js",
+      "required": [
+        "sap/ui/core/UIComponent.js"
+      ],
+      "condRequired": [
+        "sap/zen/dsh/Dsh.js",
+        "sap/ui/generic/app/navigation/service/NavigationHandler.js"
+      ]
+    },
+    {
+      "name": "fioriwrapper/manifest.json",
+      "module": "sap/zen/dsh/fioriwrapper/manifest.json"
+    },
+    {
+      "name": "library-all-dbg.js",
+      "isDebug": true,
+      "merged": true
+    },
+    {
+      "name": "library-all.js",
+      "merged": true
+    },
+    {
+      "name": "library-dbg.js",
+      "module": "sap/zen/dsh/library.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/core/Core.js",
+        "sap/ui/core/library.js",
+        "sap/ui/table/library.js",
+        "sap/ui/layout/library.js",
+        "sap/m/library.js",
+        "sap/zen/commons/library.js",
+        "sap/zen/crosstab/library.js"
+      ]
+    },
+    {
+      "name": "library-preload.js",
+      "merged": true
+    },
+    {
+      "name": "library-preload.js.map"
+    },
+    {
+      "name": "library-preload.json",
+      "merged": true
+    },
+    {
+      "name": "library.dependencies.json"
+    },
+    {
+      "name": "library.dependencies.xml"
+    },
+    {
+      "name": "library.js",
+      "module": "sap/zen/dsh/library.js",
+      "required": [
+        "sap/ui/core/Core.js",
+        "sap/ui/core/library.js",
+        "sap/ui/table/library.js",
+        "sap/ui/layout/library.js",
+        "sap/m/library.js",
+        "sap/zen/commons/library.js",
+        "sap/zen/crosstab/library.js"
+      ]
+    },
+    {
+      "name": "library.properties",
+      "module": "sap/zen/dsh/library.properties"
+    },
+    {
+      "name": "library.templates.xml"
+    },
+    {
+      "name": "manifest.json",
+      "module": "sap/zen/dsh/manifest.json"
+    },
+    {
+      "name": "resources.json"
+    },
+    {
+      "name": "rt/all-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "rt/all.js"
+    },
+    {
+      "name": "rt/icons/component.gif"
+    },
+    {
+      "name": "rt/localization/localization.properties",
+      "locale": "",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_ar.properties",
+      "locale": "ar",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_cs.properties",
+      "locale": "cs",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_de.properties",
+      "locale": "de",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_en.properties",
+      "locale": "en",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_es.properties",
+      "locale": "es",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_fr.properties",
+      "locale": "fr",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_hu.properties",
+      "locale": "hu",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_it.properties",
+      "locale": "it",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_iw.properties",
+      "locale": "iw",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_ja.properties",
+      "locale": "ja",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_kk.properties",
+      "locale": "kk",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_pl.properties",
+      "locale": "pl",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_pt.properties",
+      "locale": "pt",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_ru.properties",
+      "locale": "ru",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_tr.properties",
+      "locale": "tr",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_uk.properties",
+      "locale": "uk",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/localization/localization_zh_CN.properties",
+      "locale": "zh_CN",
+      "raw": "rt/localization/localization.properties"
+    },
+    {
+      "name": "rt/web_scripting/resources/external/require.js"
+    },
+    {
+      "name": "rt/web_scripting/resources/external/underscore.js"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/img/collapse14_14.png"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/img/error.png"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/img/expand14_14.png"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/img/remove26_26.png"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/img/transparent.png"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/img/warning.png"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/js/absolutelayout_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/js/button_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/js/gridlayout_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/js/hana_application_properties_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/js/messageview_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/js/messageview_m_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components/resources/js/statisticspanel_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_actionsheet/resources/js/actionsheet_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_checkbox/resources/js/checkbox_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_clickpane/resources/js/clickpane_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_contextmenu/resources/js/contextmenu_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_crosstab/resources/js/crosstab_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_datefield/resources/js/datefield_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_dialog/resources/js/zendialog_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_dialog/resources/js/zendialog_m_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_dialogm/resources/js/dialog_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterbar/resources/css/component.css"
+    },
+    {
+      "name": "rt/zen_rt_components_filterbar/resources/js/filterbar_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterbar/resources/js/filterbarclassic_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/ItemsCollection.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/ValueHelpDialog.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/docking.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/emptyComponent.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/filterpanel_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/filterpanel_m_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/helperfunctions.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/input.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/navigationpanel_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/range.js"
+    },
+    {
+      "name": "rt/zen_rt_components_filterpanel/resources/js/selection.js"
+    },
+    {
+      "name": "rt/zen_rt_components_fiorihelper/resources/js/fiorihelper_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_footerbar/resources/css/footerbar.css"
+    },
+    {
+      "name": "rt/zen_rt_components_footerbar/resources/js/footerbar_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/ChartThemes.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/charts/helpers/DataSeriesFormatHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/charts/helpers/DataSeriesHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/charts/helpers/DataSeriesSequenceHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/charts/helpers/DualDataSeriesHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/themes/aad_mobile.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/themes/aad_mobile_black.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/themes/aad_transparent.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/themes/sap_belize.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/themes/sap_bluecrystal.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/themes/sap_goldreflection.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/themes/sap_hcb.js"
+    },
+    {
+      "name": "rt/zen_rt_components_html5charts/resources/js/themes/sap_platinum.js"
+    },
+    {
+      "name": "rt/zen_rt_components_inputfield/resources/js/inputfield_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_pagebook/resources/js/page.js"
+    },
+    {
+      "name": "rt/zen_rt_components_pagebook/resources/js/pagebook.js"
+    },
+    {
+      "name": "rt/zen_rt_components_pagebook/resources/js/pagebook_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_pagebook/resources/js/pagebook_m_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_pagebook/resources/js/transitionhandler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_panel/resources/js/panel_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_popup/resources/css/component.css"
+    },
+    {
+      "name": "rt/zen_rt_components_popup/resources/js/popup_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_popup/resources/js/popupm_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_popup/resources/js/transitionhandler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdk/resources/js/SDKModel.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdk/resources/js/component.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdk/resources/js/databuffer.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdk/resources/js/datasource.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdk/resources/js/sdk_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdk/resources/js/sdk_propertysheets_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdk/resources/js/sdkcontrol.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdk/resources/js/sdkdatasource_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdk/resources/js/sdkui5_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/img/AdvanceChartsContainer.png"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/SDKChartPropertiesMapper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/SDKhtml5chart_util.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/ChartException.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKArea.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKBar.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKBarCombination.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKBarDualAxis.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKBaseChart.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKBubble.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKColumn.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKColumnCombinationDualAxis.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKColumnDualAxis.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKComb.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKGenericViz.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKHorizontalArea.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKHorizontalCombinationDualAxis.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKHorizontalLine.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKHorizontalWaterfall.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKLine.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKLineDualAxis.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKMultiPie.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKMultiRadar.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKPie.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKRadar.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKScatter.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKStacked100Bar.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKStacked100Col.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKStackedBar.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKStackedColumn.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKStackedWaterfall.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/SDKWaterfall.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/charts/helpers/SDKChartDataFeedingHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/dataMappers/SDKChartDataMapper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/dataMappers/SDKGenericDataMapper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/dataMappers/SDKMultiPieDataMapper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/dataMappers/SDKPieDataMapper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/dataMappers/SDKStackedWaterfallDataMapper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/dataMappers/SDKWaterfallDataMapper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/dataMappers/helpers/SDKChartTypeHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/dataMappers/helpers/SDKDataMapperHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/dataMappers/helpers/SDKMeasuresHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/formatters/SDKChartFormatter.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/formatters/SDKDualAxisFormatter.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/formatters/SDKPercentageFormatter.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/formatters/SDKPieFormatter.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/formatters/SDKScatterBubbleFormatter.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/formatters/SDKWaterfallFormatter.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/sdkcharts_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/Bubble_ChartOption.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/Common_ChartOption.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/Dual_ChartOption.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/Dual_LineOptions.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/MultiPie_ChartOptions.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/MultiRadar_ChartOptions.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/Pie_ChartOption.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/Radar_ChartOption.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/Scatter_ChartOptions.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/StackedWaterFall_ChartOptions.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/testChartOptions/WaterFall_ChartOptions.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/utilities/SDKColourHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/utilities/SDKFormattingHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_sdkhtml5chart/resources/js/utilities/SDKUtilsHelper.js"
+    },
+    {
+      "name": "rt/zen_rt_components_selection/resources/js/checkboxgroup_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_selection/resources/js/combobox_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_selection/resources/js/dropdown_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_selection/resources/js/listbox_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_selection/resources/js/listbox_m_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_selection/resources/js/radiobuttongroup_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_selection/resources/js/radiobuttongroup_m_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_splitter/resources/js/splitter_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_tabstrip/resources/js/tabstrip_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_textfield/resources/js/textfield_handler.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/contribution.xml"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/contribution.ztl"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/contribution.ztl.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/css/datasourcebrowser.css"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties",
+      "locale": "",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_ar.properties",
+      "locale": "ar",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_cs.properties",
+      "locale": "cs",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_de.properties",
+      "locale": "de",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_en.properties",
+      "locale": "en",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_es.properties",
+      "locale": "es",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_fr.properties",
+      "locale": "fr",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_hu.properties",
+      "locale": "hu",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_it.properties",
+      "locale": "it",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_iw.properties",
+      "locale": "iw",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_ja.properties",
+      "locale": "ja",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_kk.properties",
+      "locale": "kk",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_pl.properties",
+      "locale": "pl",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_pt.properties",
+      "locale": "pt",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_ru.properties",
+      "locale": "ru",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_tr.properties",
+      "locale": "tr",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_uk.properties",
+      "locale": "uk",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization_zh_CN.properties",
+      "locale": "zh_CN",
+      "raw": "rt/zen_rt_components_ui5/datasourcebrowser/i18n/localization.properties"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/images/cube.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/images/folder.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/images/query.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/images/queryview.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/js/datasourcebrowser.controller.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/js/datasourcebrowser.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/js/dsb.view.xml"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/datasourcebrowser/js/dsb_m.view.xml"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/formattedtextview.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/formattedtextview/css/component.css"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/formattedtextview/js/component.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/formattedtextview/js/component_m.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/css/fonts/SAP-icons.eot"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/css/fonts/SAP-icons.ttf"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/css/fragmentgallery.css"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__bar_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__bubble.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_boxplot.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_column_3d.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_donut.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_network.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_numericpoint.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_pie_3d.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_scatter_matrix.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_tagcloud.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__chart_treemap2.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__column_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__datefield.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__dual_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__dual_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__dual_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__dual_horizontal_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__dual_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__horizontal_area.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__horizontal_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__horizontal_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__horizontal_stacked_100_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__horizontal_stacked_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__horizontal_waterfall.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__multipie.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__multiradar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__pie.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__radar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__scatter.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__stacked_waterfall.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__surface.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__vertical_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__vertical_stacked_100_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__vertical_stacked_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__viz_heatmap.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__viz_treemap.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__viz_trellis_area.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__viz_trellis_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__viz_trellis_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__viz_trellis_horizontal_area.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__viz_trellis_horizontal_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__viz_trellis_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/charts/icon__waterfall.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/combination/icon__filter_chart.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/combination/icon__filter_chart_table.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/combination/icon__filter_table.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/combination/icon__table_chart.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__actionlist.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__actionsheet.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__button.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__chart.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__checkbox.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__checkboxgroup.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__combobox.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__crosstab.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__datefield.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__dimensionfilter.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__dropdown.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__feeding.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__feedingpanel.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__filterline.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__filterpanel.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__formattedtextview.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__geo.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__grid.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__icon.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__image.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__inputfield.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__label.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__listbox.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__object.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__page.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__pagebook.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__panel.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__popup.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__radiobutton.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__radiobuttongroup.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__rangeslider.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__scorecard.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__sdk.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__segmentedbutton.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__spreadsheet.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__styledtablefuture.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__tab.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__text.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__togglebutton.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/components/icon__tree.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/delete/delete_hover.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/delete/delete_normal.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/delete/noirimg.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/fragmentgallery_icon.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__100_area.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__100_dual_stacked_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__100_dual_stacked_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__100_stacked_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__100_stacked_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__area.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__bar_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__bubble.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__bullet.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__donut.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_horizontal_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_horizontal_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_horizontal_stacked_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_stacked_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_stacked_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__dual_stacked_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__heatmap.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__hichert_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__hichert_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__hichert_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__hichert_line_vertical.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__hichert_stacked_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__hichert_stacked_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__hichert_variance_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__horizontal_area.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__horizontal_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__horizontal_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__horizontal_stacked_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__horizontal_waterfall.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__multi_pie.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__multi_radar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__pie.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__radar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__scatter.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__stacked_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__stacked_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__stacked_combination.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__stacked_waterfall.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__timeseries_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__treemap.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__trellis_area.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__trellis_bar.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__trellis_column.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__trellis_horizontal_area.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__trellis_horizontal_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__trellis_line.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__vertical_bullet.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/infocharts/icon__waterfall.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/misc/_error.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/misc/_multiple.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/images/misc/_unknown.svg"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/fragmentgallery/js/fragmentgallery.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/icon/css/icon_component.css"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/icon/icon.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/icon/js/icon_component.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/icon/js/opentype.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/js/DSHImpl.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/link/js/component.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/progress/js/component.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/progress/progressindicator.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/segmentedButton/css/segmentedButton.css"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/segmentedButton/images/segmentedButton.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/segmentedButton/js/component_m.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/selecttable/component.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/selecttable/icon.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/switch/icon.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/switch/js/component.js"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/textarea/css/component.css"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/textarea/icon.png"
+    },
+    {
+      "name": "rt/zen_rt_components_ui5/textarea/js/component.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_00_language_native/combined/___00_language.native.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_02_core/combined/___02_core.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_04_core_native/combined/___04_core.native.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_06_core_ext/combined/___06_core.ext.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_17_io/combined/___17_io.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_18_io_native/combined/___18_io.native.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_20_runtime/combined/___20_runtime.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_29_commons/combined/___29_commons.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_30_olap_api/combined/___30_olap.api.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_30_olap_ext/combined/___30_olap.ext.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_30_olap_impl/combined/___30_olap.impl.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_32_olap_providers/combined/___32_olap.providers.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_69_buddhautils/combined/___69_buddhautils.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_70_buddha/combined/___70_buddha.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/javascript/_70_landscape_utils/combined/___70_landscape_utils.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/js/jszip.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/js/sdkinitializer.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/js/staticMimeUrlCreate.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/js/wrapper.js"
+    },
+    {
+      "name": "rt/zen_rt_firefly/js/xlsx.js"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/css/DlgClose.gif"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/css/DlgGrip_GreyBG.gif"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/css/favicon.ico"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/css/loadingIndicator.css"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/css/loading_comp.gif"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/css/zen.css"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/js/DSHqueue.js"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/js/bi_command_util.js"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/js/bi_common.js"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/js/bi_mobile_util.js"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/js/bi_phx.js"
+    },
+    {
+      "name": "rt/zen_rt_framework/resources/js/dispatcher.js"
+    },
+    {
+      "name": "rt/zen_rt_uiframework/cvom/libs/MouseEventUtils.js"
+    },
+    {
+      "name": "themes/base/.theming",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/Dsh.css",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-RTL.css",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-parameters.json",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.css",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.source.less",
+      "designtime": true,
+      "theme": "base"
+    }
+  ]
+}

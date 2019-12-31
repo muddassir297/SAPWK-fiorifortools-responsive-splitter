@@ -1,0 +1,12 @@
+
+Side Navigation
+    |
+    |__ Navigation.view.xml
+    |       |__ TODO 7: Customize Menu Items
+    |
+    |__ Navigation.controller.js
+    |       |__ TODO 8: Fill onInit
+    |       |__ TODO 9: Change to Collapsed
+    |
+    |__ style.css
+            |__ TODO 10: Add Custom CSS

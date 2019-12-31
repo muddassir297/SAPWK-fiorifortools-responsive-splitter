@@ -1,0 +1,561 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2017 SAP SE. All rights reserved
+ */
+
+@import "../../../../../../Base/baseLib/baseTheme/base.less"; /* ORIGINAL IMPORT PATH: "../../../../../sap/ui/core/themes/base/base.less" */
+
+@import "../../../../../sap/ui/core/themes/base/global.less";
+/* START "shared.css" */
+/* This CSS shares it rules with all other CSS of this library */
+
+@font-face {
+		font-family: 'SAP-icons';
+		src: url('fonts/SAP-icons.eot');
+		src: url('fonts/SAP-icons.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/SAP-icons.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+}
+
+/* END "shared.css" */
+
+
+/* START "BookmarkFilter.css" */
+
+.bookmarkFilterHorizontalLayout{
+	width:100%;
+	height:100%;
+}
+
+.bookmarkFilterHorizontalLayout .sapUiHLayoutChildWrapper{
+	
+}
+
+.bookmarkFilterHorizontalLayout .bookmarkFilterFolderHeader{
+	margin:0,25px;
+	
+}
+
+.bookmarkFilterFolderHeader-root{
+	width:100%;
+	height:100%;
+	padding-top: 8px;	
+	overflow: hidden;
+}
+
+.bookmarkFilterListBox{
+	padding: 0 0 !important;
+}
+
+.bookmarkFilterFolderHeader-root.sapUiTv{
+	color: #666666;
+}
+
+
+.bookmarkFilterFolderHeader-subfolder.sapUiTv{
+	margin-left:10%;
+}
+
+button + .bookmarkFilterFolderHeader-subfolder.sapUiTv{
+	position: absolute;
+	top: 8px;
+	left: 0px;
+	width: 100% !important;
+	text-align: center;
+	color: #666666;
+	padding: 0;
+	margin: 0;
+}
+
+.bookmarkFilterBackButton .sapUiBtnS.sapUiBtnNorm{
+	border:white !important;
+	
+}
+
+.bookmarkFilterBorderLayout{
+   border-style: solid !important;
+   border-width: 1px !important;
+   border-color: #A9A9A9 !important;
+}
+
+.bookmarkFilterBorderLayout .sapUiBorderLayoutTop{
+	background-color: white;
+	overflow: hidden !important;
+}
+
+.bookmarkFilterListBox .sapUiLbxITxt{
+	text-align:center !important;
+	line-height: 50px !important;
+	cursor: pointer;
+}
+
+.bookmarkFilterListBox .sapUiLbxI>span:last-child {
+	border-color:lightgray;
+	border-width:1px;
+	
+}
+
+.bookmarkFilterListBox .sapUiLbxI>span:first-child {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	
+}
+
+.bookmarkFilterListBox.sapUiLbx {
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+	background: none;
+	background-color: #ffffff;
+	border-radius: 0 !important;
+	border-color: #aaa;
+}
+
+.bookmarkFilterBackButton.sapUiBtnS{
+	z-index: 3;	
+	background: none !important;
+	box-shadow: none !important;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+}
+
+
+.bookmarkFilterBackButton.sapUiBtnS.sapUiBtnNorm{
+	border:none;
+}
+
+
+.bookmarkFilterAbsoluteLayout{
+	/* background-color:lightgray; */
+	background-color: white; 
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: #aaa;
+	color: #999999;
+}
+/* END "BookmarkFilter.css" */
+
+/* START "Chart.css" */
+.zenControl .v-m-tooltip {
+	z-index: 1;
+	pointer-events: none;
+}
+
+.zenControl .html5chart svg {
+	overflow: hidden;
+}
+/* END "Chart.css" */
+
+/* START "chartconfig.css" */
+.zenControl .chartconfigchartpicker {
+	min-width: 490px !important;
+	padding: 5px !important;
+	border: 1px solid #96A8C3;
+	overflow: hidden !important;
+}
+
+.zenControl .chartconfigchartpreview {
+	border: 1px solid #96A8C3 !important;
+	min-width: 500px !important;
+}
+
+.zenControl .chartconfigfeedingpanel {
+	border: none !important;
+	background: none !important;
+}
+/* END "chartconfig.css" */
+
+/* START "ChartTypeSwitch.css" */
+/* ======================================================================== */
+/* Base CSS for control sap.ui.commons/ChartTypeSwitch.control              */
+/*                                                                          */
+/* ======================================================================== */
+
+/* fix for switcher positioning */
+.zenControl .viz-controls-switchbar-chart, .zenControl .viz-controls-switchbar-chart-selected
+	{
+	float: left !important;
+	left: auto !important;
+	right: auto !important;
+	top: auto !important;
+	position: relative !important;
+	margin-right: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+html[dir="rtl"] .zenControl .viz-controls-switchbar-chart, html[dir="rtl"] .zenControl .viz-controls-switchbar-chart-selected
+	{
+	float: left !important;
+	left: auto !important;
+	right: auto !important;
+}
+
+.zenControl .viz-controls-switchbar-view {
+	min-width: 60px !important;
+}
+
+.zenControl .viz-controls-switchbar-chart-icon {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	transform: none;
+	transform-origin: none;
+}
+/* END "ChartTypeSwitch.css" */
+
+/* START "Crosstab.css" */
+/* shared CSS */
+
+.sapzencrosstab-Crosstab .sapzencrosstab-HeaderCellContentDiv{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+/* END "Crosstab.css" */
+
+/* START "FilterLine.css" */
+/* ======================================================================== */
+/* Base CSS for control sap.ui.commons/FilterLine.control               	*/
+/*                                                                          */
+/* ======================================================================== */
+.zenControl .viz-controls-filterbar-layout {
+	background: none !important;
+}
+/* END "FilterLine.css" */
+
+/* START "GeoMap.css" */
+/*sap.zen.GeoMap css*/
+
+/*Regions (choropleth layers)
+ The following properties should not be set in css 
+ as they interfere with zoom behaviour:
+ - stroke-width */
+.sapzengeomap-region {
+	stroke: white;
+	stroke-opacity: 1;
+	opacity: 0.7;
+}
+.sapzengeomap-region.sapzengeomap-unselected {
+	stroke: white;
+	opacity: 0.2;
+}
+.sapzengeomap-region.sapzengeomap-selected {
+	stroke-opacity: 1;
+	stroke: black;
+}
+.sapzengeomap-region:hover {
+	stroke: darkgray;
+	stroke-opacity: 1;
+}
+
+
+
+/*Points (pushpin layers)*/
+.sapzengeomap-point .pointImage{
+	stroke-width: 1.5;
+	stroke-opacity: 1;
+	stroke: white;
+}
+.sapzengeomap-point .pointImage.sapzengeomap-unselected{
+	stroke-opacity: 1;
+	stroke: white;
+}
+.sapzengeomap-point .pointImage.sapzengeomap-selected{
+	stroke-opacity: 1;
+	stroke: black;
+}
+.sapzengeomap-point .pointImage:hover {
+	stroke: darkgray;
+	stroke-opacity: 1;
+}
+
+
+/*Tooltip*/
+.sapzengeomap-tooltip {
+	background: white;
+	opacity: 1;
+	border: 1px solid rgb(204,204,204);
+	border-radius: 3px;
+	box-shadow: rgb(175,175,175) 1px 1px;
+	padding: 10px;
+	z-index: 1;
+}
+.sapzengeomap-tooltip .sapzengeomap-label {
+	font-familty: Arial;
+	font-size: 12px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-bottom: 8px;
+	color: #666666
+}
+.sapzengeomap-tooltip .sapzengeomap-value {
+	font-familty: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-left: 7px;
+	padding-bottom: 8px;
+	color: #666666
+}
+
+/* END "GeoMap.css" */
+
+/* START "InfoChart.less" */
+.sapzeninfochart {
+	@infoChartMessageFontSize: 23px;
+	@infoChartMessageBackgroundColor: gray;
+	@infoChartInfoIcon: '\e024';
+	@infoChartWarnIcon: '\e201';
+	@infoChartErrorIcon: '\e1c7';
+
+	& ~ .componentLoadingState {
+		background-color: @infoChartMessageBackgroundColor;
+		opacity: 0.1;
+	}
+
+	& ~ .componentLoadingStateMessage, & ~ .componentLoadingStateBox {
+		font-size: @infoChartMessageFontSize;
+		color: gray;
+		width: 100%;
+		left: 0;
+		text-align: center;
+		margin-left: 0;
+		padding-left: 10;
+		padding-right: 10;
+		display: none;
+	}
+
+	& ~ .componentLoadingStateBox {
+		@componentLoadingStateMarginTop: -45px;
+		margin-top: @componentLoadingStateMarginTop - @infoChartMessageFontSize - 2px;
+		/* Not so nice */
+		background-color: transparent !important;
+		opacity: 1;
+
+		&:before {
+			content: @infoChartErrorIcon;
+			font-family: "SAP-icons";
+		}
+	}
+
+	&.state-info ~ .componentLoadingStateBox:before {
+		content: @infoChartInfoIcon;
+	}
+
+	&.state-warn ~ .componentLoadingStateBox:before {
+		content: @infoChartWarnIcon;
+	}
+
+	&.ghost {
+		opacity: 0.3;
+		& ~ .componentLoadingStateMessage, & ~ .componentLoadingStateBox {
+			display: block;
+		}
+		& ~ .componentLoadingStateMessage {
+			// Just display the first message
+			~ .componentLoadingStateMessage {
+				display: none;
+			}
+		}
+		& ~ .componentLoadingStateBox {
+			// Just display the first message
+			~ .componentLoadingStateBox {
+				display: none;
+			}
+		}
+	}
+
+}
+/* END "InfoChart.less" */
+
+/* START "InfoFeeding.css" */
+
+/* ================================================== */
+/* Base CSS for infocharts feeding panel 							*/
+/*                                                    */
+/* ================================================== */
+
+.sapzeninfofeeding, .sapzeninfofeedingM  {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;  
+  border: 1px solid #96a8c3;
+  border-radius: 3px;
+  background-color: #DBE5EC;
+  text-overflow: ellipsis;  
+  margin: 0px;
+}
+
+.sapzeninfofeeding *, .sapzeninfofeedingM * {
+  box-sizing: border-box !important;
+  margin: 0px  !important;
+}
+
+
+.sapzeninfofeeding .feedingContainer, 
+.sapzeninfofeedingM .feedingContainer
+ {
+  position: relative;
+  padding: 4px;
+  height: 100%;
+  width: 100%;
+}
+
+.sapzeninfofeeding .innerFeedingContainer,
+.sapzeninfofeedingM .innerFeedingContainer
+{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+
+.sapzeninfofeeding .feedTypeContainer,
+.sapzeninfofeedingM  .feedTypeContainer{	
+  	position: absolute;
+  	height: 50%;
+		top: 0px;
+  	bottom: 0px;
+  	left: 0px;
+  	right: 0px;
+}
+
+
+.sapzeninfofeeding .feedTypeContainer + .feedTypeContainer,
+.sapzeninfofeedingM .feedTypeContainer + .feedTypeContainer{		
+	top: 50%;
+}
+
+
+.sapzeninfofeeding .feedContainer,
+.sapzeninfofeedingM .feedContainer
+ {		
+ 	position: absolute;
+ 	bottom: 0px;
+ 	left: 0px;
+ 	right: 0px;
+	border-color: #96a8c3;
+	background-color: #FFF;
+	border: 1px solid #96a8c3;
+	overflow:auto;
+}
+
+
+
+.sapzeninfofeeding .feedTypeTitle,
+.sapzeninfofeedingM  .feedTypeTitle
+{
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+
+.sapzeninfofeeding .bucketContainer,
+.sapzeninfofeedingM .bucketContainer
+{
+	padding: 5px;	
+	background-color: #fff;
+}
+
+.sapzeninfofeeding .bucketContainer + .bucketContainer,
+.sapzeninfofeedingM  .bucketContainer + .bucketContainer{
+	border-top: 1px solid #96a8c3;
+}
+
+/* Sortable items */
+
+
+.sapzeninfofeeding .feeding-sortable-list,
+.sapzeninfofeedingM .feeding-sortable-list{
+	list-style: none;
+	margin-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;	
+}
+
+
+.feeding-sortable-item.bucketElement.ui-sortable-helper
+{
+	list-style: none;
+	margin-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;	
+}
+
+.sapzeninfofeeding .feeding-sortable-item,
+.sapzeninfofeedingM .feeding-sortable-item  {
+	cursor: move;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 5px;
+	/* position: absolute; */
+}
+
+.sapzeninfofeeding .bucket,
+.sapzeninfofeedingM .bucket  {
+	width: 100%;
+}
+
+.sapzeninfofeeding .feeding-id-label ,
+.sapzeninfofeedingM .feeding-id-label {
+	direction: inherit;
+	text-align: left;
+	line-height: 20px;
+}
+
+/* Item placeholder (visual helper) */
+
+.sapzeninfofeeding .placeholder,
+.sapzeninfofeedingM  .placeholder
+{
+		height: 23px;
+}
+
+/* END "InfoFeeding.css" */
+
+/* START "PdfExportDialog.css" */
+/* shared CSS */
+
+.sapzenpdfdialog{
+	
+}
+/* END "PdfExportDialog.css" */
+
+/* START "Tree.css" */
+/* shared CSS for Tree Component */
+
+.sapzentreecomponent.sapUiTable .sapUiTableTr > td {
+  border: none;    
+}
+
+.sapzentreecomponent .sapUiHLayoutChildWrapper{
+  vertical-align: middle;
+}
+
+
+.sapzentreecomponent .sapUiTableRowHdr:nth-child(even), 
+.sapzentreecomponent .sapUiTableCtrl tr.sapUiTableRowOdd{
+  
+}
+.sapzentreecomponent .sapUiTableRowHdr:nth-child(even).sapUiTableRowHvr,
+.sapzentreecomponent .sapUiTableCtrl tr.sapUiTableRowOdd.sapUiTableRowHvr {
+
+}
+
+/* END "Tree.css" */
+

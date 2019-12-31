@@ -1,0 +1,247 @@
+<style type="text/css">
+	body {
+		font-family: "72-Web", Arial, Helvetica, sans-serif;
+	}
+	main > header > h1 {
+		font-size: 1.8em;
+	}
+	section h1 {
+		font-size: 1.2em;
+	}
+	table {
+		font-size: 0.9em;
+	}
+
+	/* Expand/Collapse functionality */
+	.expanded {
+		padding-left: 30px;
+	}
+	.expanded > tr > td:first-child {
+		padding-left: 35px;
+	}
+	.collapsed {
+		display: none;
+	}
+	.expanded-content > .expandable-title::before {
+		font-family: "courier";
+		font-weight: bold;
+    	content: "[-]";
+		bottom: 2px;
+    	position: relative;
+	}
+	.collapsed-content > .expandable-title::before {
+		font-family: "courier";
+		font-weight: bold;
+    	content: "[+]";
+    	bottom: 2px;
+    	position: relative;
+	}
+
+	/* Filters functionality */
+	.filters {
+		margin: 10px;
+		font-size: 1em;
+	}
+	.filter {
+		padding: 5px;
+		display: inline-block;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+	.filter-active {
+		background-color: #ddd;
+		box-shadow: 1px 1px 5px #888888;
+	}
+	.filtered {
+		display: none;
+	}
+
+	/* Table */
+	table.sapUiTable {
+		margin-top: 5px;
+		border-spacing: 0px;
+	}
+	table.sapUiTable th {
+		background-color: #f5f5f5;
+		border-bottom: 2px solid #ddd;
+	}
+	table.sapUiTable td {
+		border-bottom: 1px solid #ddd;
+		vertical-align: top;
+	}
+	table.sapUiTable th, table.sapUiTable td {
+		text-align: left;
+		padding: 10px;
+	}
+	table.sapUiTable tr:hover {
+		background-color: #f5f5f5;
+	}
+
+	/* Other */
+	.sapUiSupportLabel {
+		font-weight: bold;
+	}
+	.Error {
+		color: #bb0000;
+	}
+	.Warning {
+		color: #e78c07;
+	}
+	.bottom-margin-small {
+		margin-bottom: 10px;
+	}
+	.top-margin-xsmall {
+		margin-top: 5px;
+	}
+	.description {
+		font-size: 0.8em;
+	}
+</style>
+
+<main>
+	<header>
+		<h1>{{metadata.title}}</h1>
+		<div>Generated on (<time>{{metadata.timestamp}}</time>)</div>
+		<div class="bottom-margin-small">{{metadata.analysisDurationTitle}}: <time>{{metadata.analysisDuration}}</time></div>
+		<div>{{getScope metadata.scope}}</div>
+	</header>
+	<div>
+		<section id="section_technical-details">
+			<div class="expandable-control collapsed-content" data-expandableElement="technicalInfoContent"><h1 class="expandable-title">{{metadata.title_TechnicalInfo}}</h1></div>
+			<div id="technicalInfoContent">{{getTechnicalInformation technicalInfo}}</div>
+		</section>
+		<section id="section_app-info">
+			<div class="expandable-control collapsed-content" data-expandableElement="appInfoContent"><h1 class="expandable-title">{{metadata.title_AppInfo}}</h1></div>
+			<div id="appInfoContent">{{getAppInfo appInfo}}</div>
+		</section>
+		<section id="section_issues">
+			<div class="expandable-control collapsed-content" data-expandableElement="issuesContent"><h1 class="expandable-title">{{metadata.title_Issues}}</h1></div>
+			<div id="issuesContent" class="expandable-content">
+				<div class="filters">{{getSeverityFilters issues}}</div>
+				<div>{{getIssues issues}}</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+	</footer>
+</main>
+
+<script>
+	function initCollapseExpandFunctionality() {
+		try {
+			var expandableElements = document.getElementsByClassName('expandable-control');
+			if (!expandableElements) {
+				return;
+			}
+
+			for (var i = 0; i < expandableElements.length; i++) {
+				expandableElements[i].addEventListener('click', function (event) {
+					var toExpandElementId = this.getAttribute('data-expandableElement');
+					var expandableElement = document.getElementById(toExpandElementId);
+					var toExpand = expandableElement.classList.contains('collapsed');
+
+					if (toExpand) {
+						expandableElement.classList.remove('collapsed');
+						expandableElement.classList.add('expanded');
+						this.classList.remove('collapsed-content');
+						this.classList.add('expanded-content');
+					} else {
+						expandableElement.classList.remove('expanded');
+						expandableElement.classList.add('collapsed');
+						this.classList.remove('expanded-content');
+						this.classList.add('collapsed-content');
+					}
+				});
+
+				// Set the default collapsed/expanded state of the expandable content.
+				var elementToExpandId = expandableElements[i].getAttribute('data-expandableElement');
+				var elementToExpand = document.getElementById(elementToExpandId);
+				if (expandableElements[i].classList.contains('collapsed-content')) {
+					elementToExpand.classList.add('collapsed');
+				} else {
+					elementToExpand.classList.add('expanded');
+				}
+
+				expandableElements[i].setAttribute('style', 'cursor: pointer;');
+			}
+		} catch(ex) {
+			console.log('There was a problem initializing collapse/expand functionality.');
+		}
+	}
+
+	function initSeverityFilter() {
+		try {
+			var filters = document.getElementsByClassName('filter');
+
+			if (!filters) {
+				return;
+			}
+
+			// Used to update the groups counters and hide/show group headers if all of the elements are filtered.
+			function updateIssuesGroups() {
+				var groupHeaderElements = document.querySelectorAll('[data-groupName]');
+				for (var i = 0; i < groupHeaderElements.length; i++) {
+					var groupHeader = groupHeaderElements[i];
+					var issuesGroupId = groupHeader.getAttribute('data-expandableElement');
+					var groupName = groupHeader.getAttribute('data-groupName');
+					var groupNumber = groupHeader.getAttribute('data-groupNumber');
+					var unfilteredRules = document.querySelectorAll('#' + issuesGroupId + ' > tr:not(.filtered)');
+					var numberOfUnfilteredIssues = 0;
+					for (var i = 0; i < unfilteredRules.length; i++) {
+						numberOfUnfilteredIssues += Number(unfilteredRules[i].getAttribute('data-numberOfIssues'));
+					}
+
+					if (numberOfUnfilteredIssues === 0) {
+						groupHeader.classList.add('filtered');
+					} else {
+						groupHeader.classList.remove('filtered');
+						groupHeader.querySelector('span').innerText = ' ' + groupNumber + '. ' + groupName + ' (' + unfilteredRules.length + ' rules, ' + numberOfUnfilteredIssues + ' issues)';
+					}
+				}
+			}
+			function selectFilter(filter) {
+				if (filter.classList.contains('filter-active')) {
+					return;
+				}
+
+				var activeFilters = document.getElementsByClassName('filter-active');
+				for (var k = 0; k < activeFilters.length; k++) {
+					activeFilters[k].classList.remove('filter-active');
+				}
+				filter.classList.add('filter-active');
+			}
+			function resetFilters() {
+				var filteredElements = document.querySelectorAll('.filtered');
+				for (var i = 0; i < filteredElements.length; i++) {
+					filteredElements[i].classList.remove('filtered');
+				}
+			}
+			function filterBy(severity) {
+				resetFilters();
+				if (severity === 'Total') {
+					return;
+				}
+
+				var elements = document.querySelectorAll('.filterable:not([data-severity="' + severity + '"])');
+				for (var i = 0; i < elements.length; i++) {
+					elements[i].classList.add('filtered');
+				}
+			}
+
+			for (var i = 0; i < filters.length; i++) {
+				filters[i].addEventListener('click', function (event) {
+					selectFilter(this);
+					var severity = this.getAttribute('data-severity');
+					filterBy(severity);
+					updateIssuesGroups();
+				});
+			}
+		} catch(ex) {
+			console.log('There was a problem initializing filters.');
+		}
+	}
+
+	initCollapseExpandFunctionality();
+	initSeverityFilter();
+</script>
+

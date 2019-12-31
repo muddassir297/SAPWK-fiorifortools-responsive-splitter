@@ -1,0 +1,56 @@
+{
+  "level1": [{
+        "text": "Block Layout",
+        "type": "text",
+        "level2": [{
+            "text": "Block.view.xml",
+            "type": "xml"
+        },{
+            "text": "Block.controller.js",
+            "type": "javascript"
+        }]
+    },{
+        "text": "Responsive Splitter",
+        "type": "text",
+        "level2": [{
+            "text": "Splitter.view.xml",
+            "type": "xml"
+        },{
+            "text": "Splitter.controller.js",
+            "type": "javascript"
+        }]
+    },{
+        "text": "Side Navigation",
+        "type": "text",
+        "level2": [{
+            "text": "Navigation.view.xml",
+            "type": "xml"
+        },{
+            "text": "Navigation.controller.js",
+            "type": "javascript"
+        },{
+            "text": "style.css",
+            "type": "css"
+        }]
+    },{
+        "text": "Tool Header",
+        "type": "text",
+        "level2": [{
+            "text": "Header.view.xml",
+            "type": "xml"
+        },{
+            "text": "Header.controller.js",
+            "type": "javascript"
+        }]
+    },{
+        "text": "Tool Page",
+        "type": "text",
+        "level2": [{
+            "text": "Page.view.xml",
+            "type": "xml"
+        },{
+            "text": "Page.controller.js",
+            "type": "javascript"
+        }]
+    }]
+}

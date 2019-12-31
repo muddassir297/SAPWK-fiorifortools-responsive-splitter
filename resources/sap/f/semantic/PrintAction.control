@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>semantic/PrintAction</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>An &lt;code&gt;PrintAction&lt;/code&gt; button has default semantic-specific properties
+and it`s placed in the &lt;code&gt;SemanticPage&lt;/code&gt; share menu within the title.
+The &lt;code&gt;PrintAction&lt;/code&gt; is eligible for aggregation content of a {@link sap.f.semantic.SemanticPage}.</documentation>
+    <since>1.46.0</since>
+    <baseType>sap.f/semantic/SemanticButton</baseType>
+</control>

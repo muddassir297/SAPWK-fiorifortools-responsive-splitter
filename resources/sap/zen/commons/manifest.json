@@ -1,0 +1,39 @@
+{
+  "_version": "1.2.0",
+  "sap.app": {
+    "_version": "1.2.0",
+    "id": "sap.zen.commons",
+    "type": "library",
+    "embeds": [],
+    "applicationVersion": {
+      "version": "1.46.0"
+    },
+    "title": "Common basic controls, mainly intended for desktop scenarios",
+    "description": "Common basic controls, mainly intended for desktop scenarios",
+    "ach": "BI-RA-AD-EA",
+    "resources": "resources.json",
+    "offline": true
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_hcb"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "dependencies": {
+      "minUI5Version": "1.46",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.46.0"
+        },
+        "sap.ui.layout": {
+          "minVersion": "1.46.0"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:commons="sap.ui.commons"
+	xmlns:core="sap.ui.core">
+	<Popover
+		title="{/executionScopeTitle}"
+		contentMinWidth="250px"
+		class="sapUiContentPadding"
+		beforeOpen="onBeforePopoverOpen"
+		placement="Bottom">
+		<content>
+			<VBox>
+				<RadioButton groupName="analyzeContext" text="{/executionScopes/core/displayName}" select="onContextSelect" selected="true">
+					<customData>
+						<core:CustomData key="analyzeContext" value="core" />
+					</customData>
+					<tooltip>
+						<commons:RichTooltip text="{/executionScopes/core/description}" atPosition="right top" />
+					</tooltip>
+				</RadioButton>
+				<RadioButton groupName="analyzeContext" text="{/executionScopes/parent/displayName}" select="onContextSelect">
+					<customData>
+						<core:CustomData key="analyzeContext" value="parent" />
+					</customData>
+					<tooltip>
+						<commons:RichTooltip text="{/executionScopes/parent/description}" atPosition="right top" />
+					</tooltip>
+				</RadioButton>
+				<l:VerticalLayout
+					class="sapUiSupportToolSettingsPopoverPadding">
+					<Input
+						placeholder="Input sub-root ID"
+						enabled="{= ${/analyzeContext/key} === 'parent'}"
+						value="{/parentExecutionContextId}"
+						width="300px" />
+				</l:VerticalLayout>
+				<RadioButton groupName="analyzeContext" text="{/executionScopes/components/displayName}" select="onContextSelect" >
+					<customData>
+						<core:CustomData key="analyzeContext" value="components" />
+					</customData>
+					<tooltip>
+						<commons:RichTooltip text="{/executionScopes/components/description}" atPosition="right top" />
+					</tooltip>
+				</RadioButton>
+				<l:VerticalLayout
+					id="componentsSelectionContainer"
+					content="{/availableComponents}"
+					class="sapUiSupportToolSettingsPopoverPadding">
+					<CheckBox text="{}" enabled="{= ${/analyzeContext/key} === 'components'}" />
+				</l:VerticalLayout>
+			</VBox>
+		</content>
+	</Popover>
+</core:FragmentDefinition>

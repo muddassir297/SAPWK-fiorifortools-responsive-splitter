@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>TimelineFilterListItem</name>
+	<documentation>Provides a filter criteria list for the items filter in the Timeline control.</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Data" name="key" type="sap.ui.core/string">
+			<documentation>A key for a filter criterion. Each filter criterion must have a unique key.</documentation>
+		</property>
+		<property group="Misc" name="text" type="sap.ui.core/string">
+			<documentation>A textual label for the filter criterion. This text is displayed in the filter criteria list 
+			in the UI.</documentation>
+		</property>
+	</properties>
+</control>

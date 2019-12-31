@@ -1,0 +1,9 @@
+
+Block Layout
+    |
+    |__ Block.view.xml
+    |       |__ TODO 1: Create Data Binding
+    |       |__ TODO 2: Add New Row
+    |
+    |__ Block.controller.js
+            |__ TODO 3: Make JSON Model dynamic

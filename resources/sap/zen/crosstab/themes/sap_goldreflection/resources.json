@@ -1,0 +1,949 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".theming",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "Crosstab.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "FilterPanel.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "MessageView.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "NavigationPanel.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "PageBookPaginator.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "Popup.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "SplitCellContainer.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "VariablenDialog.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "ZZ_More.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/CornerTornEffect.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/DlgClose.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/HTornEffect.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/HTornEffectData.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/HTornEffectHeader.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/ResizeDialog.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/VTornEffect.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/ValueHelp.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/VariablenDialogClose.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/axisview_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/axisview_pressed_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/axisview_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/check.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/col_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/col_16_unselected.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/col_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/collapse_tree_node.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/collapse_tree_node_minus_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/collapse_tree_node_minus_white.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/down_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/down_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/status_1.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/status_2.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/status_3.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/status_4.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/status_5.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/status_6.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/status_7.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/status_8.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/status_9.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_1.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_2.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_3.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_4.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_5.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_6.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_7.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_8.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_asc_9.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_1.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_2.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_3.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_4.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_5.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_6.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_7.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_8.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_desc_9.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_1.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_2.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_3.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_4.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_5.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_6.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_7.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_8.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/exceptions/trend_grey_9.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/expand_tree_node.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/expand_tree_node_plus_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/expand_tree_node_plus_white.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_checkAll.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_dirty_state.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_excluded.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_excluded_hover.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_excluding.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_excluding_sel.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_included.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_included_hover.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_including.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_including_sel.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_membersegmentbutton.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_membersegmentbutton_sel.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_remove.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_searchsegmentbutton.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/filterpanel_searchsegmentbutton_sel.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/list_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/list_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/loading.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/locked.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_error.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_error_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_expand.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_expand_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_info.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_info_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_remove.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_remove_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_warning.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/messageview_warning_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/paginator_bubble.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/paginator_bubble_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/right_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/row_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/row_16_unselected.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/row_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/sort_asc.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/sort_asc.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/sort_asc_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/sort_desc.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/sort_desc.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/sort_desc_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/sort_none.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/sort_none.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/sort_none_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/trashcan.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/treenode_collapse.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/treenode_expand.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/up_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img-RTL/up_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/CornerTornEffect.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/DlgClose.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/HTornEffect.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/HTornEffectData.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/HTornEffectHeader.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/ResizeDialog.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/VTornEffect.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/ValueHelp.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/VariablenDialogClose.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/axisview_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/axisview_pressed_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/axisview_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/check.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/col_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/col_16_unselected.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/col_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/collapse_tree_node.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/collapse_tree_node_minus_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/collapse_tree_node_minus_white.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/down_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/down_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/status_1.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/status_2.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/status_3.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/status_4.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/status_5.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/status_6.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/status_7.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/status_8.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/status_9.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_asc_1.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_asc_2.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_asc_3.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_asc_4.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_asc_5.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_asc_6.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_asc_7.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_asc_8.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_asc_9.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_desc_1.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_desc_2.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_desc_3.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_desc_4.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_desc_5.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_desc_6.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_desc_7.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_desc_8.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_desc_9.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_grey_1.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_grey_2.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_grey_3.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_grey_4.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_grey_5.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_grey_6.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_grey_7.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_grey_8.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/exceptions/trend_grey_9.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/expand_tree_node.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/expand_tree_node_plus_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/expand_tree_node_plus_white.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_checkAll.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_dirty_state.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_excluded.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_excluded_hover.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_excluding.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_excluding_sel.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_included.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_included_hover.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_including.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_including_sel.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_membersegmentbutton.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_membersegmentbutton_sel.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_remove.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_searchsegmentbutton.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/filterpanel_searchsegmentbutton_sel.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/list_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/list_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/loading.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/locked.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_error.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_error_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_expand.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_expand_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_info.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_info_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_remove.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_remove_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_warning.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/messageview_warning_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/paginator_bubble.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/paginator_bubble_active.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/right_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/row_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/row_16_unselected.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/row_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/sort_asc.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/sort_asc.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/sort_asc_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/sort_desc.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/sort_desc.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/sort_desc_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/sort_none.gif",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/sort_none.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/sort_none_666.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/trashcan.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/treenode_collapse.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/treenode_expand.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/up_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "img/up_selected_16.png",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "library-RTL.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "library-dbg.css",
+      "isDebug": true,
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "library-parameters.json",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "library.css",
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "library.less",
+      "designtime": true,
+      "theme": "sap_goldreflection"
+    },
+    {
+      "name": "library.source.less",
+      "designtime": true,
+      "theme": "sap_goldreflection"
+    }
+  ]
+}

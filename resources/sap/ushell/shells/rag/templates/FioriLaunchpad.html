@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2009-2014 SAP SE, All Rights Reserved -->
+<html class="sapUShellFullHeight">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="sap.ushellConfig.1" content='{"defaultRenderer":"fiori2"}' />
+        <meta name="sap.ushellConfig.2" content='{"renderers":{"fiori2":{"componentData":{"config":
+            {"enableHideGroups":true,
+            "enablePersonalization":true,
+            "enableTagFiltering":false,
+            "enableSearch":false,
+            "enableTilesOpacity":false,
+            "enableSetTheme":true,
+            "enableAccessibility":true,
+            "enableHelp":false,
+            "enableUserDefaultParameters":true,
+            "preloadLibrariesForRootIntent":false,
+            "applications":{
+                "Shell-home":{
+                    "enableActionModeMenuButton":true,
+                    "enableActionModeFloatingButton":true,
+                    "enableEasyAccess":false,
+                    "enableTileActionsIcon":false,
+                    "enableHideGroups":false,
+                    "enableLockedGroupsCompactLayout":false,
+                    "enableTilesOpacity":false}
+                },
+            "rootIntent":"Shell-home"}}}}}' />
+        <meta name="sap.ushellConfig.3" content='{
+            "services":{
+                "CommonDataModel":{
+                    "module":"sap.ushell.services.CommonDataModel",
+                    "adapter":{
+                        "module":"sap.ushell.adapters.cdm.CommonDataModelAdapter",
+                        "config":{
+                            "ignoreSiteDataPersonalization":true,
+                            "siteDataUrl":"./shared/{{include "./shared/flpCbToken.txt"}}/flp-site/flp-site_{{include "./request/env/localeUnderscore.txt"}}.json"
+                        }
+                    }
+                },
+                "ClientSideTargetResolution":{
+                    "adapter":{
+                        "module":"sap.ushell.adapters.cdm.ClientSideTargetResolutionAdapter"
+                    }
+                },
+                "LaunchPage":{
+                    "adapter":{
+                        "module":"sap.ushell.adapters.cdm.LaunchPageAdapter"
+                    }
+                },
+                "Personalization":{
+                    "adapter":{
+                        "module":"sap.ushell.adapters.local.PersonalizationAdapter"
+                    }
+                },
+                "AppState":{
+                    "adapter":{
+                        "module":"sap.ushell.adapters.local.AppStateAdapter"
+                    }
+                },
+                "NavTargetResolution":{
+                    "config":{
+                        "runStandaloneAppFolderWhitelist":{
+                            "*":true
+                        },
+                        "allowTestUrlComponentConfig":true,
+                        "enableClientSideTargetResolution":true
+                    }
+                },
+                "SupportTicket":{
+                    "config":{
+                        "enabled":false
+                    }
+                },
+                "EndUserFeedback":{
+                    "adapter":{
+                        "config":{
+                            "enabled":false
+                        }
+                    }
+                },
+                "Ui5ComponentLoader":{
+                    "config":{
+                        "amendedLoading":false
+                    }
+                }
+            }
+        }' />
+
+        <script id="sap-ushell-bootstrap"
+                src="$ui5ResourceRoot/sap/ushell/bootstrap/cdm.js">
+        </script>
+    </head>
+
+    <body class="sapUiBody sapUShellFullHeight" role="application">
+        <div id="canvas" class="sapUShellFullHeight"></div>
+    </body>
+
+</html>

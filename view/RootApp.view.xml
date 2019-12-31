@@ -1,0 +1,102 @@
+<core:View height="100%" 
+  xmlns:core="sap.ui.core" 
+  xmlns="sap.m" 
+  xmlns:tnt="sap.tnt" 
+  xmlns:l="sap.ui.layout" 
+  xmlns:html="http://www.w3.org/1999/xhtml" 
+  xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" controllerName="UI5FioriForTools.controller.RootApp" id="app">
+  <tnt:ToolPage id="RootApp">
+    <tnt:header>
+      <tnt:ToolHeader>
+        <Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent" press="onSideNavButtonPress"></Button>
+        <Image src="http://veui5infra.dhcp.wdf.sap.corp:8080/sapui5-sdk-dist/test-resources/sap/tnt/images/SAP_Logo.png">
+        </Image>
+        <Text text="Code Editor" wrapping="false"></Text>
+        <MenuButton text="File" type="Transparent">
+          <menu >
+            <Menu itemSelected="onMenuAction">
+              <items >
+                <MenuItem text="New" icon="sap-icon://add" />
+                <MenuItem text="Import" icon="sap-icon://upload" />
+                <MenuItem text="Export" icon="sap-icon://download" />
+              </items>
+            </Menu>
+          </menu>
+        </MenuButton>
+        <MenuButton text="Edit" type="Transparent">
+          <menu>
+            <Menu itemSelected="onMenuAction">
+              <items>
+                <MenuItem text="Comment" icon="sap-icon://comment" />
+                <MenuItem text="Line" icon="sap-icon://indent" />
+              </items>
+            </Menu>
+          </menu>
+        </MenuButton>
+        <MenuButton text="Search" type="Transparent">
+          <menu>
+            <Menu itemSelected="onMenuAction">
+              <items>
+                <MenuItem text="Find" icon="sap-icon://search" />
+                <MenuItem text="Find and Replace" icon="sap-icon://search" />
+              </items>
+            </Menu>
+          </menu>
+        </MenuButton>
+        <MenuButton text="View" type="Transparent">
+          <menu>
+            <Menu itemSelected="onMenuAction">
+              <items>
+                <MenuItem text="Reset to Default" icon="sap-icon://reset" />
+              </items>
+            </Menu>
+          </menu>
+        </MenuButton>
+        <MenuButton text="Help" type="Transparent">
+          <menu>
+            <Menu itemSelected="onMenuAction">
+              <items>
+                <MenuItem text="Documentation" icon="sap-icon://education" />
+                <MenuItem text="Tips and Tricks" icon="sap-icon://lightbulb" />
+                <MenuItem text="About" icon="sap-icon://hint" />
+              </items>
+            </Menu>
+          </menu>
+        </MenuButton>
+
+        <ToolbarSpacer/>
+        <Button icon="sap-icon://search" type="Transparent">
+        </Button>
+        <Button icon="sap-icon://task" type="Transparent">
+        </Button>
+        <Button icon="sap-icon://bell" type="Transparent">
+        </Button>
+        <Button icon="http://veui5infra.dhcp.wdf.sap.corp:8080/sapui5-sdk-dist/test-resources/sap/tnt/images/avatar.png" type="Transparent">
+        </Button>
+        <Button icon="sap-icon://grid" type="Transparent">
+        </Button>
+      </tnt:ToolHeader>
+    </tnt:header>
+
+    <tnt:sideContent>
+      <tnt:SideNavigation id="sideNavigation" expanded="false" itemSelect="onItemSelect">
+        <tnt:NavigationList items="{path: '/navigation'}">
+          <tnt:NavigationListItem text="{title}" icon="{icon}" enabled="{enabled}" expanded="{expanded}" items="{items}" key="{key}">
+            <tnt:NavigationListItem text="{title}" key="{key}" enabled="{enabled}">
+            </tnt:NavigationListItem>
+          </tnt:NavigationListItem>
+        </tnt:NavigationList>
+        <tnt:fixedItem>
+          <tnt:NavigationList items="{path: '/fixedNavigation'}">
+            <tnt:NavigationListItem text="{title}" icon="{icon}" key="{key}">
+            </tnt:NavigationListItem>
+          </tnt:NavigationList>
+        </tnt:fixedItem>
+      </tnt:SideNavigation>
+    </tnt:sideContent>
+    <tnt:mainContents>
+      <App id="mainContents"/>
+    </tnt:mainContents>
+  </tnt:ToolPage>
+
+</core:View>

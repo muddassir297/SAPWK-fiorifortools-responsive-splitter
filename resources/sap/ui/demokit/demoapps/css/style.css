@@ -1,0 +1,8 @@
+.sapUiDemoApps .headlineCell {
+    background-color: white !important;
+}
+
+.sapUiDemoApps .headlineCell .sapUiBlockCellContent {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

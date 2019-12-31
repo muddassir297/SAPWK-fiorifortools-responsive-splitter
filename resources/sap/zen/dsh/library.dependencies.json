@@ -1,0 +1,79 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/zen/dsh/AnalyticGrid.js",
+      "description" : "Provides control sap.zen.dsh.AnalyticGrid.",
+      "size" : 13794,
+      "compressedSize" : 4801,
+      "required" : ["sap/zen/dsh/library.js", "sap/ui/core/Control.js", "sap/zen/dsh/rt/all.js", "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js", "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/AnalyticGridRenderer.js",
+      "size" : 166,
+      "compressedSize" : 160,
+      "required" : ["sap/zen/dsh/DshRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/Dsh.js",
+      "description" : "Provides control sap.zen.dsh.Dsh.",
+      "size" : 25016,
+      "compressedSize" : 7292,
+      "required" : ["sap/zen/dsh/library.js", "sap/ui/core/Control.js", "sap/zen/dsh/rt/all.js", "sap/zen/dsh/rt/zen_rt_firefly/js/jszip.js", "sap/zen/dsh/rt/zen_rt_firefly/js/xlsx.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/DshRenderer.js",
+      "size" : 1086,
+      "compressedSize" : 477,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYSIS/localization.properties",
+      "size" : 3467,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/applications/0ANALYTIC_GRID/localization.properties",
+      "size" : 1050,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/fioriwrapper/Component.js",
+      "size" : 3253,
+      "compressedSize" : 1915,
+      "required" : ["sap/ui/core/UIComponent.js", "sap/zen/dsh/Dsh.js", "sap/ui/generic/app/navigation/service/NavigationHandler.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/fioriwrapper/manifest.json",
+      "size" : 1362,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/library.js",
+      "description" : "Initialization Code and shared classes of library sap.zen.dsh (1.46.0)",
+      "size" : 1435,
+      "compressedSize" : 679,
+      "required" : ["sap/ui/core/Core.js", "sap/ui/core/library.js", "sap/ui/table/library.js", "sap/ui/layout/library.js", "sap/m/library.js", "sap/zen/commons/library.js", "sap/zen/crosstab/library.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/library.properties",
+      "size" : 242,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/zen/dsh/manifest.json",
+      "size" : 1666,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

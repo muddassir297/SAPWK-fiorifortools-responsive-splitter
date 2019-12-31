@@ -1,0 +1,28 @@
+{
+        "todos": [
+            {
+                "id": "7",
+                "name": "Customize Menu Items",
+                "jira": "NAVIGATION-1",
+                "location": "Navigation.view.xml"
+            },
+            {
+                "id": "8",
+                "name": "Fill onInit",
+                "jira": "NAVIGATION-2",
+                "location": "Navigation.controller.js"
+            },
+            {
+                "id": "9",
+                "name": "Change to Collapsed",
+                "jira": "NAVIGATION-3",
+                "location": "Navigation.controller.js"
+            },
+            {
+                "id": "10",
+                "name": "Add Custom CSS",
+                "jira": "NAVIGATION-4",
+                "location": "style.css"
+            }
+        ]
+}

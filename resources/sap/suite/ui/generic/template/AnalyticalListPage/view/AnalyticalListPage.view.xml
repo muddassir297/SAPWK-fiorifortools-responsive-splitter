@@ -1,0 +1,124 @@
+<core:View xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		   xmlns="sap.m" xmlns:f="sap.f" xmlns:core="sap.ui.core" xmlns:semantic="sap.m.semantic" xmlns:ushell="sap.ushell.ui"
+		   xmlns:build="sap.build" xmlns:st="sap.suite.ui.generic.template"
+		   template:require="sap.suite.ui.generic.template.AnalyticalListPage.util.AnnotationHelper sap.suite.ui.generic.template.AnalyticalListPage.util.FilterUtil"
+		   xmlns:l="sap.ui.layout"	 xmlns:smartVariantManagement="sap.ui.comp.smartvariants">
+	<!--
+		@classdesc
+		@name: Name: sap.ui.generic.template.fragments.AnalyticalListPage.view.xml
+		@description:
+			- This template creates a page containing a analytical or responsive table for entries of the given entity set
+			- The attribute parameter>aggregationBinding can be used to set filter and expand options for the table
+		@namespace {http://docs.oasis-open.org/odata/ns/edm} [edm]
+		@param {edm.EntitySet} [entitySet]
+		@param [parameter] {
+			"aggregationBinding",
+			"entitySet",
+			"entityType",
+			"sap-ui-debug"
+		}-->
+	<st:lib.FlexEnabler/>
+	<template:alias name=".ALPHelper" value="sap.suite.ui.generic.template.AnalyticalListPage.util.AnnotationHelper">
+		<template:with path="entitySet>entityType" helper="sap.ui.model.odata.AnnotationHelper.gotoEntityType"
+					   var="entityType">
+			<template:with path="parameter>/" helper=".ALPHelper.createWorkingContext" var="workingContext">
+				<!-- TODO simplify the showFooter determination by just passing "parameter>" and evaluate everything inside -->
+				<f:DynamicPage id="page" headerExpanded="true" preserveHeaderStateOnScroll="true" showFooter="{=  ${parts: [{path: 'workingContext>lineItem'},{path: 'workingContext>chart/Actions'},{path: 'parameter>/entitySet'}, {path: 'parameter>/manifest/sap.ui5/extends/extensions/sap.ui.controllerExtensions'}], formatter: '.ALPHelper.hasDeterminingActionsForALP'} }" >
+					<f:title>
+						<f:DynamicPageTitle class="alpDynamicPageTitle">
+							 <f:heading>
+								<l:VerticalLayout class="alr_filterContainer" id="alr_filterContainer1">
+										<l:HorizontalLayout id="alrKpiTagContainer1" class="alrKpiTagContainer sapUIContentPadding">
+											<smartVariantManagement:SmartVariantManagement id="alrPageVariant" persistencyKey="{= (${parameter>/settings/smartVariantManagement} || ${parameter>/settings/smartVariantManagement} === undefined) ? 'searchAnalyticalListPageVariant' : '_ST_SmartVariantManagement'}" showShare="true" showExecuteOnSelection = "{= ${parameter>/settings/showGoButtonOnFilterBar} }"/>
+											<core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.KPITagList" type="XML"/>
+										</l:HorizontalLayout>
+								</l:VerticalLayout>
+							</f:heading>
+							<f:actions>
+								<OverflowToolbar design="Transparent" id="alr_visualFilterToolbar" class="alr_visualFilterToolbar">
+									<ToolbarSpacer/>
+									<core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.ActionsFragment" type="XML"/>
+								</OverflowToolbar>
+							</f:actions>
+							<f:snappedContent>
+								<Text id="template::FilterText" class="sapSmartTemplatesListReportFilterSummary"></Text>
+							</f:snappedContent>
+						</f:DynamicPageTitle>
+					</f:title>
+					<f:header>
+						<f:DynamicPageHeader id="alr_pageHeader" class="alr_pageHeader" pinnable="true">
+							<f:content>
+								<core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.FilterContainer" type="XML"/>
+							</f:content>
+						</f:DynamicPageHeader>
+					</f:header>
+					<f:content>
+						<VBox fitContainer="true">
+							<core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.ContentContainer" type="XML"/>
+							<!-- Helper -->
+							<customData>
+								<core:CustomData id="idEntityTypeName" key="entityTypeName" writeToDom="false"
+												 value="{path: 'entityType>com.sap.vocabularies.UI.v1.HeaderInfo/TypeName', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}"/>
+							</customData>
+						</VBox>
+					</f:content>
+					<f:footer>
+						<OverflowToolbar id="alr_pageFooterBar" visible="{parts: [{path: '_templPriv>/alp/contentView'}], formatter: 'sap.suite.ui.generic.template.AnalyticalListPage.util.ModelUtil.hasVisibleChild'}">
+							<ToolbarSpacer/>
+							<template:repeat list="{parameter>/manifest/sap.ui5/extends/extensions/sap.ui.controllerExtensions/sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage/sap.ui.generic.app}" var="tmpEntitySet">
+								<template:repeat list="{tmpEntitySet>Actions}" var="customaction">
+									<template:if test="{= ${customaction>determining} === true &amp;&amp; (${customaction>filter} === 'chart')}">
+										<HBox visible="{= (${_templPriv>/alp/contentView} === 'chart' || ${_templPriv>/alp/contentView} === 'charttable') }">
+											<customData>
+												<core:CustomData key="Filter" value="chart"/>
+											</customData>
+											<core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.ManifestDeterminingActions" type="XML"/>
+										</HBox>
+									</template:if>
+								</template:repeat>
+							</template:repeat>
+							<template:repeat list="{parameter>/manifest/sap.ui5/extends/extensions/sap.ui.controllerExtensions/sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage/sap.ui.generic.app}" var="tmpEntitySet">
+								<template:repeat list="{tmpEntitySet>Actions}" var="customaction">
+									<template:if test="{= ${customaction>determining} === true &amp;&amp; (!${customaction>filter} || ${customaction>filter} === 'table')}">
+										<HBox visible="{= (${_templPriv>/alp/contentView} === 'table' || ${_templPriv>/alp/contentView} === 'charttable') }">
+											<customData>
+												<core:CustomData key="Filter" value="table"/>
+											</customData>
+											<core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.ManifestDeterminingActions" type="XML"/>
+										</HBox>
+									</template:if>
+								</template:repeat>
+							</template:repeat> 
+							<template:with path="entitySet>dummy" var="facet">
+								<template:with path="workingContext>chartPath" helper=".ALPHelper.resolveMetaModelPath" var="chart">
+									<template:repeat list="{chart>Actions}" var="dataField">
+										<template:if test="{= (${dataField>RecordType} === 'com.sap.vocabularies.UI.v1.DataFieldForAction' || ${dataField>RecordType} === 'com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation') &amp;&amp; ${dataField>Determining/Bool} === 'true'}">
+											<HBox visible="{= (${_templPriv>/alp/contentView} === 'chart' || ${_templPriv>/alp/contentView} === 'charttable') }">
+												<customData>
+													<core:CustomData key="Filter" value="chart"/>
+												</customData>
+												<core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.AnnotatedDeterminingButton" type="XML"/>
+											</HBox>
+										</template:if>
+									</template:repeat>
+								</template:with>
+							 	<template:with path="workingContext>lineItemPath" helper=".ALPHelper.resolveMetaModelPath" var="lineItem">
+									<template:repeat list="{lineItem>}" var="dataField">
+										<template:if test="{= (${dataField>RecordType} === 'com.sap.vocabularies.UI.v1.DataFieldForAction' || ${dataField>RecordType} === 'com.sap.vocabularies.UI.v1.DataFieldForIntentBasedNavigation') &amp;&amp; ${dataField>Determining/Bool} === 'true'}">
+											<HBox visible="{= (${_templPriv>/alp/contentView} === 'table' || ${_templPriv>/alp/contentView} === 'charttable') }">
+												<customData>
+													<core:CustomData key="Filter" value="table"/>
+												</customData>
+												<core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.AnnotatedDeterminingButton" type="XML"/> 
+											</HBox>
+										</template:if>
+									</template:repeat>
+								</template:with> 
+							</template:with>
+						</OverflowToolbar>
+					</f:footer>
+				</f:DynamicPage>
+			</template:with>
+		</template:with>
+	</template:alias>
+</core:View>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>AnalyticGrid</name>
+
+	<documentation>Control for embedding a Design Studio Analytic Grid in an S/4 HANA Fiori application</documentation>
+	<since>1.46</since>
+	<developmentState state="experimental" since="1.46">API is incomplete and may change incompatibly</developmentState>
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Appearance" name="width" type="sap.ui.core/CSSSize">
+			<documentation>Desired width of the AnalyticGrid control</documentation>
+		</property>
+		<property group="Appearance" name="height" type="sap.ui.core/CSSSize">
+			<documentation>Desired width of the AnalyticGrid control</documentation>
+		</property>
+		<property group="Data" name="selectionVariant" type="sap.ui.core/object">
+			<documentation>A SelectionVariant specifying the  selection state used by the AnalyticGrid.  At present, supports only initial setting at time of control creation.  This behaviour will change in the future.</documentation>
+		</property>
+		<property group="Data" name="queryName" type="sap.ui.core/string">
+			<documentation>Name of the Query to bind the AnalyticGrid to.</documentation>
+		</property>
+		<property group="Data" name="systemAlias" type="sap.ui.core/string">
+			<documentation>Target System alias for data connectivity</documentation>
+		</property>
+	</properties>
+</control>

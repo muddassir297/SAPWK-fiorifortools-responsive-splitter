@@ -1,0 +1,106 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".theming",
+      "theme": "base"
+    },
+    {
+      "name": "BookmarkFilter.css",
+      "theme": "base"
+    },
+    {
+      "name": "Chart.css",
+      "theme": "base"
+    },
+    {
+      "name": "ChartTypeSwitch.css",
+      "theme": "base"
+    },
+    {
+      "name": "Crosstab.css",
+      "theme": "base"
+    },
+    {
+      "name": "FilterLine.css",
+      "theme": "base"
+    },
+    {
+      "name": "GeoMap.css",
+      "theme": "base"
+    },
+    {
+      "name": "InfoChart.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "InfoFeeding.css",
+      "theme": "base"
+    },
+    {
+      "name": "PdfExportDialog.css",
+      "theme": "base"
+    },
+    {
+      "name": "Tree.css",
+      "theme": "base"
+    },
+    {
+      "name": "chartconfig.css",
+      "theme": "base"
+    },
+    {
+      "name": "fonts/BusinessSuiteInAppSymbols.eot",
+      "theme": "base"
+    },
+    {
+      "name": "fonts/BusinessSuiteInAppSymbols.ttf",
+      "theme": "base"
+    },
+    {
+      "name": "fonts/SAP-icons.eot",
+      "theme": "base"
+    },
+    {
+      "name": "fonts/SAP-icons.ttf",
+      "theme": "base"
+    },
+    {
+      "name": "library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "library-RTL.css",
+      "theme": "base"
+    },
+    {
+      "name": "library-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "library-parameters.json",
+      "theme": "base"
+    },
+    {
+      "name": "library.css",
+      "theme": "base"
+    },
+    {
+      "name": "library.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "library.source.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "shared.css",
+      "theme": "base"
+    }
+  ]
+}

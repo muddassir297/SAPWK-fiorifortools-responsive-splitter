@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>HeaderCellItem</name>
+	<documentation>Object that contains instance of control and information about height. It should be used inside sap.suite.ui.commons.HeaderCell</documentation>
+	<baseType>sap.ui.core/Element</baseType>
+	<developmentState state="deprecated" since="1.44.0">The HeaderCellItem was deprecated because of the deprecation of HeaderCell. Please see HeaderCell for replacement advice.</developmentState>
+	<deprecation since="1.44.0">The HeaderCellItem was deprecated because of the deprecation of HeaderCell. Please see HeaderCell for replacement advice.</deprecation>
+	<properties>
+		<property group="Misc" type="sap.ui.core/CSSSize" name="height">
+			<documentation>Height of area to occupy by control.</documentation>
+		</property>
+	</properties>
+	<aggregations>
+		<aggregation cardinality="0..1" type="sap.ui.core/Control" name="content">
+			<documentation>Instance of UI5 Control that is used as content.</documentation>
+		</aggregation>
+	</aggregations>
+</control>

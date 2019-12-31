@@ -1,0 +1,17 @@
+<mvc:View controllerName="UI5FioriForTools.controller.PageLegal" height="100%" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+  <Page class="sapUiContentPadding" title="Legal Information">
+    <content>
+      <VBox>
+        <Text text="Please visit the links below for more information on the respective topics:"/>
+        <Text text=""/>
+      </VBox>
+      <VBox>
+        <Link href="http://go.sap.com/corporate/en/legal/impressum.html" target="_blank" text="Legal Disclosure"/>
+        <Link href="http://go.sap.com/corporate/en/legal/terms-of-use.html" target="_blank" text="Terms of Use" press="onPress"/>
+        <Link href="http://go.sap.com/corporate/en/legal/copyright.html" target="_blank" text="Copyright Information"/>
+        <Link href="http://go.sap.com/corporate/en/legal/trademark.html" target="_blank" text="Trademark Information"/>
+        <!-- <Button text="Default" press="onPress" /> -->
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

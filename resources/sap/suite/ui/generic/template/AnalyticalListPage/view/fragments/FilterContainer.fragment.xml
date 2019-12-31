@@ -1,0 +1,30 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:build="sap.build"
+						 xmlns:l="sap.ui.layout"
+						 xmlns:smartVariantManagement="sap.ui.comp.smartvariants"
+						 xmlns:suite="sap.suite.ui.commons"
+						 xmlns:chart="sap.ui.comp.smartchart"
+						 xmlns:vfb="sap.suite.ui.generic.template.AnalyticalListPage.control.visualfilterbar"
+						 >
+		<!-- //TODO-DPL - addStyleClass as per the spec -->
+		<l:VerticalLayout class="alr_filterContainer" id="alr_filterContainer">
+			<VBox id="alr_compactFilterContainer" class="">
+				<core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.SmartFilterBar" type="XML"/>
+			</VBox>
+
+			<template:if test="{= ${parameter>/settings/hideVisualFilter} === undefined || ${parameter>/settings/hideVisualFilter} !== true}">
+				<VBox id="alr_visualFilterContainer" class="">
+					<vfb:SmartVisualFilterBar
+						id="alr_visualFilterBar"
+						smartVariant="alrPageVariant"
+						persistencyKey="visualFilterPersistencyKey"
+						showDividers="false"/>
+					<FlexBox alignItems="End" justifyContent="End">
+						<items>
+							<Button id="alp_goFilters" text="{i18n>GO_FILTERS}" type="Emphasized" press="._templateEventHandlers.onGoPress"/>
+						</items>
+					</FlexBox>
+				</VBox>
+			</template:if>
+		</l:VerticalLayout>
+</core:FragmentDefinition>

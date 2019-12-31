@@ -1,0 +1,51 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:smartlink="sap.ui.comp.navpopover"
+						 xmlns:smartchart="sap.ui.comp.smartchart"
+						 xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+						 xmlns:build="sap.build">
+
+	<template:with path="entityType>com.sap.vocabularies.UI.v1.HeaderInfo" var="header">
+	<template:with path="entitySet>dummy" var="facet">
+		<smartchart:SmartChart id="chart" smartFilterId="analyticalListPageFilter"
+							   smartVariant="{= (${parameter>/settings/smartVariantManagement} || ${parameter>/settings/smartVariantManagement} === undefined) ? 'alrPageVariant' : null }"
+							   persistencyKey="chartPersistencyKey"
+							   header="{path: 'header>TypeNamePlural', formatter: 'sap.ui.model.odata.AnnotationHelper.format'}"
+							   dataReceived="onDataReceived"
+							   afterVariantSave="._templateEventHandlers.onAfterChartVariantSave"
+							   afterVariantApply="._templateEventHandlers.onAfterApplyChartVariant"
+							   entitySet="{parameter>/entitySet}"
+							   class="sapSmartTemplatesAnalyticalListPageSmartChart"
+							   enableAutoBinding="false"
+							   showFullScreenButton="true"
+							   fullScreenToggled="._templateEventHandlers.onFullScreenToggled"
+							   showDrillBreadcrumbs="true"
+							   showSemanticNavigationButton="false"
+							   showDetailsButton="true"
+							   showDrillButtons="false">
+			<smartchart:customData>
+				<core:CustomData key="dateFormatSettings" value='\{"UTC":true,"style":"short"\}'/>
+				<template:if test="{workingContext>presentationVariantQualifier}">
+					<template:then>
+						<core:CustomData key="presentationVariantQualifier" value='{workingContext>presentationVariantQualifier}'/>
+					</template:then>
+				</template:if>
+				<template:if test="{workingContext>chartQualifier}">
+					<template:then>
+						<core:CustomData key="chartQualifier" value='{workingContext>chartQualifier}'/>
+					</template:then>
+				</template:if>
+			</smartchart:customData>
+			<smartchart:layoutData>
+				<FlexItemData growFactor="1"/>
+			</smartchart:layoutData>
+			<smartchart:semanticObjectController>
+				<smartlink:SemanticObjectController beforePopoverOpens="._templateEventHandlers.onBeforeSemanticObjectLinkPopoverOpens"/>
+			</smartchart:semanticObjectController>
+			<!-- Custom tool bar -->
+			<smartchart:toolbar>
+			          <core:Fragment fragmentName="sap.suite.ui.generic.template.AnalyticalListPage.view.fragments.SmartChartToolbar" type="XML"/>
+			</smartchart:toolbar>
+		</smartchart:SmartChart>
+	</template:with>
+	</template:with>
+</core:FragmentDefinition>

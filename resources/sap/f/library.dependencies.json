@@ -1,0 +1,412 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/f/Avatar.js",
+      "description" : "Provides control sap.f.Avatar.",
+      "size" : 9058,
+      "compressedSize" : 3537,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/ui/core/Control.js", "sap/ui/core/IconPool.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/AvatarRenderer.js",
+      "description" : "Provides default renderer for control sap.f.Avatar",
+      "size" : 2573,
+      "compressedSize" : 1245,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPage.js",
+      "description" : "Provides control sap.f.DynamicPage.",
+      "size" : 40589,
+      "compressedSize" : 17665,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/ui/core/Control.js", "sap/ui/core/ScrollBar.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/delegate/ScrollEnablement.js", "sap/ui/Device.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageHeader.js",
+      "description" : "Provides control sap.f.DynamicPageHeader.",
+      "size" : 7465,
+      "compressedSize" : 2681,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/ui/core/Control.js", "sap/ui/core/InvisibleText.js", "sap/m/ButtonType.js", "sap/m/ToggleButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageHeaderRenderer.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1859,
+      "compressedSize" : 914,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageRenderer.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 4343,
+      "compressedSize" : 2299,
+      "required" : ["sap/ui/Device.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageTitle.js",
+      "description" : "Provides control sap.f.DynamicPageTitle.",
+      "size" : 8629,
+      "compressedSize" : 3134,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/ui/core/Control.js", "sap/m/OverflowToolbar.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageTitleRenderer.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 3482,
+      "compressedSize" : 1875,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/FlexibleColumnLayout.js",
+      "description" : "Provides control sap.f.FlexibleColumnLayout.",
+      "size" : 65594,
+      "compressedSize" : 18875,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/f/LayoutType.js", "sap/ui/Device.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/Control.js", "sap/ui/core/InvisibleText.js", "sap/m/Button.js", "sap/m/NavContainer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/FlexibleColumnLayoutRenderer.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 2861,
+      "compressedSize" : 1800,
+      "required" : ["sap/f/FlexibleColumnLayout.js", "sap/ui/Device.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/FlexibleColumnLayoutSemanticHelper.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 13282,
+      "compressedSize" : 3925,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/f/LayoutType.js", "sap/f/FlexibleColumnLayout.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/library.js",
+      "description" : "Initialization Code and shared classes of library sap.f.",
+      "size" : 5287,
+      "compressedSize" : 2162,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/library.js", "sap/m/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/manifest.json",
+      "size" : 770,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/messagebundle.properties",
+      "size" : 3196,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/messagebundle_en_US_sappsd.properties",
+      "size" : 5798,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/messagebundle_en_US_saptrc.properties",
+      "size" : 3767,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/routing/Route.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1239,
+      "compressedSize" : 611,
+      "required" : ["sap/ui/core/routing/Route.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/routing/Router.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 10256,
+      "compressedSize" : 1805,
+      "required" : ["sap/ui/core/routing/Router.js", "sap/f/routing/TargetHandler.js", "sap/f/routing/Targets.js", "sap/f/routing/Route.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/routing/Target.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1500,
+      "compressedSize" : 511,
+      "required" : ["sap/ui/core/routing/Target.js", "sap/f/routing/async/Target.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/routing/TargetHandler.js",
+      "description" : "global Promise",
+      "size" : 6648,
+      "compressedSize" : 2246,
+      "required" : ["jquery.sap.global.js", "sap/m/InstanceManager.js", "sap/ui/base/Object.js", "sap/ui/core/routing/History.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/routing/Targets.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 17242,
+      "compressedSize" : 1080,
+      "required" : ["sap/ui/core/routing/Targets.js", "sap/f/routing/TargetHandler.js", "sap/f/routing/Target.js", "sap/f/routing/async/Targets.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/routing/async/Target.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1132,
+      "compressedSize" : 664,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/routing/async/Targets.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1369,
+      "compressedSize" : 792,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/AddAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1247,
+      "compressedSize" : 349,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/CloseAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1250,
+      "compressedSize" : 338,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/CopyAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1242,
+      "compressedSize" : 337,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/DeleteAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1272,
+      "compressedSize" : 352,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/DiscussInJamAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1341,
+      "compressedSize" : 358,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/ExitFullScreenAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1334,
+      "compressedSize" : 347,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/FavoriteAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1293,
+      "compressedSize" : 347,
+      "required" : ["sap/f/semantic/SemanticToggleButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/FlagAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1261,
+      "compressedSize" : 343,
+      "required" : ["sap/f/semantic/SemanticToggleButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/FooterMainAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1281,
+      "compressedSize" : 339,
+      "required" : ["sap/f/semantic/MainAction.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/FullScreenAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1290,
+      "compressedSize" : 343,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/MainAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1276,
+      "compressedSize" : 416,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/MessagesIndicator.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1301,
+      "compressedSize" : 344,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/NegativeAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1487,
+      "compressedSize" : 419,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/PositiveAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1487,
+      "compressedSize" : 419,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/PrintAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1288,
+      "compressedSize" : 351,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticButton.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 2607,
+      "compressedSize" : 1050,
+      "required" : ["sap/f/semantic/SemanticControl.js", "sap/f/semantic/SemanticConfiguration.js", "sap/m/Button.js", "sap/m/OverflowToolbarButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticConfiguration.js",
+      "description" : "Provides a private class <code>sap.f.semantic.SemanticConfiguration</code>",
+      "size" : 11877,
+      "compressedSize" : 6137,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Metadata.js", "sap/ui/core/IconPool.js", "sap/m/ButtonType.js", "sap/m/OverflowToolbarLayoutData.js", "sap/m/OverflowToolbarPriority.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticContainer.js",
+      "description" : "Provides a private class <code>sap.f.semantic.SemanticContainer</code>",
+      "size" : 4424,
+      "compressedSize" : 1501,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/Metadata.js", "sap/ui/core/CustomData.js", "sap/m/ToolbarSpacer.js", "sap/f/semantic/SemanticConfiguration.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticControl.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 6226,
+      "compressedSize" : 2997,
+      "required" : ["jquery.sap.global.js", "sap/ui/base/ManagedObject.js", "sap/ui/core/Element.js", "sap/f/semantic/SemanticConfiguration.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticFooter.js",
+      "description" : "Provides a private class <code>sap.f.semantic.SemanticFooter</code>",
+      "size" : 9183,
+      "compressedSize" : 4063,
+      "required" : ["jquery.sap.global.js", "sap/m/ToolbarSpacer.js", "sap/m/ButtonType.js", "sap/f/semantic/SemanticConfiguration.js", "sap/f/semantic/SemanticContainer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticPage.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 29667,
+      "compressedSize" : 10598,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/Control.js", "sap/ui/base/ManagedObject.js", "sap/f/library.js", "sap/f/DynamicPage.js", "sap/f/DynamicPageTitle.js", "sap/f/DynamicPageHeader.js", "sap/m/OverflowToolbar.js", "sap/m/ActionSheet.js", "sap/f/semantic/SemanticTitle.js", "sap/f/semantic/SemanticFooter.js", "sap/f/semantic/SemanticShareMenu.js", "sap/f/semantic/SemanticConfiguration.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticPageRenderer.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1130,
+      "compressedSize" : 464,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticShareMenu.js",
+      "description" : "Provides a private class <code>sap.f.semantic.SemanticShareMenu</code>",
+      "size" : 12974,
+      "compressedSize" : 6035,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/IconPool.js", "sap/ui/base/EventProvider.js", "sap/m/Button.js", "sap/m/ButtonType.js", "sap/m/OverflowToolbarButton.js", "sap/m/OverflowToolbarLayoutData.js", "sap/f/semantic/SemanticConfiguration.js", "sap/f/semantic/SemanticContainer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticTitle.js",
+      "description" : "Provides a private class <code>sap.f.semantic.SemanticTitle</code>",
+      "size" : 16815,
+      "compressedSize" : 7863,
+      "required" : ["jquery.sap.global.js", "sap/m/ButtonType.js", "sap/m/ToolbarSeparator.js", "sap/m/ToolbarSpacer.js", "sap/f/semantic/SemanticConfiguration.js", "sap/f/semantic/SemanticContainer.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SemanticToggleButton.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 3472,
+      "compressedSize" : 1174,
+      "required" : ["sap/f/semantic/SemanticButton.js", "sap/f/semantic/SemanticControl.js", "sap/m/ButtonType.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SendEmailAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1319,
+      "compressedSize" : 355,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/SendMessageAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1335,
+      "compressedSize" : 357,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/ShareInJamAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1327,
+      "compressedSize" : 356,
+      "required" : ["sap/f/semantic/SemanticButton.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/semantic/TitleMainAction.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2017 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1271,
+      "compressedSize" : 338,
+      "required" : ["sap/f/semantic/MainAction.js", "jquery.sap.global.js"],
+      "includes" : []
+    }
+  ]
+}

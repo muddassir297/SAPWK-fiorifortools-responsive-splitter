@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>sap.zen.crosstab</name>
+  <vendor>SAP SE</vendor>
+  <copyright>(c) Copyright 2010-2016 SAP SE or an SAP affiliate company.</copyright>
+  <version>1.46.0</version>
+  
+  <documentation>SAP UI library: sap.zen.crosstab (by SAP, Author)</documentation>
+	<appData>
+		<ownership xmlns="http://www.sap.com/ui5/buildext/ownership">
+			<component>BI-RA-AD-EA</component>
+		</ownership>		
+	</appData>
+  
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+  </dependencies>
+  
+</library>

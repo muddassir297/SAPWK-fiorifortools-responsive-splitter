@@ -1,0 +1,8 @@
+{
+        "id": "3",
+        "name": "Make JSON Model dynamic",
+        "description": "Make JSON Model dynamic dependent on the current active role.",
+        "date": "06.04.2017",
+        "person": "-",
+        "jira": "BLOCK-3"
+}

@@ -1,0 +1,2 @@
+// @copyright@
+sap.ui.define(function(){"use strict";if(!Function.prototype.bind){Function.prototype.bind=function(t){if(typeof this!=="function"){throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");}var a=Array.prototype.slice.call(arguments,1),b=this,n=function(){},B=function(){return b.apply(this instanceof n&&t?this:t,a.concat(Array.prototype.slice.call(arguments)));};n.prototype=this.prototype;B.prototype=new n();return B;};}},false);

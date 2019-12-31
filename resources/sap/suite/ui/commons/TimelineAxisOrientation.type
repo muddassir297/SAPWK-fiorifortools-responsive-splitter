@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+	<name>TimelineAxisOrientation</name>
+	<author>SAP SE</author>
+	<documentation>Defines the orientation of the timeline axis.</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+	    <value name="Vertical">
+			<documentation>Vertical timeline.</documentation>
+		</value>
+		<value name="Horizontal">
+			<documentation>Horizontal timeline.</documentation>
+		</value>
+	</enumeration>
+</simple-type>

@@ -1,0 +1,88 @@
+{
+  "_version": "1.1.0",
+  "sap.app": {
+    "_version": "1.1.0",
+    "id": "sap.ui.demo.toolpageapp",
+    "type": "application",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_hcb",
+      "sap_bluecrystal",
+      "sap_belize"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "rootView": {
+      "viewName": "UI5FioriForTools.view.RootApp",
+      "type": "XML",
+      "id": "app"
+    },
+    "dependencies": {
+      "minUI5Version": "1.30",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.tnt": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlId": "mainContents",
+        "viewType": "XML",
+        "controlAggregation": "pages",
+        "viewPath": "UI5FioriForTools.view",
+        "transition": "slide",
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "home",
+          "target": "page1"
+        },
+        {
+          "pattern": "page1",
+          "name": "page1",
+          "target": "page1"
+        },
+        {
+          "pattern": "pageResponsiveSplitter",
+          "name": "pageResponsiveSplitter",
+          "target": "pageResponsiveSplitter"
+        },
+        {
+          "pattern": "pageLegal",
+          "name": "pageLegal",
+          "target": "pageLegal"
+        }
+      ],
+      "targets": {
+        "page1": {
+          "viewName": "Root1"
+        },
+        "pageResponsiveSplitter":{
+          "viewName": "PageResponsiveSplitter"
+        },
+        "pageLegal": {
+          "viewName": "PageLegal"
+        }
+      }
+    }
+  }
+}

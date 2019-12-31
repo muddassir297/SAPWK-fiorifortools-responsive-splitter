@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>InteractiveBarChartBar</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>A bar element for the InteractiveBarChart.</documentation>
+    <since>1.42.0</since>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="label">
+            <documentation>The label for the chart bar</documentation>
+        </property>
+        <property group="Appearance" defaultValue="false" type="sap.ui.core/boolean" name="selected">
+            <documentation>Determines if the chart bar is in selected state</documentation>
+        </property>
+        <property group="Data" type="sap.ui.core/string" name="displayedValue">
+            <documentation>The value label to be displayed on the bar in the chart</documentation>
+        </property>
+        <property group="Data" type="sap.ui.core/float" name="value">
+            <documentation>The numeric value of the chart bar to be displayed on bar</documentation>
+        </property>
+    </properties>
+</control>

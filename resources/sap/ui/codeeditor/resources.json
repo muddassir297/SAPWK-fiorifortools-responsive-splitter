@@ -1,0 +1,1350 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".library"
+    },
+    {
+      "name": ".theming"
+    },
+    {
+      "name": "CodeEditor-dbg.js",
+      "module": "sap/ui/codeeditor/CodeEditor.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/Control.js",
+        "sap/ui/codeeditor/js/ace/ace.js",
+        "sap/ui/codeeditor/js/ace/mode-javascript.js",
+        "sap/ui/codeeditor/js/ace/mode-json.js"
+      ]
+    },
+    {
+      "name": "CodeEditor.js",
+      "module": "sap/ui/codeeditor/CodeEditor.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/Control.js",
+        "sap/ui/codeeditor/js/ace/ace.js",
+        "sap/ui/codeeditor/js/ace/mode-javascript.js",
+        "sap/ui/codeeditor/js/ace/mode-json.js"
+      ]
+    },
+    {
+      "name": "js/ace/LICENSE.txt"
+    },
+    {
+      "name": "js/ace/ace-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ace.js"
+    },
+    {
+      "name": "js/ace/ext-beautify-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-beautify.js"
+    },
+    {
+      "name": "js/ace/ext-elastic_tabstops_lite-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-elastic_tabstops_lite.js"
+    },
+    {
+      "name": "js/ace/ext-emmet-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-emmet.js"
+    },
+    {
+      "name": "js/ace/ext-error_marker-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-error_marker.js"
+    },
+    {
+      "name": "js/ace/ext-keybinding_menu-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-keybinding_menu.js"
+    },
+    {
+      "name": "js/ace/ext-language_tools-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-language_tools.js"
+    },
+    {
+      "name": "js/ace/ext-linking-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-linking.js"
+    },
+    {
+      "name": "js/ace/ext-modelist-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-modelist.js"
+    },
+    {
+      "name": "js/ace/ext-old_ie-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-old_ie.js"
+    },
+    {
+      "name": "js/ace/ext-searchbox-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-searchbox.js"
+    },
+    {
+      "name": "js/ace/ext-settings_menu-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-settings_menu.js"
+    },
+    {
+      "name": "js/ace/ext-spellcheck-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-spellcheck.js"
+    },
+    {
+      "name": "js/ace/ext-split-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-split.js"
+    },
+    {
+      "name": "js/ace/ext-static_highlight-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-static_highlight.js"
+    },
+    {
+      "name": "js/ace/ext-statusbar-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-statusbar.js"
+    },
+    {
+      "name": "js/ace/ext-textarea-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-textarea.js"
+    },
+    {
+      "name": "js/ace/ext-themelist-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-themelist.js"
+    },
+    {
+      "name": "js/ace/ext-whitespace-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/ext-whitespace.js"
+    },
+    {
+      "name": "js/ace/keybinding-emacs-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/keybinding-emacs.js"
+    },
+    {
+      "name": "js/ace/keybinding-vim-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/keybinding-vim.js"
+    },
+    {
+      "name": "js/ace/mode-abap-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-abap.js"
+    },
+    {
+      "name": "js/ace/mode-abc-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-abc.js"
+    },
+    {
+      "name": "js/ace/mode-actionscript-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-actionscript.js"
+    },
+    {
+      "name": "js/ace/mode-ada-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-ada.js"
+    },
+    {
+      "name": "js/ace/mode-apache_conf-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-apache_conf.js"
+    },
+    {
+      "name": "js/ace/mode-applescript-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-applescript.js"
+    },
+    {
+      "name": "js/ace/mode-asciidoc-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-asciidoc.js"
+    },
+    {
+      "name": "js/ace/mode-assembly_x86-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-assembly_x86.js"
+    },
+    {
+      "name": "js/ace/mode-autohotkey-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-autohotkey.js"
+    },
+    {
+      "name": "js/ace/mode-batchfile-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-batchfile.js"
+    },
+    {
+      "name": "js/ace/mode-c9search-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-c9search.js"
+    },
+    {
+      "name": "js/ace/mode-c_cpp-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-c_cpp.js"
+    },
+    {
+      "name": "js/ace/mode-cirru-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-cirru.js"
+    },
+    {
+      "name": "js/ace/mode-clojure-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-clojure.js"
+    },
+    {
+      "name": "js/ace/mode-cobol-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-cobol.js"
+    },
+    {
+      "name": "js/ace/mode-coffee-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-coffee.js"
+    },
+    {
+      "name": "js/ace/mode-coldfusion-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-coldfusion.js"
+    },
+    {
+      "name": "js/ace/mode-csharp-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-csharp.js"
+    },
+    {
+      "name": "js/ace/mode-css-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-css.js"
+    },
+    {
+      "name": "js/ace/mode-curly-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-curly.js"
+    },
+    {
+      "name": "js/ace/mode-d-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-d.js"
+    },
+    {
+      "name": "js/ace/mode-dart-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-dart.js"
+    },
+    {
+      "name": "js/ace/mode-diff-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-diff.js"
+    },
+    {
+      "name": "js/ace/mode-django-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-django.js"
+    },
+    {
+      "name": "js/ace/mode-dockerfile-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-dockerfile.js"
+    },
+    {
+      "name": "js/ace/mode-dot-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-dot.js"
+    },
+    {
+      "name": "js/ace/mode-drools-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-drools.js"
+    },
+    {
+      "name": "js/ace/mode-eiffel-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-eiffel.js"
+    },
+    {
+      "name": "js/ace/mode-ejs-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-ejs.js"
+    },
+    {
+      "name": "js/ace/mode-elixir-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-elixir.js"
+    },
+    {
+      "name": "js/ace/mode-elm-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-elm.js"
+    },
+    {
+      "name": "js/ace/mode-erlang-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-erlang.js"
+    },
+    {
+      "name": "js/ace/mode-forth-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-forth.js"
+    },
+    {
+      "name": "js/ace/mode-fortran-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-fortran.js"
+    },
+    {
+      "name": "js/ace/mode-ftl-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-ftl.js"
+    },
+    {
+      "name": "js/ace/mode-gcode-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-gcode.js"
+    },
+    {
+      "name": "js/ace/mode-gherkin-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-gherkin.js"
+    },
+    {
+      "name": "js/ace/mode-gitignore-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-gitignore.js"
+    },
+    {
+      "name": "js/ace/mode-glsl-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-glsl.js"
+    },
+    {
+      "name": "js/ace/mode-gobstones-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-gobstones.js"
+    },
+    {
+      "name": "js/ace/mode-golang-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-golang.js"
+    },
+    {
+      "name": "js/ace/mode-groovy-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-groovy.js"
+    },
+    {
+      "name": "js/ace/mode-haml-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-haml.js"
+    },
+    {
+      "name": "js/ace/mode-handlebars-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-handlebars.js"
+    },
+    {
+      "name": "js/ace/mode-haskell-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-haskell.js"
+    },
+    {
+      "name": "js/ace/mode-haskell_cabal-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-haskell_cabal.js"
+    },
+    {
+      "name": "js/ace/mode-haxe-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-haxe.js"
+    },
+    {
+      "name": "js/ace/mode-html-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-html.js"
+    },
+    {
+      "name": "js/ace/mode-html_elixir-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-html_elixir.js"
+    },
+    {
+      "name": "js/ace/mode-html_ruby-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-html_ruby.js"
+    },
+    {
+      "name": "js/ace/mode-ini-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-ini.js"
+    },
+    {
+      "name": "js/ace/mode-io-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-io.js"
+    },
+    {
+      "name": "js/ace/mode-jack-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-jack.js"
+    },
+    {
+      "name": "js/ace/mode-jade-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-jade.js"
+    },
+    {
+      "name": "js/ace/mode-java-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-java.js"
+    },
+    {
+      "name": "js/ace/mode-javascript-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-javascript.js"
+    },
+    {
+      "name": "js/ace/mode-json-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-json.js"
+    },
+    {
+      "name": "js/ace/mode-jsoniq-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-jsoniq.js"
+    },
+    {
+      "name": "js/ace/mode-jsp-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-jsp.js"
+    },
+    {
+      "name": "js/ace/mode-jsx-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-jsx.js"
+    },
+    {
+      "name": "js/ace/mode-julia-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-julia.js"
+    },
+    {
+      "name": "js/ace/mode-kotlin-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-kotlin.js"
+    },
+    {
+      "name": "js/ace/mode-latex-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-latex.js"
+    },
+    {
+      "name": "js/ace/mode-less-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-less.js"
+    },
+    {
+      "name": "js/ace/mode-liquid-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-liquid.js"
+    },
+    {
+      "name": "js/ace/mode-lisp-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-lisp.js"
+    },
+    {
+      "name": "js/ace/mode-livescript-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-livescript.js"
+    },
+    {
+      "name": "js/ace/mode-logiql-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-logiql.js"
+    },
+    {
+      "name": "js/ace/mode-lsl-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-lsl.js"
+    },
+    {
+      "name": "js/ace/mode-lua-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-lua.js"
+    },
+    {
+      "name": "js/ace/mode-luapage-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-luapage.js"
+    },
+    {
+      "name": "js/ace/mode-lucene-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-lucene.js"
+    },
+    {
+      "name": "js/ace/mode-makefile-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-makefile.js"
+    },
+    {
+      "name": "js/ace/mode-markdown-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-markdown.js"
+    },
+    {
+      "name": "js/ace/mode-mask-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-mask.js"
+    },
+    {
+      "name": "js/ace/mode-matlab-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-matlab.js"
+    },
+    {
+      "name": "js/ace/mode-maze-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-maze.js"
+    },
+    {
+      "name": "js/ace/mode-mel-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-mel.js"
+    },
+    {
+      "name": "js/ace/mode-mushcode-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-mushcode.js"
+    },
+    {
+      "name": "js/ace/mode-mysql-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-mysql.js"
+    },
+    {
+      "name": "js/ace/mode-nix-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-nix.js"
+    },
+    {
+      "name": "js/ace/mode-nsis-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-nsis.js"
+    },
+    {
+      "name": "js/ace/mode-objectivec-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-objectivec.js"
+    },
+    {
+      "name": "js/ace/mode-ocaml-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-ocaml.js"
+    },
+    {
+      "name": "js/ace/mode-pascal-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-pascal.js"
+    },
+    {
+      "name": "js/ace/mode-perl-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-perl.js"
+    },
+    {
+      "name": "js/ace/mode-pgsql-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-pgsql.js"
+    },
+    {
+      "name": "js/ace/mode-php-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-php.js"
+    },
+    {
+      "name": "js/ace/mode-plain_text-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-plain_text.js"
+    },
+    {
+      "name": "js/ace/mode-powershell-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-powershell.js"
+    },
+    {
+      "name": "js/ace/mode-praat-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-praat.js"
+    },
+    {
+      "name": "js/ace/mode-prolog-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-prolog.js"
+    },
+    {
+      "name": "js/ace/mode-properties-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-properties.js"
+    },
+    {
+      "name": "js/ace/mode-protobuf-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-protobuf.js"
+    },
+    {
+      "name": "js/ace/mode-python-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-python.js"
+    },
+    {
+      "name": "js/ace/mode-r-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-r.js"
+    },
+    {
+      "name": "js/ace/mode-razor-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-razor.js"
+    },
+    {
+      "name": "js/ace/mode-rdoc-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-rdoc.js"
+    },
+    {
+      "name": "js/ace/mode-rhtml-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-rhtml.js"
+    },
+    {
+      "name": "js/ace/mode-rst-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-rst.js"
+    },
+    {
+      "name": "js/ace/mode-ruby-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-ruby.js"
+    },
+    {
+      "name": "js/ace/mode-rust-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-rust.js"
+    },
+    {
+      "name": "js/ace/mode-sass-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-sass.js"
+    },
+    {
+      "name": "js/ace/mode-scad-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-scad.js"
+    },
+    {
+      "name": "js/ace/mode-scala-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-scala.js"
+    },
+    {
+      "name": "js/ace/mode-scheme-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-scheme.js"
+    },
+    {
+      "name": "js/ace/mode-scss-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-scss.js"
+    },
+    {
+      "name": "js/ace/mode-sh-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-sh.js"
+    },
+    {
+      "name": "js/ace/mode-sjs-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-sjs.js"
+    },
+    {
+      "name": "js/ace/mode-smarty-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-smarty.js"
+    },
+    {
+      "name": "js/ace/mode-snippets-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-snippets.js"
+    },
+    {
+      "name": "js/ace/mode-soy_template-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-soy_template.js"
+    },
+    {
+      "name": "js/ace/mode-space-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-space.js"
+    },
+    {
+      "name": "js/ace/mode-sql-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-sql.js"
+    },
+    {
+      "name": "js/ace/mode-sqlserver-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-sqlserver.js"
+    },
+    {
+      "name": "js/ace/mode-stylus-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-stylus.js"
+    },
+    {
+      "name": "js/ace/mode-svg-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-svg.js"
+    },
+    {
+      "name": "js/ace/mode-swift-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-swift.js"
+    },
+    {
+      "name": "js/ace/mode-tcl-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-tcl.js"
+    },
+    {
+      "name": "js/ace/mode-tex-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-tex.js"
+    },
+    {
+      "name": "js/ace/mode-text-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-text.js"
+    },
+    {
+      "name": "js/ace/mode-textile-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-textile.js"
+    },
+    {
+      "name": "js/ace/mode-toml-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-toml.js"
+    },
+    {
+      "name": "js/ace/mode-tsx-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-tsx.js"
+    },
+    {
+      "name": "js/ace/mode-twig-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-twig.js"
+    },
+    {
+      "name": "js/ace/mode-typescript-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-typescript.js"
+    },
+    {
+      "name": "js/ace/mode-vala-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-vala.js"
+    },
+    {
+      "name": "js/ace/mode-vbscript-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-vbscript.js"
+    },
+    {
+      "name": "js/ace/mode-velocity-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-velocity.js"
+    },
+    {
+      "name": "js/ace/mode-verilog-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-verilog.js"
+    },
+    {
+      "name": "js/ace/mode-vhdl-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-vhdl.js"
+    },
+    {
+      "name": "js/ace/mode-wollok-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-wollok.js"
+    },
+    {
+      "name": "js/ace/mode-xml-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-xml.js"
+    },
+    {
+      "name": "js/ace/mode-xquery-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-xquery.js"
+    },
+    {
+      "name": "js/ace/mode-yaml-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/mode-yaml.js"
+    },
+    {
+      "name": "js/ace/theme-tomorrow-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/theme-tomorrow.js"
+    },
+    {
+      "name": "js/ace/theme-tomorrow_night-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/theme-tomorrow_night.js"
+    },
+    {
+      "name": "js/ace/theme-tomorrow_night_blue-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/theme-tomorrow_night_blue.js"
+    },
+    {
+      "name": "js/ace/theme-tomorrow_night_bright-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/theme-tomorrow_night_bright.js"
+    },
+    {
+      "name": "js/ace/theme-tomorrow_night_eighties-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/theme-tomorrow_night_eighties.js"
+    },
+    {
+      "name": "js/ace/worker-coffee-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/worker-coffee.js"
+    },
+    {
+      "name": "js/ace/worker-css-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/worker-css.js"
+    },
+    {
+      "name": "js/ace/worker-html-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/worker-html.js"
+    },
+    {
+      "name": "js/ace/worker-javascript-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/worker-javascript.js"
+    },
+    {
+      "name": "js/ace/worker-json-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/worker-json.js"
+    },
+    {
+      "name": "js/ace/worker-lua-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/worker-lua.js"
+    },
+    {
+      "name": "js/ace/worker-php-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/worker-php.js"
+    },
+    {
+      "name": "js/ace/worker-xml-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/worker-xml.js"
+    },
+    {
+      "name": "js/ace/worker-xquery-dbg.js",
+      "isDebug": true
+    },
+    {
+      "name": "js/ace/worker-xquery.js"
+    },
+    {
+      "name": "library-all-dbg.js",
+      "isDebug": true,
+      "merged": true
+    },
+    {
+      "name": "library-all.js",
+      "merged": true
+    },
+    {
+      "name": "library-dbg.js",
+      "module": "sap/ui/codeeditor/library.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/core/Core.js"
+      ]
+    },
+    {
+      "name": "library-preload.js",
+      "merged": true
+    },
+    {
+      "name": "library-preload.js.map"
+    },
+    {
+      "name": "library-preload.json",
+      "merged": true
+    },
+    {
+      "name": "library.dependencies.json"
+    },
+    {
+      "name": "library.dependencies.xml"
+    },
+    {
+      "name": "library.js",
+      "module": "sap/ui/codeeditor/library.js",
+      "required": [
+        "sap/ui/core/Core.js"
+      ]
+    },
+    {
+      "name": "library.templates.xml"
+    },
+    {
+      "name": "manifest.json",
+      "module": "sap/ui/codeeditor/manifest.json"
+    },
+    {
+      "name": "resources.json"
+    },
+    {
+      "name": "themes/base/.theming",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-RTL.css",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-parameters.json",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.css",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.source.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/sap_bluecrystal/.theming",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library-RTL.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library-dbg.css",
+      "isDebug": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library-parameters.json",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library.source.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    }
+  ]
+}

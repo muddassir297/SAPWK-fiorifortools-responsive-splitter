@@ -1,0 +1,10 @@
+{
+        "todos": [
+            {
+                "id": "7",
+                "name": "Customize Menu Items",
+                "jira": "NAVIGATION-1",
+                "location": "Navigation.view.xml"
+            }
+        ]
+}

@@ -1,0 +1,76 @@
+<mvc:View height="100%" 
+  xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" 
+  xmlns:core="sap.ui.core" 
+  xmlns:form="sap.ui.layout.form" 
+  xmlns:html="http://www.w3.org/1999/xhtml" 
+  xmlns:l="sap.ui.layout" 
+  xmlns:mvc="sap.ui.core.mvc" 
+  xmlns:tnt="sap.tnt" 
+  xmlns:u="sap.ui.unified" 
+  xmlns="sap.m" controllerName="UI5FioriForTools.controller.Root1">
+
+  <Page showHeader="false">
+    <l:BlockLayout id="BlockLayout">
+      <l:BlockLayoutRow>
+        <l:BlockLayoutCell class="customCellImageBackground" id="cell0" title="Welcome to Code Editor" height="200px">
+        </l:BlockLayoutCell>
+      </l:BlockLayoutRow>
+    </l:BlockLayout>
+
+    <l:BlockLayout>
+      <l:BlockLayoutRow>
+        <l:BlockLayoutCell title="Featured Projects">
+        </l:BlockLayoutCell>
+      </l:BlockLayoutRow>
+    </l:BlockLayout>
+
+    <l:BlockLayout background="Dashboard">
+      <l:BlockLayoutRow>
+        <l:BlockLayoutCell title="Tool Page" titleAlignment="Center">
+          <Text text="5 open TODOs" textAlign="Center" width="100%"/>
+          <Text text="Updated 1 week ago" textAlign="Center" width="100%"/>
+        </l:BlockLayoutCell>
+        <l:BlockLayoutCell title="Side Navigation" titleAlignment="Center">
+          <Text text="4 open TODOs" textAlign="Center" width="100%"/>
+          <Text text="Updated 2 weeks ago" textAlign="Center" width="100%"/>
+        </l:BlockLayoutCell>
+        <l:BlockLayoutCell title="Responsive Splitter" titleAlignment="Center">
+          <Text text="3 open TODOs" textAlign="Center" width="100%"/>
+          <Text text="Updated 2 weeks ago" textAlign="Center" width="100%"/>
+        </l:BlockLayoutCell>
+        <l:BlockLayoutCell title="Tool Header" titleAlignment="Center">
+          <Text text="3 open TODOs" textAlign="Center" width="100%"/>
+          <Text text="Updated 3 weeks ago" textAlign="Center" width="100%"/>
+        </l:BlockLayoutCell>
+      </l:BlockLayoutRow>
+    </l:BlockLayout>
+
+    <l:BlockLayout>
+      <l:BlockLayoutRow>
+        <l:BlockLayoutCell title="Urgent TODOs">
+        </l:BlockLayoutCell>
+      </l:BlockLayoutRow>
+    </l:BlockLayout>
+
+    <l:BlockLayout background="Dashboard">
+      <l:BlockLayoutRow>
+        <l:BlockLayoutCell title="Implement Logout" titleAlignment="Center">
+          <Text text="Jira Task PAGE-5" textAlign="Center" width="100%"/>
+          <Text text="Deadline 16.02.2017" textAlign="Center" width="100%"/>
+        </l:BlockLayoutCell>
+        <l:BlockLayoutCell title="Customize Menu Items" titleAlignment="Center">
+          <Text text="Jira Task NAVIGATION-1" textAlign="Center" width="100%"/>
+          <Text text="Deadline 16.02.2017" textAlign="Center" width="100%"/>
+        </l:BlockLayoutCell>
+        <l:BlockLayoutCell title="Change JSON Model" titleAlignment="Center">
+          <Text text="Jira Task SPLITER-3" textAlign="Center" width="100%"/>
+          <Text text="Deadline 17.02.2017" textAlign="Center" width="100%"/>
+        </l:BlockLayoutCell>
+        <l:BlockLayoutCell title="Bind to real User" titleAlignment="Center">
+          <Text text="Jira Task HEADER-2" textAlign="Center" width="100%"/>
+          <Text text="Deadline 19.02.2017" textAlign="Center" width="100%"/>
+        </l:BlockLayoutCell>
+      </l:BlockLayoutRow>
+    </l:BlockLayout>
+  </Page>
+</mvc:View>

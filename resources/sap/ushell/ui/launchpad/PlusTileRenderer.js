@@ -1,0 +1,2 @@
+// @copyright@
+sap.ui.define(['sap/ushell/resources'],function(r){"use strict";var P={};var t=r.i18n;P.render=function(R,c){R.write("<div");R.writeAttribute("tabindex","-1");R.writeControlData(c);R.addClass("sapUshellTile");R.addClass("sapUshellPlusTile");R.addClass("sapContrastPlus");R.addClass("sapMGT");R.writeClasses();R.writeAccessibilityState(c,{label:t.getText("TilePlus_label")});R.write(">");R.renderControl(c.oIcon);R.write("</div>");};return P;},true);

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartfilterbar/SmartFilterBar</name>
+    <derived/>
+    <author>SAP</author>
+    <documentation>The SmartFilterBar control uses the OData metadata of an entity in order to create a FilterBar.&lt;br&gt;
+       Whether a field is visible on the FilterBar, supports type-ahead and value help, for example, is automatically determined. When you use
+       control configurations and group configurations it is possible to configure the FilterBar and adapt it according to your needs.&lt;br&gt;
+       &lt;b&gt;&lt;i&gt;Note:&lt;/i&gt;&lt;/b&gt;&lt;br&gt;
+       Most of the attributes/properties are not dynamic and cannot be changed once the control has been initialized.</documentation>
+    <baseType>sap.ui.comp/filterbar/FilterBar</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="entityType">
+            <documentation>The OData entity type whose metadata is used to create the SmartFilterBar. &lt;b&gt;Note:&lt;/b&gt; Changing this value after the
+SmartFilterBar is initialized (&lt;code&gt;initialise&lt;/code&gt; event was fired) has no effect.</documentation>
+            <deprecation since="1.40">Use &lt;code&gt;entitySet&lt;/code&gt; property instead of this one, to enable V4 annotation support</deprecation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="entitySet">
+            <documentation>The OData entity set whose metadata is used to create the SmartFilterBar. &lt;b&gt;Note:&lt;/b&gt; Changing this value after the
+SmartFilterBar is initialized (&lt;code&gt;initialise&lt;/code&gt; event was fired) has no effect.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="resourceUri">
+            <documentation>Optional. The OData service URL. If it is not specified, the service URL from the OData model (this.getModel()) will be used.
+&lt;b&gt;Note:&lt;/b&gt; Changing this value after the SmartFilterBar is initialized (initialise event was fired) has no effect.</documentation>
+            <deprecation since="1.29">Set an ODataModel as the main model on your control/view instead</deprecation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="basicSearchFieldName">
+            <documentation>Name of the field that is the focus of the basic search.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="enableBasicSearch">
+            <documentation>Enables the basic search field. The entered value can be accessed with
+{@link sap.ui.comp.smartfilterbar.SmartFilterBar#getParameters}. &lt;b&gt;Note:&lt;/b&gt; When the SmartFilterBar control is used with a
+{@link sap.ui.comp.smarttable.SmartTable} control the parameters are handled automatically. Therefore, this must only be enabled
+for OData service entities that support basic search.</documentation>
+        </property>
+        <property since="1.40" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="liveMode">
+            <documentation>If set the search will be automatically triggered, when a filter value was set via the &lt;B&gt;change&lt;/B&gt; event. &lt;b&gt;Note:&lt;/b&gt; The live
+mode only operates on non-phone scenarios.</documentation>
+        </property>
+        <property since="1.40" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="showMessages">
+            <documentation>If set to &lt;code&gt;false&lt;/code&gt; eventual errors during the search, will not be displayed in a messagebox.</documentation>
+        </property>
+        <property since="1.42.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="considerAnalyticalParameters">
+            <documentation>Indicates if the analytical parameters (SelectionVariant) must be taken into consideration.</documentation>
+            <developmentState since="1.42.0" state="experimental">This property is NOT stable yet. Use at your own risk.</developmentState>
+        </property>
+        <property since="1.46.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="useDateRangeType">
+            <documentation>If set to &lt;code&gt;true&lt;/code&gt; all date fields with filter restriction &lt;code&gt;interval&lt;/code&gt; will be treated as
+&lt;code&gt;DateTimeRange&lt;/code&gt; filters. &lt;b&gt;Note:&lt;/b&gt; If this property is set to &lt;code&gt;true&lt;/code&gt; and any date filters with filter
+restriction &lt;code&gt;interval&lt;/code&gt; were stored as part of a variant, the values of these filters cannot be applied. If this
+property is set to &lt;code&gt;false&lt;/code&gt;, any previously stored filters which were treated as type &lt;code&gt;DateTimeRange&lt;/code&gt;
+based on the former setting, cannot be converted back to the standard date interval.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" since="1.36" name="pendingChange">
+            <documentation>This event is fired after the pending state of the &lt;code&gt;FilterBar&lt;/code&gt; control changes.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..n" type="sap.ui.comp/smartfilterbar/ControlConfiguration" name="controlConfiguration">
+            <documentation>Using control configurations you can add additional configuration to filter fields, for example set custom labels, change the order
+of fields, or change the filter field control type. &lt;b&gt;Note:&lt;/b&gt; Changing the values here after the SmartFilter is initialized (&lt;code&gt;initialise&lt;/code&gt;
+event was fired) has no effect.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" type="sap.ui.comp/smartfilterbar/GroupConfiguration" name="groupConfiguration">
+            <documentation>Provides the possibility to add additional configuration to groups. Groups are used to show fields in the advanced area of the
+SmartFilterBar. With additional configuration, you can for example set custom labels or change the order of groups. &lt;b&gt;Note:&lt;/b&gt;
+Changing the values here after the SmartFilter is initialized (&lt;code&gt;initialise&lt;/code&gt; event was fired) has no effect.</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association since="1.38" cardinality="0..1" type="sap.ui.comp/smartvariants/SmartVariantManagement" name="smartVariant">
+            <documentation>Identifies the SmartVariant control which should be used for the personalization.</documentation>
+        </association>
+    </associations>
+    <methods>
+        <method type="sap.ui.core/void" name="applyVariant">
+            <documentation>Applies the current variant as opposed to &lt;code&gt;fetchVariant&lt;/code&gt;. The variant is retrieved via the flex layer.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/object" name="variant">
+                    <documentation>The variant that must be applied. oVariant must contain a valid JSON object.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method type="sap.ui.core/object" name="fetchVariant">
+            <documentation>Retrieves the currently visible filters and the values for storing them as variants. The result will be passed on as a JSON object to the
+callee smart variant control.</documentation>
+        </method>
+    </methods>
+</control>

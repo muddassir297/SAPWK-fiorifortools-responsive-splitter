@@ -1,0 +1,65 @@
+<mvc:View
+  height="100%"
+  controllerName="UI5FioriForTools.controller.PageResponsiveSplitter"
+  xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+  xmlns:core="sap.ui.core"
+  xmlns:form="sap.ui.layout.form"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  xmlns:l="sap.ui.layout"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:tnt="sap.tnt"
+  xmlns:u="sap.ui.unified"
+  xmlns="sap.m">
+
+ <!-- RESPONSIVE SPLITTER -->
+    <l:ResponsiveSplitter id="splitter" defaultPane="default" width="100%" height="100%">
+          <!-- PANE CONTAINER 1 -->
+          <l:PaneContainer orientation="Horizontal">
+              <!-- PANE CONTAINER 2, NESTED -->
+              <l:PaneContainer orientation="Horizontal">
+                  <!-- SPLIT PANE 1 WITH XML VIEW-->
+                  <l:layoutData>
+                        <l:SplitterLayoutData size="220px">
+                        </l:SplitterLayoutData>
+                  </l:layoutData>
+                  <l:SplitPane id="tree" requiredParentWidth="700" demandPane="true">
+                    <mvc:XMLView viewName="UI5FioriForTools.view.Tree" />
+                  </l:SplitPane>
+              </l:PaneContainer>
+              
+              <!-- PANE CONTAINER 3, NESTED -->
+              <l:PaneContainer orientation="Vertical">
+                    <!-- PANE CONTAINER 5, NESTED -->
+                    <l:PaneContainer orientation="Horizontal">
+                        <!-- SPLIT PANE 2 WITH XML VIEW-->
+                        <l:SplitPane  id="default" requiredParentWidth="300" >
+                            <mvc:XMLView viewName="UI5FioriForTools.view.Console" class="ConsoleView" />
+                        </l:SplitPane>
+                    </l:PaneContainer>
+                    <!-- PANE CONTAINER 6, NESTED -->
+                    <l:PaneContainer orientation="Horizontal">
+                        <!-- SPLIT PANE 3 WITH XML VIEW-->
+                        <l:layoutData>
+                            <l:SplitterLayoutData size="30%">
+                            </l:SplitterLayoutData>
+                        </l:layoutData>
+                        <l:SplitPane requiredParentWidth="600" id="console" demandPane="true">
+                            <mvc:XMLView viewName="UI5FioriForTools.view.Table" />
+                        </l:SplitPane>
+                    </l:PaneContainer>
+              </l:PaneContainer>
+
+              <!-- PANE CONTAINER 4, NESTED -->
+              <l:PaneContainer orientation="Horizontal">
+                  <!-- SPLIT PANE 4 WITH XML VIEW-->
+                  <l:layoutData>
+                        <l:SplitterLayoutData size="25%">
+                        </l:SplitterLayoutData>
+                  </l:layoutData>
+                  <l:SplitPane requiredParentWidth="1000" demandPane="true">
+                      <mvc:XMLView viewName="UI5FioriForTools.view.Form" />
+                  </l:SplitPane>
+              </l:PaneContainer>
+          </l:PaneContainer>
+    </l:ResponsiveSplitter>
+</mvc:View>

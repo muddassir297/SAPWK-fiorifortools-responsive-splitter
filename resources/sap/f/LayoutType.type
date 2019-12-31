@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>LayoutType</name>
+    <derived/>
+    <documentation>Types of layout for the sap.f.FlexibleColumnLayout control.</documentation>
+    <since>1.46</since>
+    <enumeration>
+        <value name="OneColumn">
+            <documentation>Description</documentation>
+        </value>
+        <value name="TwoColumnsBeginExpanded">
+            <documentation>Description</documentation>
+        </value>
+        <value name="TwoColumnsMidExpanded">
+            <documentation>Description</documentation>
+        </value>
+        <value name="MidColumnFullScreen">
+            <documentation>Description</documentation>
+        </value>
+        <value name="ThreeColumnsMidExpanded">
+            <documentation>Description</documentation>
+        </value>
+        <value name="ThreeColumnsEndExpanded">
+            <documentation>Description</documentation>
+        </value>
+        <value name="ThreeColumnsMidExpandedEndHidden">
+            <documentation>Description</documentation>
+        </value>
+        <value name="ThreeColumnsBeginExpandedEndHidden">
+            <documentation>Description</documentation>
+        </value>
+        <value name="EndColumnFullScreen">
+            <documentation>Description</documentation>
+        </value>
+    </enumeration>
+</simple-type>

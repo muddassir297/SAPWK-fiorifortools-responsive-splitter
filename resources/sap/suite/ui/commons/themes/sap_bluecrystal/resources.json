@@ -1,0 +1,329 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".theming",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ChartContainer.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ChartTile.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "FacetOverview.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "GenericTile2X2.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "HeaderContainer.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "KpiTile.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "LinkActionSheet.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "MonitoringTile.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "NumericTile.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlow.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlowConnection.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlowConnectionLabel.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlowLaneHeader.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlowNode.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "TargetFilter.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ThingCollection.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "TileContent2X2.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "UnifiedThingGroup.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "UnifiedThingInspector.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/arrow_left.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/arrow_left_hover.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/arrow_right.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/arrow_right_hover.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/attachment_16.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/attachment_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/btn_actions_hover.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/btn_actions_regular.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/btn_nav_left_a.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/btn_nav_left_p.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/btn_nav_right_a.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/btn_nav_right_p.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/bubble.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/bubble_1.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/decline_16.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/delete_16.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/edit_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/edit_grey_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/home_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/img_bg.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/img_bg_ti.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/search_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/stripes.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/tag_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/thumbDown_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img-RTL/thumbUp_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/arrow_left.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/arrow_left_hover.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/arrow_right.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/arrow_right_hover.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/attachment_16.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/attachment_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/btn_actions_hover.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/btn_actions_regular.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/btn_nav_left_a.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/btn_nav_left_p.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/btn_nav_right_a.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/btn_nav_right_p.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/bubble.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/bubble_1.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/decline_16.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/delete_16.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/edit_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/edit_grey_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/home_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/img_bg.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/img_bg_ti.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/search_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/stripes.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/tag_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/thumbDown_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "img/thumbUp_24.png",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library-RTL.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library-dbg.css",
+      "isDebug": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library-parameters.json",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library.source.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "shared.css",
+      "theme": "sap_bluecrystal"
+    }
+  ]
+}

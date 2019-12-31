@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>InteractiveBarChart</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The InteractiveBarChart control belongs to a chart control group in the MicroChart library with a number of interactive features. These interactive features provide more information on a chart value.
+For example, by selecting a bar you can get more details on the displayed value.</documentation>
+    <since>1.42.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Appearance" defaultValue="3" type="sap.ui.core/int" name="displayedBars">
+            <documentation>The number of displayed bars.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="40%" type="sap.ui.core/Percentage" name="labelWidth">
+            <documentation>Width of the labels column in the resulting layout (in percentage). Possible range of values from 0 to 100.
+A value of 40 results in the labels column taking up 40% of available space.</documentation>
+        </property>
+        <property group="Behavior" defaultValue="true" type="sap.ui.core/boolean" name="selectionEnabled">
+            <documentation>Enables the selection in the chart.</documentation>
+        </property>
+        <property group="Appearance" type="sap.ui.core/float" name="min">
+            <documentation>Begin of displayed scale.</documentation>
+        </property>
+        <property group="Appearance" type="sap.ui.core/float" name="max">
+            <documentation>End of displayed scale.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="selectionChanged">
+            <documentation>Event is fired when user has selected or deselected a bar.</documentation>
+            <parameters>
+                <parameter type="sap.suite.ui.microchart/InteractiveBarChartBar[]" name="selectedBars">
+                    <documentation>All bars which are in selected state.</documentation>
+                </parameter>
+                <parameter type="sap.suite.ui.microchart/InteractiveBarChartBar" name="bar">
+                    <documentation>The bar being selected or deselected.</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="selected">
+                    <documentation>The selection state of the bar being selected or deselected.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event allowPreventDefault="false" name="press">
+            <documentation>The event is fired when the user presses the chart while its bars are not selectable in non-interactive mode. This is decided internally, depending on the size of the bars.</documentation>
+        </event>
+    </events>
+    <aggregations default="bars">
+        <aggregation bindable="bindable" cardinality="0..n" type="sap.suite.ui.microchart/InteractiveBarChartBar" name="bars">
+            <documentation>Bars displayed on the chart.</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association cardinality="0..n" type="sap.ui.core/Control" name="ariaLabelledBy">
+            <documentation>Association to controls which label this control (see WAI-ARIA attribute aria-labelledby).</documentation>
+        </association>
+    </associations>
+</control>

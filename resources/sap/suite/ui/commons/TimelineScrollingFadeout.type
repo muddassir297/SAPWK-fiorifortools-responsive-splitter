@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>TimelineScrollingFadeout</name>
+	<author></author>
+	<documentation>Type of the fadeout effect applied to the upper and lower margins of the visible timeline area.</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<enumeration>
+		<value name="None">
+			<documentation>Timeline does not fade out.</documentation>
+		</value>
+		<value name="Area">
+			<documentation>Timeline fades into the lower and upper margins of the visible area, 
+			but no scroll buttons are displayed.</documentation>
+		</value>
+		<value name="AreaWithButtons">
+			<documentation>Timeline fades into the lower and upper margins of the visible area, 
+			and scroll buttons are displayed.</documentation>
+		</value>
+	</enumeration>
+</simple-type>

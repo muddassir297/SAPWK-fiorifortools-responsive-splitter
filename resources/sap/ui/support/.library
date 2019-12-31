@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+	<name>sap.ui.support</name>
+	<vendor>SAP SE</vendor>
+	<copyright>SAP UI development toolkit for HTML5 (SAPUI5)
+
+(c) Copyright 2009-2017 SAP SE. All rights reserved</copyright>
+	<version>1.46.2</version>
+
+	<documentation>UI5 library: sap.ui.support</documentation>
+
+	<dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+			<libraryName>sap.ui.fl</libraryName>
+			<libraryName>sap.ui.layout</libraryName>
+			<libraryName>sap.ui.codeeditor</libraryName>
+			<libraryName>sap.m</libraryName>
+		</dependency>
+	</dependencies>
+
+	<appData>
+		 <documentation xmlns="http://www.sap.com/ui5/buildext/documentation"
+	        indexUrl="../../../../test-resources/sap/ui/support/demokit/docuindex.json"
+	        resolve="lib" />
+		<!-- excludes for the JSDoc -->
+		<jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc">
+			<exclude name="sap.ui.support.js."/>
+		</jsdoc>
+		<!-- excludes for the JSCoverage -->
+		<jscoverage xmlns="http://www.sap.com/ui5/buildext/jscoverage">
+			<exclude name="sap.ui.support.js."/>
+		</jscoverage>
+	</appData>
+
+</library>

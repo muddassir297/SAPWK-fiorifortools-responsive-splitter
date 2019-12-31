@@ -1,0 +1,20 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:build="sap.build">
+
+	<IconTabBar id="iconTabBar" expandable="false" stretchContentHeight="true" headerMode="Inline" select="._templateEventHandlers.onIconTabBarSelect">
+		<items>
+			<template:repeat list="{parameter>/settings/tableTabs}" var="tabItem">
+				<IconTabFilter key="{parts: [{path: 'parameter>/settings/tableTabs'}, {path: 'tabItem>'}], formatter: 'sap.suite.ui.generic.template.js.AnnotationHelper.getIconTabFilterKey'}"
+							   text="{path: 'tabItem>', formatter: 'sap.suite.ui.generic.template.js.AnnotationHelper.getIconTabFilterText'}"
+							   count="0">
+				</IconTabFilter>
+			</template:repeat>
+		</items>
+		<content>
+			<core:Fragment
+				fragmentName="sap.suite.ui.generic.template.ListReport.view.fragments.SmartTable_ForTableTabs"
+				type="XML" />
+		</content>
+	</IconTabBar>
+</core:FragmentDefinition>
